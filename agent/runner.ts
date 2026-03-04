@@ -9,7 +9,7 @@ const MAX_ITERATIONS = 30; // safety cap — prevents infinite loops
 
 export async function runAgent(task: string): Promise<string> {
   // Build system prompt from SOUL.md + long-term memory + today's log
-  const soul = fs.readFileSync(path.join(__dirname, "SOUL.md"), "utf-8");
+  const soul = fs.readFileSync(path.join(process.cwd(), "agent", "SOUL.md"), "utf-8");
   const memory = readMemory();
   const todayLog = readTodayLog();
   const today = new Date().toISOString().split("T")[0];

@@ -44,8 +44,8 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install and build
+        run: npm ci && npm run build
 
       - name: Determine skill name
         id: skill
@@ -57,8 +57,8 @@ jobs:
           elif [ "${{ github.event_name }}" = "schedule" ]; then
             CRON="${{ github.event.schedule }}"
             SKILL=$(node -e "
-              const { listSkills } = require('./agent/skills');
-              const { loadSkill } = require('./agent/skills');
+              const { listSkills } = require('./dist/agent/skills');
+              const { loadSkill } = require('./dist/agent/skills');
               const cron = '$CRON';
               const match = listSkills().find(s => loadSkill(s).config.schedule === cron);
               console.log(match || '');
@@ -77,7 +77,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: npx ts-node agent/index.ts ${{ steps.skill.outputs.name }}
+        run: node dist/agent/index.js ${{ steps.skill.outputs.name }}
 
       - name: Commit results
         run: |
@@ -85,7 +85,7 @@ jobs:
           git config user.name "Aeon"
           SKILL_NAME="${{ steps.skill.outputs.name }}"
           COMMIT_PATHS=$(node -e "
-            const { loadSkill } = require('./agent/skills');
+            const { loadSkill } = require('./dist/agent/skills');
             const skill = loadSkill('$SKILL_NAME');
             console.log(skill.config.commits.join(' '));
           ")

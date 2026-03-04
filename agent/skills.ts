@@ -14,7 +14,7 @@ export interface Skill {
   prompt: string;
 }
 
-const SKILLS_DIR = join(__dirname, "..", "skills");
+const SKILLS_DIR = join(process.cwd(), "skills");
 
 // ─── Frontmatter parser ────────────────────────────────────────────────────────
 
