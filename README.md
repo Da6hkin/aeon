@@ -1,6 +1,6 @@
 # Aeon
 
-Autonomous agent running on GitHub Actions, powered by Claude. Writes daily articles, builds features from GitHub issues, and notifies you on Telegram.
+Autonomous agent running on GitHub Actions, powered by Claude Code. Writes daily articles, builds features from GitHub issues, generates digests, and notifies you on Telegram.
 
 ## Setup
 
@@ -8,23 +8,40 @@ Autonomous agent running on GitHub Actions, powered by Claude. Writes daily arti
 
 ### 2. Add GitHub secrets
 
-Go to **Settings → Secrets and variables → Actions** and add:
+Go to **Settings > Secrets and variables > Actions** and add:
 
 | Secret | Required | Description |
 |--------|----------|-------------|
-| `ANTHROPIC_API_KEY` | ✅ | Your Anthropic API key from console.anthropic.com |
+| `CLAUDE_CODE_OAUTH_TOKEN` | Yes | OAuth token for Claude (see below) |
 | `TELEGRAM_BOT_TOKEN` | Optional | From @BotFather on Telegram |
 | `TELEGRAM_CHAT_ID` | Optional | Your Telegram chat ID from @userinfobot |
+| `XAI_API_KEY` | Optional | X.AI API key for searching X/Twitter |
+
+#### Getting your auth token
+
+**Option A: Claude Code OAuth token (recommended)** — uses your existing Claude Pro/Max subscription, no separate API billing.
+
+1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and run:
+   ```bash
+   claude setup-token
+   ```
+2. It opens a browser for OAuth login, then prints a long-lived token (`sk-ant-oat01-...`, valid for 1 year).
+3. Add it as the `CLAUDE_CODE_OAUTH_TOKEN` secret in your repo.
+
+**Option B: Standard API key** — usage-based billing through console.anthropic.com.
+
+1. Go to [console.anthropic.com/settings/keys](https://console.anthropic.com/settings/keys) and create a key.
+2. Add it as `CLAUDE_CODE_OAUTH_TOKEN` in your repo secrets (it works in the same field).
 
 ### 3. Customize the agent
 
-- **`agent/SOUL.md`** — change the agent's identity, rules, and output style
-- **`skills/*.md`** — edit skill prompts or add new ones
+- **`CLAUDE.md`** — agent identity, rules, and instructions (auto-loaded by Claude Code)
+- **`skills/*.md`** — skill prompts and config
 - **`memory/MEMORY.md`** — seed with context about your project
 
 ### 4. Run manually to test
 
-Go to **Actions → Run Skill → Run workflow** and enter a skill name (e.g. `article`).
+Go to **Actions > Run Skill > Run workflow** and enter a skill name (e.g. `digest`).
 
 ## Adding a new skill
 
@@ -47,55 +64,40 @@ Today is ${today}. Your task is to...
 
 2. If it needs a cron schedule, add the cron to `.github/workflows/run-skill.yml` under `schedule:` and map it in the "Determine skill name" step.
 
-3. Run locally: `npm run skill -- your-skill`
-
-**Template variables:** `${today}` → `2026-03-04`, `${now}` → full ISO timestamp, `${repo}` → repo name.
-
-## Adding a new tool
-
-Use `create_tool` at runtime, or run the `build-tool` skill to create a persistent tool-skill:
-
-```bash
-npm run build-tool
-```
+**Template variables:** `${today}` (2026-03-06), `${now}` (full ISO timestamp), `${repo}` (repo name).
 
 ## Trigger feature builds from issues
 
-Add the label `ai-build` to any GitHub issue. The run-skill workflow fires
-automatically and Claude will read the issue, implement it, and open a PR.
+Add the label `ai-build` to any GitHub issue. The workflow fires automatically and Claude will read the issue, implement it, and open a PR.
 
 ## Local development
 
 ```bash
-cp .env.example .env
-# fill in ANTHROPIC_API_KEY at minimum
+# Run any skill locally (requires Claude Code CLI)
+node scripts/load-skill.js --prompt article | claude -p --dangerously-skip-permissions
 
-npm install
-npm run article           # run the article skill
-npm run feature           # run the feature skill
-npm run skill -- my-skill # run any skill by name
+# List available skills
+node scripts/load-skill.js --list
 ```
 
 ## Project structure
 
 ```
+CLAUDE.md           <- agent identity (auto-loaded by Claude Code)
+scripts/
+  load-skill.js     <- skill loader (parses frontmatter, interpolates vars)
 skills/
-  article.md      ← daily article skill prompt + config
-  feature.md      ← feature builder skill prompt + config
-agent/
-  index.ts        ← CLI entry, loads skill by name
-  skills.ts       ← skill loader (parses .md frontmatter + prompt)
-  runner.ts       ← Claude agent loop
-  memory.ts       ← read/write memory files
-  SOUL.md         ← agent identity
-  tools/
-    index.ts      ← tool registry (run_code, create_tool, web_search, send_telegram)
-    telegram.ts   ← Telegram notifications
+  article.md        <- daily article skill
+  digest.md         <- daily digest skill
+  feature.md        <- feature builder skill
+  reflect.md        <- weekly reflection skill
+  build-tool.md     <- skill builder skill
+  fetch-tweets.md   <- tweet fetcher skill
 memory/
-  MEMORY.md       ← long-term persistent memory
-  logs/           ← daily run logs (auto-created)
-articles/         ← generated articles (auto-created)
+  MEMORY.md         <- long-term persistent memory
+  logs/             <- daily run logs (auto-created)
+articles/           <- generated articles (auto-created)
 .github/
   workflows/
-    run-skill.yml ← single workflow dispatches all skills
+    run-skill.yml   <- single workflow dispatches all skills via Claude Code
 ```

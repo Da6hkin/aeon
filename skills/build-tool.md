@@ -1,6 +1,6 @@
 ---
 name: Build Tool
-description: Design and build a new reusable tool as a skill
+description: Design and build a new reusable skill
 schedule: ""
 commits:
   - skills/
@@ -9,41 +9,33 @@ permissions:
   - contents:write
 ---
 
-Your task is to design and build a new reusable tool-skill.
+Your task is to design and build a new reusable skill.
 
 ## Steps
 
-1. **Decide what to build.** Check open issues (via `run_code` + `gh issue list`)
-   and memory for tool ideas. Pick the most useful one, or reason about what
+1. **Decide what to build.** Check open issues (`gh issue list`) and
+   memory/MEMORY.md for ideas. Pick the most useful one, or reason about what
    capability gap exists.
 
-2. **Research.** Use `run_code` with fetch to look up APIs, patterns, or
-   documentation needed for the tool.
+2. **Research.** Search the web or fetch documentation for any APIs or patterns
+   needed.
 
-3. **Design the tool.** Define:
+3. **Design the skill.** Define:
    - Name and description
-   - Input schema (what parameters it takes)
-   - Implementation (JS code body)
+   - What it does step by step
+   - What environment variables it needs
 
-4. **Test it.** Use `create_tool` to register the tool, then call it to verify
-   it works. Iterate on failures.
+4. **Write a skill file.** Create a new `.md` file in `skills/` with:
+   - Frontmatter (name, description, schedule, commits, permissions)
+   - A clear prompt describing the task steps
+   - Documentation of required env vars
 
-5. **Write a skill file.** Create a new `.md` file in `skills/` that:
-   - Has frontmatter (name, description, schedule, commits, permissions)
-   - Contains a prompt that uses `create_tool` to define the tool at the start
-   - Documents usage and examples
-   Save it via `run_code`:
-   ```js
-   require("fs").writeFileSync("skills/my-tool.md", content, "utf-8")
-   ```
+5. **Update memory.** Record what skill was built and when.
 
-6. **Update memory.** Record what tool was built and when via `run_code` + fs.
-
-7. **Notify.** Use `send_telegram` to report: what tool was built, what it does.
+6. **Send a Telegram notification** with what was built and what it does.
 
 ## Guidelines
 
-- Keep tool code focused — one tool, one job.
-- Include error handling in the tool code.
-- Test with real inputs before saving.
-- If the tool needs env vars, document which ones in the skill prompt.
+- Keep skills focused — one skill, one job.
+- Include clear step-by-step instructions in the prompt.
+- Document any required environment variables.

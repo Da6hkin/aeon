@@ -1,26 +1,9 @@
 {
   "name": "aeon",
-  "version": "1.0.0",
-  "description": "Aeon — autonomous agent powered by Claude",
-  "main": "dist/agent/index.js",
+  "version": "2.0.0",
+  "description": "Aeon — autonomous agent powered by Claude Code",
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node agent/index.ts",
-    "skill": "ts-node agent/index.ts",
-    "article": "ts-node agent/index.ts article",
-    "feature": "ts-node agent/index.ts feature",
-    "build-tool": "ts-node agent/index.ts build-tool",
-    "digest": "ts-node agent/index.ts digest",
-    "fetch-tweets": "ts-node agent/index.ts fetch-tweets"
-  },
-  "dependencies": {
-    "@anthropic-ai/sdk": "^0.78.0",
-    "dotenv": "^16.4.5",
-    "node-fetch": "^3.3.2"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.0"
+    "skill": "node scripts/load-skill.js --prompt",
+    "list": "node scripts/load-skill.js --list"
   }
 }

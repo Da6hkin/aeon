@@ -13,14 +13,15 @@ permissions:
 Today is ${today}. Your task is to build a new feature for this repository.
 
 Steps:
-1. Read the open GitHub issues labelled "ai-build" to find what to work on.
-   If there are none, read MEMORY.md to see if there's a previously planned feature,
-   or pick a reasonable improvement to the agent itself (e.g. a new tool, better prompts).
-2. Read the relevant existing files to understand the codebase.
-3. Implement the feature in TypeScript. Write clean, typed code.
-4. Run `npm run build` to verify it compiles. Fix any errors.
-5. Create a PR with a clear title and description explaining what was built and why.
-6. Update MEMORY.md to record what was built.
-7. Send a Telegram notification: "🚀 Feature built: [feature name] — PR: [url]"
+1. Read `memory/MEMORY.md` for context.
+2. Check open GitHub issues labelled "ai-build" using `gh issue list --label ai-build`.
+   If there are none, check memory for planned features, or pick a reasonable
+   improvement (e.g. a new skill, better prompts).
+3. Read the relevant existing files to understand the codebase.
+4. Implement the feature. Write clean code.
+5. Create a branch, commit, and open a PR with a clear title and description.
+6. Update memory/MEMORY.md to record what was built.
+7. Log what you did to memory/logs/${today}.md.
+8. Send a Telegram notification: "Feature built: [name] — PR: [url]"
 
 Write complete, working code. No TODOs or placeholders.
