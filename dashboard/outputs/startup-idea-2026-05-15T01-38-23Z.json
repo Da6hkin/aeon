@@ -1,0 +1,405 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Startup Ideas — 2026-05-15"
+      },
+      "children": [
+        "tags_stack",
+        "idea1_container",
+        "separator1",
+        "idea2_container",
+        "separator2",
+        "footer"
+      ]
+    },
+    "tags_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tag_crypto_saas",
+        "tag_polymarket",
+        "tag_algo"
+      ]
+    },
+    "tag_crypto_saas": {
+      "type": "Badge",
+      "props": {
+        "text": "crypto saas"
+      }
+    },
+    "tag_polymarket": {
+      "type": "Badge",
+      "props": {
+        "text": "polymarket"
+      }
+    },
+    "tag_algo": {
+      "type": "Badge",
+      "props": {
+        "text": "algo"
+      }
+    },
+    "idea1_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea1_title_row",
+        "idea1_description",
+        "idea1_icp_block",
+        "idea1_wedge_block",
+        "idea1_why_block",
+        "idea1_mvp_block",
+        "idea1_kill_block"
+      ]
+    },
+    "idea1_title_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_heading",
+        "idea1_status_badge"
+      ]
+    },
+    "idea1_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "1. LiquidLine",
+        "level": "h2"
+      }
+    },
+    "idea1_status_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "executable",
+        "variant": "secondary"
+      }
+    },
+    "idea1_description": {
+      "type": "Text",
+      "props": {
+        "text": "Productize a managed Polymarket LP bot; the reward program pays but ~zero retail run two-sided quotes.",
+        "variant": "body"
+      }
+    },
+    "idea1_icp_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_icp_label",
+        "idea1_icp_text"
+      ]
+    },
+    "idea1_icp_label": {
+      "type": "Heading",
+      "props": {
+        "text": "ICP",
+        "level": "h4"
+      }
+    },
+    "idea1_icp_text": {
+      "type": "Text",
+      "props": {
+        "text": "Crypto-native trader with $5–50k idle stables, just got rate-limited by sub-5% Aave/Pendle yields."
+      }
+    },
+    "idea1_wedge_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_wedge_label",
+        "idea1_wedge_text"
+      ]
+    },
+    "idea1_wedge_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Wedge",
+        "level": "h4"
+      }
+    },
+    "idea1_wedge_text": {
+      "type": "Text",
+      "props": {
+        "text": "Hosted LP bot, 10 curated strategies, auto reward-tier optimization, P&L dashboard."
+      }
+    },
+    "idea1_why_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_why_label",
+        "idea1_why_text"
+      ]
+    },
+    "idea1_why_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h4"
+      }
+    },
+    "idea1_why_text": {
+      "type": "Text",
+      "props": {
+        "text": "HIP-4 + Polymarket US opening tripled LP surface, MM growth is flat."
+      }
+    },
+    "idea1_mvp_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_mvp_label",
+        "idea1_mvp_text"
+      ]
+    },
+    "idea1_mvp_label": {
+      "type": "Heading",
+      "props": {
+        "text": "MVP",
+        "level": "h4"
+      }
+    },
+    "idea1_mvp_text": {
+      "type": "Text",
+      "props": {
+        "text": "Single-strategy BTC 1h-duration bot, 5 pilots × $1k from r/Polymarket DMs over 14 days. Need ≥3 net-positive AND ≥3 paying 20% perf fee."
+      }
+    },
+    "idea1_kill_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea1_kill_label",
+        "idea1_kill_text"
+      ]
+    },
+    "idea1_kill_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Kill",
+        "level": "h4"
+      }
+    },
+    "idea1_kill_text": {
+      "type": "Text",
+      "props": {
+        "text": "<10 paying users / <$50k AUM by day 60–90."
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "idea2_container": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "idea2_title_row",
+        "idea2_description",
+        "idea2_icp_block",
+        "idea2_wedge_block",
+        "idea2_why_block",
+        "idea2_mvp_block",
+        "idea2_kill_block"
+      ]
+    },
+    "idea2_title_row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_heading",
+        "idea2_status_badge"
+      ]
+    },
+    "idea2_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "2. Resolva",
+        "level": "h2"
+      }
+    },
+    "idea2_status_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "ambitious",
+        "variant": "secondary"
+      }
+    },
+    "idea2_description": {
+      "type": "Text",
+      "props": {
+        "text": "Resolution-insurance overlay; UMA oracle disputes are now a top-3 trader complaint after the March '25 $7M Ukraine flip.",
+        "variant": "body"
+      }
+    },
+    "idea2_icp_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_icp_label",
+        "idea2_icp_text"
+      ]
+    },
+    "idea2_icp_label": {
+      "type": "Heading",
+      "props": {
+        "text": "ICP",
+        "level": "h4"
+      }
+    },
+    "idea2_icp_text": {
+      "type": "Text",
+      "props": {
+        "text": "Polymarket whale (>$50k volume, on-chain identifiable) just opened a contested-category position."
+      }
+    },
+    "idea2_wedge_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_wedge_label",
+        "idea2_wedge_text"
+      ]
+    },
+    "idea2_wedge_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Wedge",
+        "level": "h4"
+      }
+    },
+    "idea2_wedge_text": {
+      "type": "Text",
+      "props": {
+        "text": "Per-trade insurance — 0.5–3% premium, payout if UMA diverges from credible truth-source consensus."
+      }
+    },
+    "idea2_why_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_why_label",
+        "idea2_why_text"
+      ]
+    },
+    "idea2_why_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Why now",
+        "level": "h4"
+      }
+    },
+    "idea2_why_text": {
+      "type": "Text",
+      "props": {
+        "text": "2025 governance attack + CFTC clarity + Polymarket US / Kalshi / HIP-4 onboarding less crypto-native users who won't eat oracle risk."
+      }
+    },
+    "idea2_mvp_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_mvp_label",
+        "idea2_mvp_text"
+      ]
+    },
+    "idea2_mvp_label": {
+      "type": "Heading",
+      "props": {
+        "text": "MVP",
+        "level": "h4"
+      }
+    },
+    "idea2_mvp_text": {
+      "type": "Text",
+      "props": {
+        "text": "Self-fund $25k float, hand-quote 5 disputed markets, DM 50 top wallets. ≥10 policies AND positive EV."
+      }
+    },
+    "idea2_kill_block": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "idea2_kill_label",
+        "idea2_kill_text"
+      ]
+    },
+    "idea2_kill_label": {
+      "type": "Heading",
+      "props": {
+        "text": "Kill",
+        "level": "h4"
+      }
+    },
+    "idea2_kill_text": {
+      "type": "Text",
+      "props": {
+        "text": "<50 policies in 90d OR loss ratio >70% over first 100."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "Full memos: memory/logs/2026-05-15.md",
+        "variant": "muted"
+      }
+    }
+  }
+}
