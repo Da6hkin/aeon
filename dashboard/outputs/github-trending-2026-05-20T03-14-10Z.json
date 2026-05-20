@@ -1,0 +1,522 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-05-20"
+      },
+      "children": [
+        "section_top_pick",
+        "sep1",
+        "section_agent_infra",
+        "sep2",
+        "section_devtools",
+        "sep3",
+        "footer"
+      ]
+    },
+    "section_top_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_top_pick",
+        "entry_rtk_top"
+      ]
+    },
+    "heading_top_pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "entry_rtk_top": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_rtk_top",
+        "text_rtk_top_desc"
+      ]
+    },
+    "link_rtk_top": {
+      "type": "StoryLink",
+      "props": {
+        "title": "rtk-ai/rtk",
+        "href": "https://github.com/rtk-ai/rtk"
+      },
+      "children": []
+    },
+    "text_rtk_top_desc": {
+      "type": "Text",
+      "props": {
+        "text": "In a slate dominated by agent-tooling repos, rtk stands out because it pays for itself the moment you install it — measurable token savings on commands you already run.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_agent_infra": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_agent_infra",
+        "entry_superpowers",
+        "entry_cli_anything",
+        "entry_rtk_agent",
+        "entry_codegraph",
+        "entry_agentmemory"
+      ]
+    },
+    "heading_agent_infra": {
+      "type": "Heading",
+      "props": {
+        "text": "Agent infra",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "entry_superpowers": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "line_superpowers_header",
+        "text_superpowers_desc"
+      ]
+    },
+    "line_superpowers_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_superpowers",
+        "stat_superpowers",
+        "badge_superpowers_lang",
+        "badge_superpowers_status"
+      ]
+    },
+    "link_superpowers": {
+      "type": "StoryLink",
+      "props": {
+        "title": "obra/superpowers",
+        "href": "https://github.com/obra/superpowers"
+      },
+      "children": []
+    },
+    "stat_superpowers": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,623 today (199k total)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_superpowers_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Shell",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_superpowers_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "text_superpowers_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Codifies the \"skill\" primitive so coding agents fetch reusable workflows on demand instead of re-prompting from scratch.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "entry_cli_anything": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "line_cli_anything_header",
+        "text_cli_anything_desc"
+      ]
+    },
+    "line_cli_anything_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_cli_anything",
+        "stat_cli_anything",
+        "badge_cli_anything_lang",
+        "badge_cli_anything_status"
+      ]
+    },
+    "link_cli_anything": {
+      "type": "StoryLink",
+      "props": {
+        "title": "HKUDS/CLI-Anything",
+        "href": "https://github.com/HKUDS/CLI-Anything"
+      },
+      "children": []
+    },
+    "stat_cli_anything": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,038 today (38k total)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_cli_anything_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_cli_anything_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "text_cli_anything_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Wraps everyday apps in a uniform CLI so agents can drive them without app-specific tool integrations.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "entry_rtk_agent": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "line_rtk_agent_header",
+        "text_rtk_agent_desc"
+      ]
+    },
+    "line_rtk_agent_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_rtk_agent",
+        "stat_rtk_agent",
+        "badge_rtk_agent_lang",
+        "badge_rtk_agent_status"
+      ]
+    },
+    "link_rtk_agent": {
+      "type": "StoryLink",
+      "props": {
+        "title": "rtk-ai/rtk",
+        "href": "https://github.com/rtk-ai/rtk"
+      },
+      "children": []
+    },
+    "stat_rtk_agent": {
+      "type": "Text",
+      "props": {
+        "text": "★ 704 today (51k total)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_rtk_agent_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Rust",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_rtk_agent_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "text_rtk_agent_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Drop-in CLI proxy that strips 60–90% of LLM token spend on dev commands. Single Rust binary, zero config.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "entry_codegraph": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "line_codegraph_header",
+        "text_codegraph_desc"
+      ]
+    },
+    "line_codegraph_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_codegraph",
+        "stat_codegraph",
+        "badge_codegraph_lang",
+        "badge_codegraph_status"
+      ]
+    },
+    "link_codegraph": {
+      "type": "StoryLink",
+      "props": {
+        "title": "colbymchenry/codegraph",
+        "href": "https://github.com/colbymchenry/codegraph"
+      },
+      "children": []
+    },
+    "stat_codegraph": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,850 today (6.8k total)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_codegraph_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_codegraph_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "text_codegraph_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pre-builds a local code knowledge graph so Claude/Cursor/Codex stop re-grepping the codebase every turn.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "entry_agentmemory": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "line_agentmemory_header",
+        "text_agentmemory_desc"
+      ]
+    },
+    "line_agentmemory_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_agentmemory",
+        "stat_agentmemory",
+        "badge_agentmemory_lang",
+        "badge_agentmemory_status"
+      ]
+    },
+    "link_agentmemory": {
+      "type": "StoryLink",
+      "props": {
+        "title": "rohitg00/agentmemory",
+        "href": "https://github.com/rohitg00/agentmemory"
+      },
+      "children": []
+    },
+    "stat_agentmemory": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,609 today (14k total)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_agentmemory_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_agentmemory_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "text_agentmemory_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Persistent memory layer for coding agents — claims top spot on the benchmark eval, drop-in for Claude/Cursor/Codex.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_devtools",
+        "entry_cloakbrowser"
+      ]
+    },
+    "heading_devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "entry_cloakbrowser": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "line_cloakbrowser_header",
+        "text_cloakbrowser_desc"
+      ]
+    },
+    "line_cloakbrowser_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "link_cloakbrowser",
+        "stat_cloakbrowser",
+        "badge_cloakbrowser_lang",
+        "badge_cloakbrowser_status"
+      ]
+    },
+    "link_cloakbrowser": {
+      "type": "StoryLink",
+      "props": {
+        "title": "CloakHQ/CloakBrowser",
+        "href": "https://github.com/CloakHQ/CloakBrowser"
+      },
+      "children": []
+    },
+    "stat_cloakbrowser": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1,463 today (17k total)",
+        "variant": "caption"
+      },
+      "children": []
+    },
+    "badge_cloakbrowser_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "badge_cloakbrowser_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "text_cloakbrowser_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Drop-in Playwright fork that passes every bot-detection test (30/30) via source-level fingerprint patches.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 6/18",
+        "variant": "muted"
+      },
+      "children": []
+    }
+  }
+}
