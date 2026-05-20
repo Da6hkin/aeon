@@ -9,11 +9,11 @@ Hash-anchored edits stop the silent overwrite bug other coding agents hit when f
 
 *Infra*
 • [rmyndharis/OpenWA](https://github.com/rmyndharis/OpenWA) — ★ 726 today (4.6k total) · TypeScript · [ACCELERATING]
-Self-hosts the WhatsApp gateway instead of paying Metas Business API — viable for low-volume senders.
+Self-hosts the WhatsApp gateway instead of paying Meta's Business API — viable for low-volume senders.
 
 *Devtools*
 • [zakirullin/files.md](https://github.com/zakirullin/files.md) — ★ 468 today (2.1k total) · Go · [RETURNING]
-Local-first .md editor that opens a folder — Obsidians vibe minus the cloud, sync, or vault DB.
+Local-first .md editor that opens a folder — Obsidian's vibe minus the cloud, sync, or vault DB.
 
 ---
 sources: trending=ok · gh_api=ok · kept 3/17 (4 already-featured + 6 already-dropped + 4 filtered)
