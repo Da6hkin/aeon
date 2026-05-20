@@ -63,7 +63,7 @@ skills:
   technical-explainer: { enabled: false, schedule: "30 14 * * *" } # visual technical explanation with AI-generated hero image
   digest: { enabled: false, schedule: "0 14 * * *" }
   research-brief: { enabled: false, schedule: "0 14 * * *" }
-  deep-research: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand only — set var to research topic
+  deep-research: { enabled: false, schedule: "workflow_dispatch", var: "autonomous AI agents on Base + Liquid Protocol + DIEM ecosystem + new agent infrastructure opportunities" } # on-demand only — set var to research topic
   last30: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — cross-platform 30-day social research
   paper-pick: { enabled: false, schedule: "0 14 * * *" }
   search-skill: { enabled: false, schedule: "0 14 * * *" }
@@ -90,9 +90,9 @@ skills:
   repo-scanner:
     {
       enabled: false,
-      schedule: "0 15 * * 0",
+      schedule: "workflow_dispatch",
       model: "claude-sonnet-4-6",
-      var: ""
+      var: "aaronjmars"
     } # catalog all GitHub repos — set var to username
 
   # --- Late afternoon (4 PM UTC) ---
@@ -147,7 +147,7 @@ skills:
     {
       enabled: true,
       schedule: "0 */6 * * *",
-      var: "crypto saas tools polymarket trading algo ai "
+      var: "autonomous AI agents, Liquid Protocol DIEM ecosystem, agent infrastructure, registry / payment routing / coordination layer for on-chain agents, crypto saas tools, polymarket, trading algo"
     }
   tool-builder: { enabled: false, schedule: "reactive", var: "" } # reactive — build automation scripts from recurring tasks
   skill-repair: { enabled: false, schedule: "reactive", var: "" } # reactive — auto-fix failing skills
@@ -276,12 +276,18 @@ reactive:
 #         - parallel: [skill-a, skill-b]
 #         - skill: skill-c, consume: [skill-a, skill-b]
 chains:
-  # daily-routine:
-  #   schedule: "0 7 * * *"
-  #   on_error: fail-fast
-  #   steps:
-  #     - parallel: [token-movers, paper-pick, github-issues, hacker-news-digest]
-  #     - skill: daily-routine, consume: [token-movers, paper-pick, github-issues, hacker-news-digest]
+  overnight-research:
+    # 04:45 UTC = 05:45 CET / 06:45 EET — fires once early-morning, output ready by 10am local
+    schedule: "45 4 * * *"
+    on_error: continue
+    steps:
+      - parallel: [github-trending, hacker-news-digest, deep-research, repo-scanner]
+      - skill: startup-idea
+        consume: [github-trending, hacker-news-digest, deep-research, repo-scanner]
+      - skill: idea-capture
+        consume: [startup-idea]
+      - skill: morning-brief
+        consume: [startup-idea, idea-capture, deep-research, github-trending]
 
 # Default model for all skills. Override per-run via workflow_dispatch.
 # Options: claude-opus-4-7, claude-sonnet-4-6, claude-haiku-4-5-20251001
