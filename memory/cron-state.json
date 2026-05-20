@@ -7,5 +7,9 @@
     "total_failures": 0,
     "consecutive_failures": 0,
     "success_rate": 1
+  },
+  "chain:overnight-research": {
+    "last_status": "failed",
+    "last_failed": "2026-05-20T03:11:55Z"
   }
 }
