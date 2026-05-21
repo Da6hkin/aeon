@@ -1,0 +1,114 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-05-21"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "main_text",
+        "separator1",
+        "breakdown_heading",
+        "stats_grid",
+        "catalyst_alert",
+        "separator2",
+        "status_text"
+      ]
+    },
+    "main_text": {
+      "type": "Text",
+      "props": {
+        "text": "Quiet day, nothing above the noise floor. Today's trending page is yesterday's list almost verbatim — all 17 repos either featured (7) or dropped (10) in the 2026-05-20 runs, no new catalysts (no major releases, security incidents, or viral moments) to justify re-featuring.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "breakdown_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Repository Breakdown",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stats_grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_featured",
+        "stat_dropped",
+        "stat_new"
+      ]
+    },
+    "stat_featured": {
+      "type": "Stat",
+      "props": {
+        "label": "Featured",
+        "value": "7"
+      },
+      "children": []
+    },
+    "stat_dropped": {
+      "type": "Stat",
+      "props": {
+        "label": "Dropped",
+        "value": "10"
+      },
+      "children": []
+    },
+    "stat_new": {
+      "type": "Stat",
+      "props": {
+        "label": "New Additions",
+        "value": "0"
+      },
+      "children": []
+    },
+    "catalyst_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "No New Catalysts",
+        "message": "No major releases, security incidents, or viral moments to justify re-featuring today's repos",
+        "type": "info"
+      },
+      "children": []
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "status_text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=skipped (no survivors) · kept 0/17",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
