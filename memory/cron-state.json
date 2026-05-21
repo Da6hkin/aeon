@@ -9,8 +9,8 @@
     "success_rate": 1
   },
   "chain:overnight-research": {
-    "last_status": "dispatched",
-    "last_failed": "2026-05-20T16:50:09Z",
+    "last_status": "failed",
+    "last_failed": "2026-05-21T05:57:55Z",
     "last_dispatch": "2026-05-21T05:56:37Z"
   },
   "github-trending": {
