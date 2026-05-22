@@ -1,10 +1,7 @@
-The skill at `skills/overnight-research/SKILL.md` does not exist. I checked the skills directory and there is no `overnight-research` skill. The closest matches I found are:
+The skill `skills/overnight-research/SKILL.md` does not exist in this repo. Closest matches are:
 
-- `skills/autoresearch/SKILL.md`
-- `skills/deep-research/SKILL.md`
-- `skills/research-brief/SKILL.md`
+- `skills/deep-research/` — deep research skill
+- `skills/autoresearch/` — autoresearch skill
+- `skills/research-brief/` — research brief skill
 
-Would you like me to:
-1. Run one of the existing research skills instead (e.g. `deep-research`, `autoresearch`, or `research-brief`)?
-2. Create a new `overnight-research` skill?
-3. Something else?
+Which one did you mean? Or should I create a new `overnight-research` skill?
