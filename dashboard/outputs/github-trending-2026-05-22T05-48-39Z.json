@@ -1,0 +1,321 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-05-22"
+      },
+      "children": [
+        "heading-top-pick",
+        "repo-top-pick-stack",
+        "sep-1",
+        "heading-ai-ml",
+        "ai-ml-stack",
+        "sep-2",
+        "heading-devtools",
+        "devtools-stack",
+        "sep-3",
+        "sources-text"
+      ]
+    },
+    "heading-top-pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h2"
+      }
+    },
+    "repo-top-pick-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-top-pick",
+        "desc-top-pick"
+      ]
+    },
+    "link-top-pick": {
+      "type": "StoryLink",
+      "props": {
+        "title": "teng-lin/notebooklm-py",
+        "href": "https://github.com/teng-lin/notebooklm-py"
+      }
+    },
+    "desc-top-pick": {
+      "type": "Text",
+      "props": {
+        "text": "A reverse-engineered NotebookLM client that exposes the bits Google's web UI hides — the kind of repo that becomes load-bearing in agent stacks within a month.",
+        "variant": "body"
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-ai-ml": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "ai-ml-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo-aiml-1",
+        "repo-aiml-2"
+      ]
+    },
+    "repo-aiml-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-aiml-1",
+        "stats-aiml-1",
+        "desc-aiml-1"
+      ]
+    },
+    "link-aiml-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "teng-lin/notebooklm-py",
+        "href": "https://github.com/teng-lin/notebooklm-py"
+      }
+    },
+    "stats-aiml-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stats-aiml-1",
+        "badge-aiml-1"
+      ]
+    },
+    "text-stats-aiml-1": {
+      "type": "Text",
+      "props": {
+        "text": "★ 186 today (14k total) · Python",
+        "variant": "caption"
+      }
+    },
+    "badge-aiml-1": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc-aiml-1": {
+      "type": "Text",
+      "props": {
+        "text": "Programmatic access to NotebookLM features the web UI doesn't ship: mass upload, batch generation, model selection.",
+        "variant": "body"
+      }
+    },
+    "repo-aiml-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-aiml-2",
+        "stats-aiml-2",
+        "desc-aiml-2"
+      ]
+    },
+    "link-aiml-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "multica-ai/multica",
+        "href": "https://github.com/multica-ai/multica"
+      }
+    },
+    "stats-aiml-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stats-aiml-2",
+        "badge-aiml-2"
+      ]
+    },
+    "text-stats-aiml-2": {
+      "type": "Text",
+      "props": {
+        "text": "★ 534 today (31k total) · Go",
+        "variant": "caption"
+      }
+    },
+    "badge-aiml-2": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc-aiml-2": {
+      "type": "Text",
+      "props": {
+        "text": "Self-hosted managed-agents platform — treats coding agents as named teammates with task queues and shared skill libraries.",
+        "variant": "body"
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "devtools-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo-devtools-1",
+        "repo-devtools-2"
+      ]
+    },
+    "repo-devtools-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-devtools-1",
+        "stats-devtools-1",
+        "desc-devtools-1"
+      ]
+    },
+    "link-devtools-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "ChromeDevTools/chrome-devtools-mcp",
+        "href": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+      }
+    },
+    "stats-devtools-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stats-devtools-1",
+        "badge-devtools-1"
+      ]
+    },
+    "text-stats-devtools-1": {
+      "type": "Text",
+      "props": {
+        "text": "★ 151 today (41k total) · TypeScript",
+        "variant": "caption"
+      }
+    },
+    "badge-devtools-1": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "desc-devtools-1": {
+      "type": "Text",
+      "props": {
+        "text": "Chrome team's MCP server lets coding agents drive a live browser via DevTools Protocol — DOM, network, perf traces.",
+        "variant": "body"
+      }
+    },
+    "repo-devtools-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-devtools-2",
+        "stats-devtools-2",
+        "desc-devtools-2"
+      ]
+    },
+    "link-devtools-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Lum1104/Understand-Anything",
+        "href": "https://github.com/Lum1104/Understand-Anything"
+      }
+    },
+    "stats-devtools-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text-stats-devtools-2",
+        "badge-devtools-2"
+      ]
+    },
+    "text-stats-devtools-2": {
+      "type": "Text",
+      "props": {
+        "text": "★ 666 today (17k total) · TypeScript",
+        "variant": "caption"
+      }
+    },
+    "badge-devtools-2": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc-devtools-2": {
+      "type": "Text",
+      "props": {
+        "text": "Code knowledge graphs aimed at humans exploring a repo, not just LLMs retrieving snippets — a readability counter to codegraph.",
+        "variant": "body"
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 4/19",
+        "variant": "muted"
+      }
+    }
+  }
+}
