@@ -1,0 +1,213 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "failed-section",
+        "sep1",
+        "chronic-section",
+        "sep2",
+        "stale-section",
+        "sep3",
+        "issues-section"
+      ]
+    },
+    "failed-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "failed-heading",
+        "fail1",
+        "fail2",
+        "fail3",
+        "fail4"
+      ]
+    },
+    "failed-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "🔴 FAILED",
+        "level": "h2"
+      }
+    },
+    "fail1": {
+      "type": "Alert",
+      "props": {
+        "title": "chain:overnight-research",
+        "message": "Failed 3h ago",
+        "type": "error"
+      }
+    },
+    "fail2": {
+      "type": "Alert",
+      "props": {
+        "title": "github-trending",
+        "message": "Failed 3h ago",
+        "type": "error"
+      }
+    },
+    "fail3": {
+      "type": "Alert",
+      "props": {
+        "title": "heartbeat",
+        "message": "28 consecutive failures, last success 60h ago",
+        "type": "error"
+      }
+    },
+    "fail4": {
+      "type": "Alert",
+      "props": {
+        "title": "overnight-research",
+        "message": "Failed just now",
+        "type": "error"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "chronic-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "chronic-heading",
+        "success-stat",
+        "chronic-details"
+      ]
+    },
+    "chronic-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "🔴 heartbeat chronic",
+        "level": "h2"
+      }
+    },
+    "success-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Success rate",
+        "value": "24%",
+        "delta": "-76%",
+        "trend": "down"
+      }
+    },
+    "chronic-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "detail-runs",
+        "detail-stale",
+        "detail-errors",
+        "detail-cause"
+      ]
+    },
+    "detail-runs": {
+      "type": "Text",
+      "props": {
+        "text": "37 total runs",
+        "variant": "body"
+      }
+    },
+    "detail-stale": {
+      "type": "Text",
+      "props": {
+        "text": "Self-check >36h stale",
+        "variant": "body"
+      }
+    },
+    "detail-errors": {
+      "type": "Text",
+      "props": {
+        "text": "All errors show zero-token API responses",
+        "variant": "body"
+      }
+    },
+    "detail-cause": {
+      "type": "Text",
+      "props": {
+        "text": "Likely shared infra issue",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stale-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stale-heading",
+        "stale-alert"
+      ]
+    },
+    "stale-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "🔵 STALE",
+        "level": "h2"
+      }
+    },
+    "stale-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "startup-idea",
+        "message": "11 days since last success, every-6h schedule",
+        "type": "warning"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "issues-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "issues-heading",
+        "issue-alert"
+      ]
+    },
+    "issues-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "📋 Open Issues",
+        "level": "h2"
+      }
+    },
+    "issue-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "ISS-001",
+        "message": "Chain failure + startup-idea downstream staleness",
+        "type": "error"
+      }
+    }
+  }
+}

@@ -1,9 +1,4 @@
-HEARTBEAT_OK · STATUS_PAGE=DEGRADED
-
-## Summary
-
-Ran `skills/heartbeat/SKILL.md` (20:00Z slot, fired 20:30Z). Same P0 (`chain:overnight-research` failed 2026-05-22 05:45Z, ~39h ago) + P3 (`startup-idea` 8+ days stale) — ninth consecutive heartbeat with this pattern. ISS-001 already tracks it, notification suppressed per dedup. Status page regenerated with verdict 🔴 DEGRADED.
-
-- Files modified: `docs/status.md`, `memory/logs/2026-05-23.md`
-- Notification: suppressed (dedup); ISS-001 remains the operator-visible artifact
-- Follow-up: ISS-001 awaits either `skill-repair` dispatch or manual investigation of the chain runner's failing step
+🔴 FAILED: chain:overnight-research (3h ago), github-trending (3h ago), heartbeat (28 consecutive failures, last success 60h ago), overnight-research (just now)
+🔴 heartbeat chronic: 24% success rate (37 runs), self-check >36h stale — all errors show zero-token API responses, likely shared infra issue
+🔵 STALE: startup-idea (11d since last success, every-6h schedule)
+📋 ISS-001 open: chain failure + startup-idea downstream staleness
