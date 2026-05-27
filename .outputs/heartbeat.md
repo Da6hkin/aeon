@@ -1,4 +1,2 @@
-🔴 FAILED: chain:overnight-research (3h ago), github-trending (3h ago), heartbeat (28 consecutive failures, last success 60h ago), overnight-research (just now)
-🔴 heartbeat chronic: 24% success rate (37 runs), self-check >36h stale — all errors show zero-token API responses, likely shared infra issue
-🔵 STALE: startup-idea (11d since last success, every-6h schedule)
-📋 ISS-001 open: chain failure + startup-idea downstream staleness
+🔴 STUCK: overnight-research dispatched 6h ago, never reported back — likely hung or crashed before state update.
+🟡 UPDATE: heartbeat briefly recovered yesterday (14:37Z) but re-entered failure cycle (3 consecutive failures, 24% lifetime rate). All zero-token API response errors persist across overnight-research (5 consecutive) and heartbeat.

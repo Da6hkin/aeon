@@ -1,0 +1,110 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert-stuck",
+        "alert-update",
+        "stack-failures",
+        "stack-api-errors"
+      ]
+    },
+    "alert-stuck": {
+      "type": "Alert",
+      "props": {
+        "title": "🔴 STUCK",
+        "message": "overnight-research dispatched 6h ago, never reported back — likely hung or crashed before state update.",
+        "type": "error"
+      }
+    },
+    "alert-update": {
+      "type": "Alert",
+      "props": {
+        "title": "🟡 UPDATE",
+        "message": "heartbeat briefly recovered yesterday (14:37Z) but re-entered failure cycle",
+        "type": "warning"
+      }
+    },
+    "stack-failures": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-failures-header",
+        "stat-consecutive",
+        "stat-lifetime"
+      ]
+    },
+    "text-failures-header": {
+      "type": "Text",
+      "props": {
+        "text": "Failure Metrics:",
+        "variant": "lead"
+      }
+    },
+    "stat-consecutive": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive failures",
+        "value": "3"
+      }
+    },
+    "stat-lifetime": {
+      "type": "Stat",
+      "props": {
+        "label": "Lifetime success rate",
+        "value": "24%"
+      }
+    },
+    "stack-api-errors": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text-api-header",
+        "text-api-detail",
+        "stat-api-consecutive"
+      ]
+    },
+    "text-api-header": {
+      "type": "Text",
+      "props": {
+        "text": "API Response Errors:",
+        "variant": "lead"
+      }
+    },
+    "text-api-detail": {
+      "type": "Text",
+      "props": {
+        "text": "All zero-token API response errors persist across overnight-research and heartbeat",
+        "variant": "body"
+      }
+    },
+    "stat-api-consecutive": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive errors (overnight-research)",
+        "value": "5"
+      }
+    }
+  }
+}
