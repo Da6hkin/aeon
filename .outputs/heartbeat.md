@@ -1,19 +1,19 @@
-HEARTBEAT_OK · STATUS_PAGE=DEGRADED
-
 ## Summary
 
-Heartbeat ran the priority checks against `memory/cron-state.json`:
+Heartbeat ran clean — no new findings since the 09:06Z run today.
 
-- **🔴 P0 FAILED**: `chain:overnight-research` failed at 05:45Z today (~3.4h ago)
-- **🔴 P0 CHRONIC**: `heartbeat` at 28% success rate, `overnight-research` at 38%
-- **🔵 P3 STALE**: `startup-idea` last succeeded 13 days ago (tracked under ISS-001); `chain:overnight-research` has never recorded a success
-- **Positive**: `overnight-research` recovered from the 25h-stuck state reported yesterday; `github-trending` ran clean this morning
-- **Self-check**: heartbeat last succeeded ~12h ago, well within threshold
+**State:**
+- 🔴 P0 chronic failures persist: `heartbeat` 30% (13/44), `overnight-research` 38% (3/8)
+- 🔴 P0 failed: `chain:overnight-research` (2026-05-28 05:45Z)
+- 🔵 P3 stale: `startup-idea` ~13.8d (ISS-001), `chain:overnight-research` never succeeded
+- No PRs stalled, issues disabled, nothing flagged in memory
 
-**Dedup result**: All findings already appeared in the 2026-05-27 heartbeat logs (within 48h window). **No notification sent.**
+**Dedup:** All items were logged in today's 09:06Z run and 2026-05-27 — within 48h window. **No notification sent.**
 
-**Files modified**:
-- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run: startup-idea at 12:00 UTC
-- `memory/logs/2026-05-28.md` — appended 09:06Z heartbeat entry
+**Status page:** Regenerated `docs/status.md` → 🔴 DEGRADED, 1 open issue, next run startup-idea at 00:00 UTC. Token Pulse section omitted (no `articles/token-report-*.md`).
 
-**Follow-up**: ISS-001 remains open and is the underlying driver of two of the chronic items (startup-idea stale + chain:overnight-research failures).
+**Files modified:**
+- `docs/status.md` (regenerated)
+- `memory/logs/2026-05-28.md` (appended 21:25Z entry)
+
+HEARTBEAT_OK · STATUS_PAGE=DEGRADED
