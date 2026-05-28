@@ -1,0 +1,403 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-05-28"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading-top-pick",
+        "stack-top-pick",
+        "sep-1",
+        "heading-ai-ml",
+        "stack-ai-ml",
+        "sep-2",
+        "heading-devtools",
+        "stack-devtools",
+        "sep-3",
+        "heading-web",
+        "stack-web",
+        "sep-4",
+        "heading-infra",
+        "stack-infra",
+        "sep-5",
+        "text-sources"
+      ]
+    },
+    "heading-top-pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      }
+    },
+    "stack-top-pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-top-pick",
+        "text-top-pick-desc"
+      ]
+    },
+    "link-top-pick": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anthropics/knowledge-work-plugins",
+        "href": "https://github.com/anthropics/knowledge-work-plugins"
+      }
+    },
+    "text-top-pick-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Anthropic open-sourced its own Claude Cowork plugins — a first-party reference implementation of the agent-skills format the rest of today's board is orbiting."
+      }
+    },
+    "sep-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-ai-ml": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "stack-ai-ml": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-ai-ml-1",
+        "item-ai-ml-2",
+        "item-ai-ml-3"
+      ]
+    },
+    "item-ai-ml-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-ai-ml-1",
+        "text-ai-ml-1-meta",
+        "text-ai-ml-1-desc"
+      ]
+    },
+    "link-ai-ml-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anthropics/knowledge-work-plugins",
+        "href": "https://github.com/anthropics/knowledge-work-plugins"
+      }
+    },
+    "text-ai-ml-1-meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 695 today (17k total) · Python · [ACCELERATING]",
+        "variant": "caption"
+      }
+    },
+    "text-ai-ml-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "First-party plugin set for Claude Cowork — canonical examples for knowledge-worker workflows."
+      }
+    },
+    "item-ai-ml-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-ai-ml-2",
+        "text-ai-ml-2-meta",
+        "text-ai-ml-2-desc"
+      ]
+    },
+    "link-ai-ml-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "p-e-w/heretic",
+        "href": "https://github.com/p-e-w/heretic"
+      }
+    },
+    "text-ai-ml-2-meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 211 today (22k total) · Python · [ACCELERATING]",
+        "variant": "caption"
+      }
+    },
+    "text-ai-ml-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Automates abliteration — strips refusal training from any LLM without retraining or labeled data."
+      }
+    },
+    "item-ai-ml-3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-ai-ml-3",
+        "text-ai-ml-3-meta",
+        "text-ai-ml-3-desc"
+      ]
+    },
+    "link-ai-ml-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "shiyu-coder/Kronos",
+        "href": "https://github.com/shiyu-coder/Kronos"
+      }
+    },
+    "text-ai-ml-3-meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 401 today (27k total) · Python · [ACCELERATING]",
+        "variant": "caption"
+      }
+    },
+    "text-ai-ml-3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Open foundation model pretrained on candlestick data — markets as a language, GPT-style."
+      }
+    },
+    "sep-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "stack-devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-devtools-1",
+        "item-devtools-2"
+      ]
+    },
+    "item-devtools-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-devtools-1",
+        "text-devtools-1-meta",
+        "text-devtools-1-desc"
+      ]
+    },
+    "link-devtools-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Lum1104/Understand-Anything",
+        "href": "https://github.com/Lum1104/Understand-Anything"
+      }
+    },
+    "text-devtools-1-meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 4.5k today (41k total) · TypeScript · [ACCELERATING]",
+        "variant": "caption"
+      }
+    },
+    "text-devtools-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Turns any codebase into an interactive knowledge graph you can browse and query."
+      }
+    },
+    "item-devtools-2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-devtools-2",
+        "text-devtools-2-meta",
+        "text-devtools-2-desc"
+      ]
+    },
+    "link-devtools-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "obra/superpowers",
+        "href": "https://github.com/obra/superpowers"
+      }
+    },
+    "text-devtools-2-meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1.5k today (210k total) · Shell · [ACCELERATING]",
+        "variant": "caption"
+      }
+    },
+    "text-devtools-2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The agentic-skills framework half of today's board is referencing — becoming the de-facto Claude Code workflow standard."
+      }
+    },
+    "sep-3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-web": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h3"
+      }
+    },
+    "stack-web": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-web-1"
+      ]
+    },
+    "item-web-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-web-1",
+        "text-web-1-meta",
+        "text-web-1-desc"
+      ]
+    },
+    "link-web-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "twentyhq/twenty",
+        "href": "https://github.com/twentyhq/twenty"
+      }
+    },
+    "text-web-1-meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 519 today (47k total) · TypeScript · [RETURNING]",
+        "variant": "caption"
+      }
+    },
+    "text-web-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Open Salesforce alternative repositioning around AI-first CRM — back on trending after a quiet stretch."
+      }
+    },
+    "sep-4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading-infra": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h3"
+      }
+    },
+    "stack-infra": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "item-infra-1"
+      ]
+    },
+    "item-infra-1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-infra-1",
+        "text-infra-1-meta",
+        "text-infra-1-desc"
+      ]
+    },
+    "link-infra-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "iii-hq/iii",
+        "href": "https://github.com/iii-hq/iii"
+      }
+    },
+    "text-infra-1-meta": {
+      "type": "Text",
+      "props": {
+        "text": "★ 376 today (17k total) · Rust · [ACCELERATING]",
+        "variant": "caption"
+      }
+    },
+    "text-infra-1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Rust runtime for live-composing and observing services — service mesh meets hot reload."
+      }
+    },
+    "sep-5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text-sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 7/17",
+        "variant": "caption"
+      }
+    }
+  }
+}
