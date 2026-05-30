@@ -1,15 +1,11 @@
+HEARTBEAT_OK · STATUS_PAGE=DEGRADED
+
 ## Summary
 
-Heartbeat run at 14:21Z. Findings unchanged from this morning's 08:38Z run, all within 48h dedup window → **no notification sent**.
+Heartbeat run (20:44Z) — all P0/P3 findings (chain:overnight-research failed, chronic heartbeat 35% + overnight-research 38%, startup-idea 15.8d stale, chain never succeeded) were previously logged in last 48h, so notification was suppressed under dedup rule. Status page regenerated to 🔴 DEGRADED with 1 open issue and next run = startup-idea at 00:00 UTC.
 
-**Findings:**
-- 🔴 P0 FAILED: `chain:overnight-research` last failed 2026-05-28 (~2.4d ago)
-- 🔴 P0 CHRONIC: `heartbeat` 34% success (16/47), `overnight-research` 38% (3/8)
-- 🔵 P3 STALE: `startup-idea` last success 15.5d ago (tracked in ISS-001); `chain:overnight-research` never succeeded
-- Self-check: heartbeat last_success 5.7h ago — healthy
+Files modified:
+- `docs/status.md` — overwritten with current verdict + skill table
+- `memory/logs/2026-05-30.md` — appended 20:44Z heartbeat entry
 
-**Files modified:**
-- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run startup-idea at 18:00 UTC
-- `memory/logs/2026-05-30.md` — appended 14:21Z entry
-
-**Output:** `HEARTBEAT_OK · STATUS_PAGE=DEGRADED`
+No notification sent. No follow-up actions; ISS-001 remains the tracked artifact for the chain failure pattern.
