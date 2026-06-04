@@ -1,32 +1,34 @@
-*GitHub Trending — 2026-05-28*
+*GitHub Trending — 2026-06-04*
 
-*Top pick* — [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins)
-Anthropic open-sourced its own Claude Cowork plugins — a first-party reference implementation of the agent-skills format the rest of today's board is orbiting.
-
-*AI/ML*
-• [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) — ★ 695 today (17k total) · Python · [ACCELERATING]
-First-party plugin set for Claude Cowork — canonical examples for knowledge-worker workflows.
-
-• [p-e-w/heretic](https://github.com/p-e-w/heretic) — ★ 211 today (22k total) · Python · [ACCELERATING]
-Automates abliteration — strips refusal training from any LLM without retraining or labeled data.
-
-• [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) — ★ 401 today (27k total) · Python · [ACCELERATING]
-Open foundation model pretrained on candlestick data — markets as a language, GPT-style.
+*Top pick* — [chopratejas/headroom](https://github.com/chopratejas/headroom)
+Token compression for the LLM context window — drop-in library, proxy, and MCP server claiming 60-95% reduction. Cheap to try, biggest cost lever on most agent benches.
 
 *Devtools*
-• [Lum1104/Understand-Anything](https://github.com/Lum1104/Understand-Anything) — ★ 4.5k today (41k total) · TypeScript · [ACCELERATING]
-Turns any codebase into an interactive knowledge graph you can browse and query.
+• [chopratejas/headroom](https://github.com/chopratejas/headroom) — ★ 3.5k today (10k total) · Python · ACCELERATING
+Cuts LLM tokens 60-95% by compressing tool outputs, logs, and RAG chunks before they reach the model.
 
-• [obra/superpowers](https://github.com/obra/superpowers) — ★ 1.5k today (210k total) · Shell · [ACCELERATING]
-The agentic-skills framework half of today's board is referencing — becoming the de-facto Claude Code workflow standard.
+• [affaan-m/ECC](https://github.com/affaan-m/ECC) — ★ 2.1k today (206k total) · JavaScript · ACCELERATING
+Skills/memory/security harness wrapping Claude Code, Codex, Cursor, Opencode — agent infra as a layer.
 
-*Web/Apps*
-• [twentyhq/twenty](https://github.com/twentyhq/twenty) — ★ 519 today (47k total) · TypeScript · [RETURNING]
-Open Salesforce alternative repositioning around AI-first CRM — back on trending after a quiet stretch.
+• [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) — ★ 600 today (25k total) · TypeScript · RETURNING
+Drop-in memory API pitched as "Stripe for memory" — alternative to rolling your own context store.
 
-*Infra*
-• [iii-hq/iii](https://github.com/iii-hq/iii) — ★ 376 today (17k total) · Rust · [ACCELERATING]
-Rust runtime for live-composing and observing services — service mesh meets hot reload.
+*AI/ML*
+• [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) — ★ 1.7k today (180k total) · Python · ACCELERATING
+Nous's stateful agent that accumulates skills across sessions — bet that agents need memory, not bigger context.
+
+• [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — ★ 693 today (9k total) · Python · RETURNING
+Voice-driven local LLM client with interruption and a Live2D avatar — cross-platform, runs without cloud.
+
+• [lyogavin/airllm](https://github.com/lyogavin/airllm) — ★ 208 today (19k total) · Jupyter · RETURNING
+Layer-streamed 70B inference on a 4GB GPU — slow, but lets consumer hardware touch frontier-size models.
+
+*Data*
+• [microsoft/markitdown](https://github.com/microsoft/markitdown) — ★ 2.0k today (143k total) · Python · RETURNING
+Microsoft's pipe for converting Office docs, PDFs, audio into Markdown — canonical RAG-ingest preprocessor.
+
+• [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) — ★ 570 today (23k total) · Java · ACCELERATING
+PDF parser emitting structured, accessibility-tagged output — built for RAG pipelines that hate scraping figure captions.
 
 ---
-sources: trending=ok · gh_api=ok · kept 7/17
+sources: trending=ok · gh_api=ok · kept 8/14
