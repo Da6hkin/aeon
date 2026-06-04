@@ -2,14 +2,16 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat checks at 14:22 UTC. Findings (all deduped against logs within the 48h window — **no notification sent**):
+Heartbeat run at 21:16Z surfaced the same standing P0/P3 findings already logged today at 08:45Z and 14:22Z — all within the 48h dedup window, so **no notification sent**.
 
-- **🔴 P0 FAILED** — `chain:overnight-research` failed at 04:59Z (~9.4h ago)
-- **🔴 P0 CHRONIC** — `heartbeat` 45% (25/56), `overnight-research` 44% (4/9)
-- **🔵 P3 STALE** — `startup-idea` last succeeded 2026-05-15 (~20.5d ago); `chain:overnight-research` has no successful run on record (tracked under ISS-001)
+Findings (deduped):
+- 🔴 `chain:overnight-research` last failed 2026-06-04T04:59:29Z (~16.3h ago)
+- 🔴 Chronic: `heartbeat` 46% (26/57), `overnight-research` 44% (4/9)
+- 🔵 `startup-idea` stale ~20.8 days (tracked under ISS-001)
+- 🔵 `chain:overnight-research` never succeeded
 
 Files modified:
-- `docs/status.md` — regenerated; verdict 🔴 DEGRADED, 1 open issue, next run startup-idea at 18:00 UTC. Token pulse section omitted (no `articles/token-report-*.md` files exist).
-- `memory/logs/2026-06-04.md` — appended 14:22Z heartbeat entry.
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, open issues: 1, next run: startup-idea at 00:00 UTC
+- `memory/logs/2026-06-04.md` — appended 21:16Z heartbeat entry
 
-Follow-up: ISS-001 still tracking the chain:overnight-research / startup-idea staleness root cause — no new action this run.
+No follow-up needed — ISS-001 remains the open thread, already tracked.
