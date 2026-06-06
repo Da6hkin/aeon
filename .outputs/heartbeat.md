@@ -2,17 +2,16 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran the heartbeat skill (14:25 UTC slot).
+Ran heartbeat 20:07Z checks against `memory/cron-state.json`, `aeon.yml`, and `memory/issues/INDEX.md`.
 
-**Findings (all known, all deduped — no notification sent):**
-- 🔴 P0 FAILED: `chain:overnight-research` failed at 2026-06-06T05:43:10Z (~8.7h ago) — tracked in [ISS-001](memory/issues/ISS-001.md)
-- 🔴 P0 CHRONIC: `heartbeat` success rate 48% (29/60)
-- 🔵 P3 STALE: `startup-idea` last success ~22.5d ago (also ISS-001)
-- 🔵 P3 STALE: `chain:overnight-research` has no recorded successful run
-- No open PRs, no flagged memory items, no token-report files
+**Findings (all duplicates of today's 08:12Z and 14:25Z runs — dedup suppressed notification):**
+- 🔴 P0 FAILED: `chain:overnight-research` failed at 05:43Z (~14h ago) — tracked under ISS-001
+- 🔴 P0 CHRONIC: `heartbeat` at 49% success (30/61, < 0.5 threshold)
+- 🔵 P3 STALE: `startup-idea` last success 22.8d ago; `chain:overnight-research` never succeeded
+- No open PRs, no flagged memory items, no token-report articles
 
-**Files modified:**
-- `docs/status.md` — regenerated (🔴 DEGRADED, 1 open issue, next run: startup-idea at 18:00 UTC)
-- `memory/logs/2026-06-06.md` — appended 14:25Z heartbeat entry
+**Files written:**
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run startup-idea @ 00:00 UTC
+- `memory/logs/2026-06-06.md` — appended 20:07Z heartbeat entry
 
-**Follow-up:** ISS-001 remains the dominant signal — `chain:overnight-research` failure path is keeping `startup-idea` state stale. Needs investigation per the issue's suggested next steps.
+**Follow-ups:** ISS-001 still open — chain failure / startup-idea staleness needs root-cause investigation (skill-repair has not closed it).
