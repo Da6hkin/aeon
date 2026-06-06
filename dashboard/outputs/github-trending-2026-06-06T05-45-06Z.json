@@ -1,0 +1,467 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-06-06"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top_pick_section",
+        "sep1",
+        "ai_ml_section",
+        "sep2",
+        "devtools_section",
+        "sep3",
+        "footer_section"
+      ]
+    },
+    "top_pick_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "top_pick_label",
+        "cosmos_link",
+        "cosmos_desc"
+      ]
+    },
+    "top_pick_label": {
+      "type": "Text",
+      "props": {
+        "text": "Top pick",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "cosmos_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NVIDIA/cosmos",
+        "href": "https://github.com/NVIDIA/cosmos"
+      },
+      "children": []
+    },
+    "cosmos_desc": {
+      "type": "Text",
+      "props": {
+        "text": "NVIDIA's open-weight world models for Physical AI dropped today — looks set to become the default sim layer for robotics and AV teams without private video datasets."
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "ai_ml_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai_ml_heading",
+        "repo1_stack",
+        "repo2_stack",
+        "repo3_stack"
+      ]
+    },
+    "ai_ml_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "repo1_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo1_header",
+        "repo1_desc",
+        "repo1_meta"
+      ]
+    },
+    "repo1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo1_link",
+        "repo1_badge"
+      ]
+    },
+    "repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NVIDIA/cosmos",
+        "href": "https://github.com/NVIDIA/cosmos",
+        "score": "★ 479 today (9.5k total)"
+      },
+      "children": []
+    },
+    "repo1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "World-model foundation weights for robotics sim; predicts physical interactions from raw video."
+      },
+      "children": []
+    },
+    "repo1_meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Jupyter",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "repo2_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo2_header",
+        "repo2_desc",
+        "repo2_meta"
+      ]
+    },
+    "repo2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo2_link",
+        "repo2_badge"
+      ]
+    },
+    "repo2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "lfnovo/open-notebook",
+        "href": "https://github.com/lfnovo/open-notebook",
+        "score": "★ 1,152 today (26k total)"
+      },
+      "children": []
+    },
+    "repo2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "repo2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Self-hosted NotebookLM clone with podcast generation, custom embeddings, and bring-your-own-model."
+      },
+      "children": []
+    },
+    "repo2_meta": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "repo3_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo3_header",
+        "repo3_desc",
+        "repo3_meta"
+      ]
+    },
+    "repo3_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo3_link",
+        "repo3_badge"
+      ]
+    },
+    "repo3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mvanhorn/last30days-skill",
+        "href": "https://github.com/mvanhorn/last30days-skill",
+        "score": "★ 731 today (28k total)"
+      },
+      "children": []
+    },
+    "repo3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "repo3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Claude Code skill that fans one query across Reddit/X/YouTube/HN/Polymarket and synthesizes a grounded answer."
+      },
+      "children": []
+    },
+    "repo3_meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "devtools_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_heading",
+        "repo4_stack",
+        "repo5_stack",
+        "repo6_stack"
+      ]
+    },
+    "devtools_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "repo4_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo4_header",
+        "repo4_desc",
+        "repo4_meta"
+      ]
+    },
+    "repo4_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo4_link",
+        "repo4_badge"
+      ]
+    },
+    "repo4_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "github/copilot-sdk",
+        "href": "https://github.com/github/copilot-sdk",
+        "score": "★ 309 today (9.3k total)"
+      },
+      "children": []
+    },
+    "repo4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "repo4_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Embeds Copilot Agent in non-IDE apps — official JVM/.NET/Go/Node bindings, no editor required."
+      },
+      "children": []
+    },
+    "repo4_meta": {
+      "type": "Badge",
+      "props": {
+        "text": "Java",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "repo5_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo5_header",
+        "repo5_desc",
+        "repo5_meta"
+      ]
+    },
+    "repo5_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo5_link",
+        "repo5_badge"
+      ]
+    },
+    "repo5_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "withastro/flue",
+        "href": "https://github.com/withastro/flue",
+        "score": "★ 126 today (4.6k total)"
+      },
+      "children": []
+    },
+    "repo5_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "repo5_desc": {
+      "type": "Text",
+      "props": {
+        "text": "From the Astro team — sandboxed agent runtime with per-tool capability boundaries instead of one big trust blob."
+      },
+      "children": []
+    },
+    "repo5_meta": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "repo6_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "repo6_header",
+        "repo6_desc",
+        "repo6_meta"
+      ]
+    },
+    "repo6_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "repo6_link",
+        "repo6_badge"
+      ]
+    },
+    "repo6_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "openclaw/openclaw-windows-node",
+        "href": "https://github.com/openclaw/openclaw-windows-node",
+        "score": "★ 326 today (1.6k total)"
+      },
+      "children": []
+    },
+    "repo6_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "repo6_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Brings OpenClaw to Windows with a PowerToys Command Palette extension and a system-tray companion."
+      },
+      "children": []
+    },
+    "repo6_meta": {
+      "type": "Badge",
+      "props": {
+        "text": "C#",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer_section": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 6/17",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

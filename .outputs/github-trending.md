@@ -1,34 +1,27 @@
-*GitHub Trending — 2026-06-04*
+*GitHub Trending — 2026-06-06*
 
-*Top pick* — [chopratejas/headroom](https://github.com/chopratejas/headroom)
-Token compression for the LLM context window — drop-in library, proxy, and MCP server claiming 60-95% reduction. Cheap to try, biggest cost lever on most agent benches.
-
-*Devtools*
-• [chopratejas/headroom](https://github.com/chopratejas/headroom) — ★ 3.5k today (10k total) · Python · ACCELERATING
-Cuts LLM tokens 60-95% by compressing tool outputs, logs, and RAG chunks before they reach the model.
-
-• [affaan-m/ECC](https://github.com/affaan-m/ECC) — ★ 2.1k today (206k total) · JavaScript · ACCELERATING
-Skills/memory/security harness wrapping Claude Code, Codex, Cursor, Opencode — agent infra as a layer.
-
-• [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) — ★ 600 today (25k total) · TypeScript · RETURNING
-Drop-in memory API pitched as "Stripe for memory" — alternative to rolling your own context store.
+*Top pick* — [NVIDIA/cosmos](https://github.com/NVIDIA/cosmos)
+NVIDIA's open-weight world models for Physical AI dropped today — looks set to become the default sim layer for robotics and AV teams without private video datasets.
 
 *AI/ML*
-• [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) — ★ 1.7k today (180k total) · Python · ACCELERATING
-Nous's stateful agent that accumulates skills across sessions — bet that agents need memory, not bigger context.
+• [NVIDIA/cosmos](https://github.com/NVIDIA/cosmos) — ★ 479 today (9.5k total) · Jupyter · [RETURNING]
+World-model foundation weights for robotics sim; predicts physical interactions from raw video.
 
-• [Open-LLM-VTuber/Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — ★ 693 today (9k total) · Python · RETURNING
-Voice-driven local LLM client with interruption and a Live2D avatar — cross-platform, runs without cloud.
+• [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) — ★ 1,152 today (26k total) · TypeScript · [RETURNING]
+Self-hosted NotebookLM clone with podcast generation, custom embeddings, and bring-your-own-model.
 
-• [lyogavin/airllm](https://github.com/lyogavin/airllm) — ★ 208 today (19k total) · Jupyter · RETURNING
-Layer-streamed 70B inference on a 4GB GPU — slow, but lets consumer hardware touch frontier-size models.
+• [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) — ★ 731 today (28k total) · Python · [ACCELERATING]
+Claude Code skill that fans one query across Reddit/X/YouTube/HN/Polymarket and synthesizes a grounded answer.
 
-*Data*
-• [microsoft/markitdown](https://github.com/microsoft/markitdown) — ★ 2.0k today (143k total) · Python · RETURNING
-Microsoft's pipe for converting Office docs, PDFs, audio into Markdown — canonical RAG-ingest preprocessor.
+*Devtools*
+• [github/copilot-sdk](https://github.com/github/copilot-sdk) — ★ 309 today (9.3k total) · Java · [ACCELERATING]
+Embeds Copilot Agent in non-IDE apps — official JVM/.NET/Go/Node bindings, no editor required.
 
-• [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) — ★ 570 today (23k total) · Java · ACCELERATING
-PDF parser emitting structured, accessibility-tagged output — built for RAG pipelines that hate scraping figure captions.
+• [withastro/flue](https://github.com/withastro/flue) — ★ 126 today (4.6k total) · TypeScript · [RETURNING]
+From the Astro team — sandboxed agent runtime with per-tool capability boundaries instead of one big trust blob.
+
+• [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) — ★ 326 today (1.6k total) · C# · [RETURNING]
+Brings OpenClaw to Windows with a PowerToys Command Palette extension and a system-tray companion.
 
 ---
-sources: trending=ok · gh_api=ok · kept 8/14
+sources: trending=ok · gh_api=ok · kept 6/17
