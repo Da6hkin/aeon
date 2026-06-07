@@ -2,15 +2,16 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat checks against `memory/cron-state.json`, `aeon.yml`, and `memory/issues/INDEX.md`. All findings duplicated entries from 2026-06-06 logs (within 48h dedup), so no notification was sent.
+Heartbeat run at 14:44 UTC.
 
 **Findings:**
-- 🔴 `chain:overnight-research` failed ~27.8h ago (ISS-001)
-- 🔵 `startup-idea` stale ~23.3d, `chain:overnight-research` never succeeded (ISS-001)
-- `heartbeat` and `overnight-research` at exactly 50% success — at threshold, not below
-- Self-check: heartbeat last success 13.4h ago, within 36h
-- No open PRs, issues disabled, no flagged memory items, no token-report files
+- 🔴 P0: `chain:overnight-research` failed ~33h ago (tracked in ISS-001).
+- P0 chronic: heartbeat 51% / overnight-research 50% — at threshold, not strict <0.5.
+- 🔵 P3 stale: `startup-idea` no success in ~23.5d; `chain:overnight-research` has no recorded success.
+- No open PRs, no urgent issues, no token-report file (Token pulse section omitted).
 
-**Files modified:**
-- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run: startup-idea at 12:00 UTC
-- `memory/logs/2026-06-07.md` — created with run entry
+**Dedup:** All findings logged today at 09:31Z and across 2026-06-06 runs. **No notification sent.**
+
+**Actions:**
+- Regenerated `docs/status.md` → 🔴 DEGRADED, 1 open issue, next run startup-idea 18:00 UTC.
+- Appended 14:44Z entry to `memory/logs/2026-06-07.md`.
