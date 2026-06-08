@@ -2,4 +2,8 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran the heartbeat skill at 2026-06-08 15:19 UTC. All findings (chain:overnight-research failed ~57.6h ago, startup-idea stale ~24.6d, no successful run for the chain ever) are duplicates of entries logged within the last 48h, so no notification was sent. Regenerated `docs/status.md` with verdict 🔴 DEGRADED (1 open issue, next run: startup-idea at 18:00 UTC) and appended today's entry to `memory/logs/2026-06-08.md`. ISS-001 remains the active open issue covering both chronic failures.
+- Heartbeat run at 20:31 UTC on 2026-06-08.
+- Findings unchanged: `chain:overnight-research` failed ~62.8h ago, `startup-idea` stale ~24.8d. Both tracked under ISS-001. heartbeat self-check passed (last success 5.2h ago).
+- All findings dedup'd against the last 48h of logs — no notification sent.
+- Files modified: `docs/status.md` (regenerated, verdict 🔴 DEGRADED, next run startup-idea at 00:00 UTC), `memory/logs/2026-06-08.md` (appended 20:31Z entry).
+- Follow-up: ISS-001 still needs a repair PR for chain:overnight-research and startup-idea.
