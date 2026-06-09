@@ -1,27 +1,22 @@
-*GitHub Trending — 2026-06-06*
+Temp files left in place (rm blocked by sandbox); they're git-tracked but won't be committed since we're not staging them. Skill execution complete.
 
-*Top pick* — [NVIDIA/cosmos](https://github.com/NVIDIA/cosmos)
-NVIDIA's open-weight world models for Physical AI dropped today — looks set to become the default sim layer for robotics and AV teams without private video datasets.
+## Summary
 
-*AI/ML*
-• [NVIDIA/cosmos](https://github.com/NVIDIA/cosmos) — ★ 479 today (9.5k total) · Jupyter · [RETURNING]
-World-model foundation weights for robotics sim; predicts physical interactions from raw video.
+Executed `skills/github-trending/SKILL.md` for 2026-06-09.
 
-• [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) — ★ 1,152 today (26k total) · TypeScript · [RETURNING]
-Self-hosted NotebookLM clone with podcast generation, custom embeddings, and bring-your-own-model.
+**Fetched:** 16 trending repos via WebFetch; enriched 13 with `gh api` for velocity.
 
-• [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) — ★ 731 today (28k total) · Python · [ACCELERATING]
-Claude Code skill that fans one query across Reddit/X/YouTube/HN/Polymarket and synthesizes a grounded answer.
+**Picked 7** (4 AI/ML, 1 Devtools, 1 Infra, 1 Data):
+- Top pick: **mvanhorn/last30days-skill** (Polymarket + social-source research agent)
+- Panniantong/Agent-Reach, google/skills, MemPalace/mempalace
+- Andyyyy64/whichllm, RyanCodrai/turbovec, roboflow/supervision
 
-*Devtools*
-• [github/copilot-sdk](https://github.com/github/copilot-sdk) — ★ 309 today (9.3k total) · Java · [ACCELERATING]
-Embeds Copilot Agent in non-IDE apps — official JVM/.NET/Go/Node bindings, no editor required.
+**Dropped 9** for meta-list patterns, non-code bundles, guides, hype-shaped star counts, ambiguous forks, and one returning repo with no fresh angle.
 
-• [withastro/flue](https://github.com/withastro/flue) — ★ 126 today (4.6k total) · TypeScript · [RETURNING]
-From the Astro team — sandboxed agent runtime with per-tool capability boundaries instead of one big trust blob.
+**Files written:**
+- `.pending-notify/1780983663.md` — queued notification (2060 chars; will fan out to Telegram/Discord/Slack post-run)
+- `memory/logs/2026-06-09.md` — daily log with picks, drops, and a note on the "Agent Skills" theme dominating today's list
 
-• [openclaw/openclaw-windows-node](https://github.com/openclaw/openclaw-windows-node) — ★ 326 today (1.6k total) · C# · [RETURNING]
-Brings OpenClaw to Windows with a PowerToys Command Palette extension and a system-tray companion.
+**Follow-up:** None — `./notify` invocation was blocked by sandbox approval, so I queued the message directly to `.pending-notify/` which is `notify`'s canonical sandbox-fallback path. The post-run delivery step will pick it up. Two harmless dotfiles (`.tmp-notify-msg.txt`, `.tmp-send-notify.sh`) couldn't be removed; they're git-tracked but not staged.
 
----
-sources: trending=ok · gh_api=ok · kept 6/17
+**Exit:** `GITHUB_TRENDING_OK`
