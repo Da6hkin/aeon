@@ -1,0 +1,411 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-05-20"
+      },
+      "children": [
+        "main-stack"
+      ]
+    },
+    "main-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "top-section",
+        "sep1",
+        "ai-section",
+        "sep2",
+        "infra-section",
+        "sep3",
+        "devtools-section",
+        "sep4",
+        "footer"
+      ]
+    },
+    "top-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top-heading",
+        "top-link",
+        "top-desc"
+      ]
+    },
+    "top-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "top-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "can1357/oh-my-pi",
+        "href": "https://github.com/can1357/oh-my-pi"
+      },
+      "children": []
+    },
+    "top-desc": {
+      "type": "Text",
+      "props": {
+        "text": "The only new AI coding agent today shipping a concrete technical lever, not just another skills/CLAUDE.md bundle.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "ai-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai-heading",
+        "ai-item"
+      ]
+    },
+    "ai-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "ai-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ai-link",
+        "ai-stats-row",
+        "ai-badges-row",
+        "ai-desc"
+      ]
+    },
+    "ai-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "can1357/oh-my-pi",
+        "href": "https://github.com/can1357/oh-my-pi"
+      },
+      "children": []
+    },
+    "ai-stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "ai-stat-today",
+        "ai-stat-total"
+      ]
+    },
+    "ai-stat-today": {
+      "type": "Stat",
+      "props": {
+        "label": "today",
+        "value": "237"
+      },
+      "children": []
+    },
+    "ai-stat-total": {
+      "type": "Stat",
+      "props": {
+        "label": "total",
+        "value": "5.3k"
+      },
+      "children": []
+    },
+    "ai-badges-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "ai-badge-lang",
+        "ai-badge-status"
+      ]
+    },
+    "ai-badge-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "ai-badge-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "ai-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Hash-anchored edits stop the silent overwrite bug other coding agents hit when files shift mid-session.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "infra-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra-heading",
+        "infra-item"
+      ]
+    },
+    "infra-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "infra-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "infra-link",
+        "infra-stats-row",
+        "infra-badges-row",
+        "infra-desc"
+      ]
+    },
+    "infra-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "rmyndharis/OpenWA",
+        "href": "https://github.com/rmyndharis/OpenWA"
+      },
+      "children": []
+    },
+    "infra-stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "infra-stat-today",
+        "infra-stat-total"
+      ]
+    },
+    "infra-stat-today": {
+      "type": "Stat",
+      "props": {
+        "label": "today",
+        "value": "726"
+      },
+      "children": []
+    },
+    "infra-stat-total": {
+      "type": "Stat",
+      "props": {
+        "label": "total",
+        "value": "4.6k"
+      },
+      "children": []
+    },
+    "infra-badges-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "infra-badge-lang",
+        "infra-badge-status"
+      ]
+    },
+    "infra-badge-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "infra-badge-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      },
+      "children": []
+    },
+    "infra-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Self-hosts the WhatsApp gateway instead of paying Metas Business API — viable for low-volume senders.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "devtools-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools-heading",
+        "devtools-item"
+      ]
+    },
+    "devtools-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "devtools-item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools-link",
+        "devtools-stats-row",
+        "devtools-badges-row",
+        "devtools-desc"
+      ]
+    },
+    "devtools-link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "zakirullin/files.md",
+        "href": "https://github.com/zakirullin/files.md"
+      },
+      "children": []
+    },
+    "devtools-stats-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "devtools-stat-today",
+        "devtools-stat-total"
+      ]
+    },
+    "devtools-stat-today": {
+      "type": "Stat",
+      "props": {
+        "label": "today",
+        "value": "468"
+      },
+      "children": []
+    },
+    "devtools-stat-total": {
+      "type": "Stat",
+      "props": {
+        "label": "total",
+        "value": "2.1k"
+      },
+      "children": []
+    },
+    "devtools-badges-row": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "devtools-badge-lang",
+        "devtools-badge-status"
+      ]
+    },
+    "devtools-badge-lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Go",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "devtools-badge-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      },
+      "children": []
+    },
+    "devtools-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Local-first .md editor that opens a folder — Obsidians vibe minus the cloud, sync, or vault DB.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 3/17 (4 already-featured + 6 already-dropped + 4 filtered)",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

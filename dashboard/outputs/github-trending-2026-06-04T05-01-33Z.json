@@ -1,0 +1,633 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-06-04"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "lg"
+      },
+      "children": [
+        "section_top_pick",
+        "sep1",
+        "section_devtools",
+        "sep2",
+        "section_aiml",
+        "sep3",
+        "section_data",
+        "footer"
+      ]
+    },
+    "section_top_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_top_pick",
+        "repo_headroom_topPick"
+      ]
+    },
+    "heading_top_pick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h2"
+      }
+    },
+    "repo_headroom_topPick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_headroom_top",
+        "text_headroom_desc_top"
+      ]
+    },
+    "link_headroom_top": {
+      "type": "StoryLink",
+      "props": {
+        "title": "chopratejas/headroom",
+        "href": "https://github.com/chopratejas/headroom"
+      }
+    },
+    "text_headroom_desc_top": {
+      "type": "Text",
+      "props": {
+        "text": "Token compression for the LLM context window — drop-in library, proxy, and MCP server claiming 60-95% reduction. Cheap to try, biggest cost lever on most agent benches.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_devtools",
+        "repo_headroom",
+        "repo_ecc",
+        "repo_supermemory"
+      ]
+    },
+    "heading_devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "repo_headroom": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_headroom",
+        "meta_headroom",
+        "desc_headroom"
+      ]
+    },
+    "link_headroom": {
+      "type": "StoryLink",
+      "props": {
+        "title": "chopratejas/headroom",
+        "href": "https://github.com/chopratejas/headroom"
+      }
+    },
+    "meta_headroom": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_headroom_stars",
+        "badge_headroom_lang",
+        "badge_headroom_status"
+      ]
+    },
+    "badge_headroom_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 3.5k today (10k total)"
+      }
+    },
+    "badge_headroom_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "badge_headroom_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_headroom": {
+      "type": "Text",
+      "props": {
+        "text": "Cuts LLM tokens 60-95% by compressing tool outputs, logs, and RAG chunks before they reach the model.",
+        "variant": "caption"
+      }
+    },
+    "repo_ecc": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_ecc",
+        "meta_ecc",
+        "desc_ecc"
+      ]
+    },
+    "link_ecc": {
+      "type": "StoryLink",
+      "props": {
+        "title": "affaan-m/ECC",
+        "href": "https://github.com/affaan-m/ECC"
+      }
+    },
+    "meta_ecc": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_ecc_stars",
+        "badge_ecc_lang",
+        "badge_ecc_status"
+      ]
+    },
+    "badge_ecc_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 2.1k today (206k total)"
+      }
+    },
+    "badge_ecc_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript",
+        "variant": "secondary"
+      }
+    },
+    "badge_ecc_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_ecc": {
+      "type": "Text",
+      "props": {
+        "text": "Skills/memory/security harness wrapping Claude Code, Codex, Cursor, Opencode — agent infra as a layer.",
+        "variant": "caption"
+      }
+    },
+    "repo_supermemory": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_supermemory",
+        "meta_supermemory",
+        "desc_supermemory"
+      ]
+    },
+    "link_supermemory": {
+      "type": "StoryLink",
+      "props": {
+        "title": "supermemoryai/supermemory",
+        "href": "https://github.com/supermemoryai/supermemory"
+      }
+    },
+    "meta_supermemory": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_supermemory_stars",
+        "badge_supermemory_lang",
+        "badge_supermemory_status"
+      ]
+    },
+    "badge_supermemory_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 600 today (25k total)"
+      }
+    },
+    "badge_supermemory_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript",
+        "variant": "secondary"
+      }
+    },
+    "badge_supermemory_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "desc_supermemory": {
+      "type": "Text",
+      "props": {
+        "text": "Drop-in memory API pitched as \"Stripe for memory\" — alternative to rolling your own context store.",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_aiml": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_aiml",
+        "repo_hermes",
+        "repo_vtuber",
+        "repo_airllm"
+      ]
+    },
+    "heading_aiml": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "repo_hermes": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_hermes",
+        "meta_hermes",
+        "desc_hermes"
+      ]
+    },
+    "link_hermes": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NousResearch/hermes-agent",
+        "href": "https://github.com/NousResearch/hermes-agent"
+      }
+    },
+    "meta_hermes": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_hermes_stars",
+        "badge_hermes_lang",
+        "badge_hermes_status"
+      ]
+    },
+    "badge_hermes_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 1.7k today (180k total)"
+      }
+    },
+    "badge_hermes_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "badge_hermes_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_hermes": {
+      "type": "Text",
+      "props": {
+        "text": "Nous's stateful agent that accumulates skills across sessions — bet that agents need memory, not bigger context.",
+        "variant": "caption"
+      }
+    },
+    "repo_vtuber": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_vtuber",
+        "meta_vtuber",
+        "desc_vtuber"
+      ]
+    },
+    "link_vtuber": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Open-LLM-VTuber/Open-LLM-VTuber",
+        "href": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber"
+      }
+    },
+    "meta_vtuber": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_vtuber_stars",
+        "badge_vtuber_lang",
+        "badge_vtuber_status"
+      ]
+    },
+    "badge_vtuber_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 693 today (9k total)"
+      }
+    },
+    "badge_vtuber_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "badge_vtuber_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "desc_vtuber": {
+      "type": "Text",
+      "props": {
+        "text": "Voice-driven local LLM client with interruption and a Live2D avatar — cross-platform, runs without cloud.",
+        "variant": "caption"
+      }
+    },
+    "repo_airllm": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_airllm",
+        "meta_airllm",
+        "desc_airllm"
+      ]
+    },
+    "link_airllm": {
+      "type": "StoryLink",
+      "props": {
+        "title": "lyogavin/airllm",
+        "href": "https://github.com/lyogavin/airllm"
+      }
+    },
+    "meta_airllm": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_airllm_stars",
+        "badge_airllm_lang",
+        "badge_airllm_status"
+      ]
+    },
+    "badge_airllm_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 208 today (19k total)"
+      }
+    },
+    "badge_airllm_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Jupyter",
+        "variant": "secondary"
+      }
+    },
+    "badge_airllm_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "desc_airllm": {
+      "type": "Text",
+      "props": {
+        "text": "Layer-streamed 70B inference on a 4GB GPU — slow, but lets consumer hardware touch frontier-size models.",
+        "variant": "caption"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_data": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_data",
+        "repo_markitdown",
+        "repo_opendataloader"
+      ]
+    },
+    "heading_data": {
+      "type": "Heading",
+      "props": {
+        "text": "Data",
+        "level": "h2"
+      }
+    },
+    "repo_markitdown": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_markitdown",
+        "meta_markitdown",
+        "desc_markitdown"
+      ]
+    },
+    "link_markitdown": {
+      "type": "StoryLink",
+      "props": {
+        "title": "microsoft/markitdown",
+        "href": "https://github.com/microsoft/markitdown"
+      }
+    },
+    "meta_markitdown": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_markitdown_stars",
+        "badge_markitdown_lang",
+        "badge_markitdown_status"
+      ]
+    },
+    "badge_markitdown_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 2.0k today (143k total)"
+      }
+    },
+    "badge_markitdown_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "badge_markitdown_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "desc_markitdown": {
+      "type": "Text",
+      "props": {
+        "text": "Microsoft's pipe for converting Office docs, PDFs, audio into Markdown — canonical RAG-ingest preprocessor.",
+        "variant": "caption"
+      }
+    },
+    "repo_opendataloader": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_opendataloader",
+        "meta_opendataloader",
+        "desc_opendataloader"
+      ]
+    },
+    "link_opendataloader": {
+      "type": "StoryLink",
+      "props": {
+        "title": "opendataloader-project/opendataloader-pdf",
+        "href": "https://github.com/opendataloader-project/opendataloader-pdf"
+      }
+    },
+    "meta_opendataloader": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_opendataloader_stars",
+        "badge_opendataloader_lang",
+        "badge_opendataloader_status"
+      ]
+    },
+    "badge_opendataloader_stars": {
+      "type": "Badge",
+      "props": {
+        "text": "★ 570 today (23k total)"
+      }
+    },
+    "badge_opendataloader_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Java",
+        "variant": "secondary"
+      }
+    },
+    "badge_opendataloader_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_opendataloader": {
+      "type": "Text",
+      "props": {
+        "text": "PDF parser emitting structured, accessibility-tagged output — built for RAG pipelines that hate scraping figure captions.",
+        "variant": "caption"
+      }
+    },
+    "footer": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "footer_text"
+      ]
+    },
+    "footer_text": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 8/14",
+        "variant": "muted"
+      }
+    }
+  }
+}

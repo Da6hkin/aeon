@@ -1,0 +1,19 @@
+*GitHub Trending — 2026-05-20*
+
+*Top pick* — [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi)
+The only new AI coding agent today shipping a concrete technical lever, not just another skills/CLAUDE.md bundle.
+
+*AI/ML*
+• [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) — ★ 237 today (5.3k total) · TypeScript · [ACCELERATING]
+Hash-anchored edits stop the silent overwrite bug other coding agents hit when files shift mid-session.
+
+*Infra*
+• [rmyndharis/OpenWA](https://github.com/rmyndharis/OpenWA) — ★ 726 today (4.6k total) · TypeScript · [ACCELERATING]
+Self-hosts the WhatsApp gateway instead of paying Meta's Business API — viable for low-volume senders.
+
+*Devtools*
+• [zakirullin/files.md](https://github.com/zakirullin/files.md) — ★ 468 today (2.1k total) · Go · [RETURNING]
+Local-first .md editor that opens a folder — Obsidian's vibe minus the cloud, sync, or vault DB.
+
+---
+sources: trending=ok · gh_api=ok · kept 3/17 (4 already-featured + 6 already-dropped + 4 filtered)
