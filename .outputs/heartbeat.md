@@ -1,16 +1,18 @@
-HEARTBEAT_OK · STATUS_PAGE=DEGRADED
-
 ## Summary
 
-Heartbeat (20:34Z) — no new conditions. Findings persist from the day's earlier runs (08:50Z, 16:41Z) and are all within the 48h dedup window, so no notification was sent.
+Heartbeat ran 2026-06-10 21:33Z (today's 20:00 UTC slot, late by ~1.5h).
 
-- 🔴 `chain:overnight-research` failed ~15h ago — ISS-001 still open.
-- 🔵 `startup-idea` stale ~25.8d (downstream of broken chain) — ISS-001.
-- `heartbeat`/`overnight-research` success rates 54%/55% — above the strict <0.5 chronic threshold.
-- No stuck skills, no open PRs, no urgent issues, no flagged memory items, no token-report files.
+**Findings (all dedup'd against last 48h of logs — no notification sent):**
+- 🔴 `chain:overnight-research` last failed 2026-06-09T05:37Z (~40h), tracked under ISS-001
+- 🟡 Heartbeat self-check: last_success ~25h ago — today's 08:00 and 14:00 heartbeat runs never updated state (likely missed dispatches); still within 36h threshold
+- 🔵 `startup-idea` stale ~26.8d (ISS-001)
+- 🔵 `chain:overnight-research` never had a successful run
+- No open PRs, issues disabled on repo, no flagged memory items, no token-report files
 
-Files modified:
-- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run startup-idea at 00:00 UTC.
-- `memory/logs/2026-06-09.md` — appended 20:34Z entry.
+**Files written:**
+- `docs/status.md` — regenerated, verdict **🔴 DEGRADED**, open issues: 1, next run: `startup-idea at 00:00 UTC`
+- `memory/logs/2026-06-10.md` — new daily log with this run's findings
 
-Follow-up: ISS-001 still needs a repair PR for `chain:overnight-research` so `startup-idea` state can advance again.
+**HEARTBEAT_OK · STATUS_PAGE=DEGRADED**
+
+**Follow-up:** ISS-001 (chain:overnight-research + startup-idea) remains open. The missing 08:00/14:00 heartbeat runs today are a new soft signal worth watching — if today's pattern persists, the scheduler workflow itself may be degrading.
