@@ -2,16 +2,16 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran the heartbeat skill at 14:43 UTC.
+Ran heartbeat for the 20:00 UTC slot (2026-06-11T20:10Z). All findings unchanged from earlier slots and within the 48h dedup window — no notification sent.
 
-**Findings (all deduped against last 48h of logs — no notification sent):**
-- 🔴 P0 `chain:overnight-research` still failed (last 2026-06-09 05:37Z, ~57h ago); state not advancing past prior failure. Tracked under ISS-001.
-- 🔴 P0 chronic success rates: `heartbeat` 56% (40/72), `overnight-research` 55% (6/11) — above strict <0.5 threshold.
-- 🔵 P3 `startup-idea` last success 2026-05-15 (~27.5d ago, schedule every 6h). Tracked under ISS-001.
-- 🔵 P3 `chain:overnight-research` has no successful run on record.
-- No open PRs, issues disabled, no flagged memory items, no token reports.
-- Note: today's 08:00 UTC heartbeat slot has no state update — appears missed.
+**Findings:**
+- 🔴 P0 FAILED: `chain:overnight-research` (last failed 2026-06-09, ~62.5h ago) — tracked under ISS-001
+- 🔵 P3 STALE: `startup-idea` (~27.8d stale) and `chain:overnight-research` (never succeeded) — tracked under ISS-001
+- Self-check: heartbeat last succeeded 14:44Z today, healthy
+- No open PRs, no urgent issues, no flagged memory items, no token reports
 
-**Actions:**
-- Wrote `docs/status.md` → 🔴 DEGRADED, 1 open issue, next run startup-idea at 18:00 UTC.
-- Appended log entry to `memory/logs/2026-06-11.md`.
+**Files modified:**
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run startup-idea at 00:00 UTC
+- `memory/logs/2026-06-11.md` — appended 20:10Z heartbeat log entry
+
+**Follow-up:** ISS-001 remains open and unresolved — `chain:overnight-research` failure and `startup-idea` staleness need root-cause investigation outside the heartbeat dedup cycle.
