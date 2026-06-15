@@ -56,3 +56,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-13,heartbeat,claude-opus-4-7,1971,7129,491108,36257
 2026-06-14,heartbeat,claude-opus-4-7,17,5579,603987,35016
 2026-06-14,heartbeat,claude-opus-4-7,10,4666,267281,34119
+2026-06-15,vienna-apartments,claude-sonnet-4-6,11,15141,268206,37569

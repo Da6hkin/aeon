@@ -1,0 +1,148 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Vienna apartments — 2026-06-15"
+      },
+      "children": [
+        "stack_listings"
+      ]
+    },
+    "stack_listings": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "listing_1",
+        "listing_2",
+        "listing_3",
+        "listing_4",
+        "listing_5",
+        "listing_6",
+        "listing_7",
+        "listing_8",
+        "listing_9",
+        "listing_10",
+        "listing_11",
+        "listing_12",
+        "separator",
+        "reminder"
+      ]
+    },
+    "listing_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Wunderschöne Altbauwohnung, Ruhelage",
+        "href": "https://www.immobilienscout24.at/expose/6a2c24060159bd74cfcd711d",
+        "source": "D9 · €875 · 62 m² · 2.5 Zi"
+      }
+    },
+    "listing_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2-Zimmer mit Hof-Terrasse, Wiedner Hauptstraße",
+        "href": "https://findheim.at/de/i/2-zimmer-wohnung-mit-hof-terrasse-bei-der-wiedner-hauptstrasse",
+        "source": "D4 · €964 · 2 Zi"
+      }
+    },
+    "listing_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Terrassenwohnung Neustiftgasse",
+        "href": "https://www.immobilienscout24.at/expose/6a2fbf50a299c3b103279558",
+        "source": "D7 · €1,030 · 59 m² · 2 Zi"
+      }
+    },
+    "listing_4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3-Zimmer Altbauwohnung, ausgezeichnete Lage",
+        "href": "https://www.immobilienscout24.at/expose/6a2e77b97ca013173fa3bc37",
+        "source": "D6 · €1,100 · 87 m² · 3 Zi"
+      }
+    },
+    "listing_5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2 Zimmer, franz. Balkon, Mariahilf",
+        "href": "https://www.immobilienscout24.at/expose/6a2fb4eaf5a2314bae387e53",
+        "source": "D6 · €1,150 · 59 m² · 2 Zi"
+      }
+    },
+    "listing_6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Helle, ruhige 2-Zimmer, Josefstadt",
+        "href": "https://www.immobilienscout24.at/expose/6a2fd7bfa003cef3f4b9b65f",
+        "source": "D8 · €1,190 · 53 m² · 2 Zi"
+      }
+    },
+    "listing_7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Hochparterre Wohnung, Ruhelage, Alsergrund",
+        "href": "https://www.immobilienscout24.at/expose/6a2fdeaa6b8e464c20947035",
+        "source": "D9 · €1,196 · 82 m² · 2.5 Zi"
+      }
+    },
+    "listing_8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "⭐ Provisionsfrei: Altbau-Hauptmiete",
+        "href": "https://www.immobilienscout24.at/expose/6a2ae31bab3106a6c6d9b2a2",
+        "source": "D7 · €1,271 · 60 m² · 2 Zi"
+      }
+    },
+    "listing_9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3-Zimmer mit Loggia, Margareten",
+        "href": "https://www.immosuchmaschine.at/expose/45481936",
+        "source": "D5 · €1,372 · 84 m² · 3 Zi"
+      }
+    },
+    "listing_10": {
+      "type": "StoryLink",
+      "props": {
+        "title": "⭐ Provisionsfrei: Erstbezug + Balkon, Florianigasse",
+        "href": "https://www.immobilienscout24.at/expose/6a2b0ef233f09d21b95d99f9",
+        "source": "D8 · €1,390 · 62 m² · 2 Zi"
+      }
+    },
+    "listing_11": {
+      "type": "StoryLink",
+      "props": {
+        "title": "⭐ Provisionsfrei: Erstbezug Florianigasse",
+        "href": "https://www.immobilienscout24.at/expose/6a2c34977ca013173f9f0b6a",
+        "source": "D8 · €1,450 · 66 m² · 2 Zi"
+      }
+    },
+    "listing_12": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3-Zimmer mit Loggia, möbliert, all-inkl",
+        "href": "https://immo.sn.at/immobilien/3-zimmer-wohnung-mit-loggia-moebiliert-hofruhelage-all-inkl-1480-00-eu-GXRN4P",
+        "source": "D5 · €1,480 · 84 m² · 3 Zi"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "reminder": {
+      "type": "Alert",
+      "props": {
+        "title": "Reminder",
+        "message": "Open Claude + your logged-in Facebook browser and ask to run the full FB-group sweep (provision-free / no-income-check posts).",
+        "type": "info"
+      }
+    }
+  }
+}
