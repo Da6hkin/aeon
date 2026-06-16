@@ -1,16 +1,16 @@
-*🏠 Vienna apartments — 2026-06-15*
+*🏠 Vienna apartments — 2026-06-16*
 
-- *D9* €875 · 62 m² · 2.5 Zi — [Wunderschöne Altbauwohnung, Ruhelage](https://www.immobilienscout24.at/expose/6a2c24060159bd74cfcd711d)
-- *D4* €964 · 2 Zi — [2-Zimmer mit Hof-Terrasse, Wiedner Hauptstraße](https://findheim.at/de/i/2-zimmer-wohnung-mit-hof-terrasse-bei-der-wiedner-hauptstrasse)
-- *D7* €1,030 · 59 m² · 2 Zi — [Terrassenwohnung Neustiftgasse](https://www.immobilienscout24.at/expose/6a2fbf50a299c3b103279558)
-- *D6* €1,100 · 87 m² · 3 Zi — [3-Zimmer Altbauwohnung, ausgezeichnete Lage](https://www.immobilienscout24.at/expose/6a2e77b97ca013173fa3bc37)
-- *D6* €1,150 · 59 m² · 2 Zi — [2 Zimmer, franz. Balkon, Mariahilf](https://www.immobilienscout24.at/expose/6a2fb4eaf5a2314bae387e53)
-- *D8* €1,190 · 53 m² · 2 Zi — [Helle, ruhige 2-Zimmer, Josefstadt](https://www.immobilienscout24.at/expose/6a2fd7bfa003cef3f4b9b65f)
-- *D9* €1,196 · 82 m² · 2.5 Zi — [Hochparterre Wohnung, Ruhelage, Alsergrund](https://www.immobilienscout24.at/expose/6a2fdeaa6b8e464c20947035)
-- *D7* €1,271 · 60 m² · 2 Zi — [⭐ Provisionsfrei: Altbau-Hauptmiete](https://www.immobilienscout24.at/expose/6a2ae31bab3106a6c6d9b2a2)
-- *D5* €1,372 · 84 m² · 3 Zi — [3-Zimmer mit Loggia, Margareten](https://www.immosuchmaschine.at/expose/45481936)
-- *D8* €1,390 · 62 m² · 2 Zi — [⭐ Provisionsfrei: Erstbezug + Balkon, Florianigasse](https://www.immobilienscout24.at/expose/6a2b0ef233f09d21b95d99f9)
-- *D8* €1,450 · 66 m² · 2 Zi — [⭐ Provisionsfrei: Erstbezug Florianigasse](https://www.immobilienscout24.at/expose/6a2c34977ca013173f9f0b6a)
-- *D5* €1,480 · 84 m² · 3 Zi — [3-Zimmer mit Loggia, möbliert, all-inkl](https://immo.sn.at/immobilien/3-zimmer-wohnung-mit-loggia-moebiliert-hofruhelage-all-inkl-1480-00-eu-GXRN4P)
+- *D4* €943 · 40 m² · 2 Zi — [Charmante 2 Zimmer im 4. Bezirk](https://www.immobilienscout24.at/expose/6a2edcc47ca013173fa3fb09)
+- *D5* €1,050 · 50 m² · 2 Zi — [Urbanes Flair Toplage Gassergasse](https://www.immobilienscout24.at/expose/6a3083dbc63c6a17cc2da0da)
+- *D9* €1,050 · 40 m² · 2 Zi — [Frisch renovierter Erstbezug nahe U6](https://www.immobilienscout24.at/expose/6a2d29ce7ca013173fa166cb)
+- *D6* €1,121 · 50 m² · 2 Zi — [Helle Altbauwohnung Nähe U3 Neubaugasse](https://www.immobilienscout24.at/expose/6a301570a003cef3f4ba1433)
+- *D5* €1,099 · 38 m² · 2 Zi — [DG-Wohnung mit Terrasse, Klimaanlage](https://www.immobilienscout24.at/expose/6a2fe2fda003cef3f4b9c76c)
+- *D3* €1,181 · 45 m² · 2 Zi — [Village im Dritten, Baufeld 3](https://www.immosuchmaschine.at/expose/45489338)
+- *D8* €1,249 · 58 m² · 2.5 Zi — [2,5 Zimmer Biedermeierhaus Josefstadt](https://www.immodirekt.at/immobilie/6a2bf8f29faaec815c4fbd5d)
+- *D3* €1,297 · 54 m² · 2 Zi — [Village im Dritten, Baufeld 3](https://www.immosuchmaschine.at/expose/45489332)
+- *D4* €1,300 · 64 m² · 2 Zi — [Möblierte 2 Zi nähe U1 Taubstummengasse](https://www.immobilienscout24.at/expose/6a2c83747ca013173f9f57a1)
+- *D9* €1,469 · 52 m² · 2 Zi — [DG Sobieskiplatz / MedUni](https://findheim.at/de/i/neues-zuhause-im-dachgeschoss-naehe-sobieskiplatz-und-meduni-e211144b)
+- *D8* €1,481 · 65 m² · 2 Zi — [Altbau mit Balkon, Laudongasse](https://www.immobilienscout24.at/expose/6a2a7ad37bdb3c69b061de92)
+- *D8* €1,495 · 70 m² · 2 Zi — [Provisionsfrei Erstbezug 70m²](https://www.immobilienscout24.at/expose/6a2b012c33f09d21b95d8f7d)
 
 _Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)._

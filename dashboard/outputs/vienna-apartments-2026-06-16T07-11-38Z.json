@@ -1,0 +1,162 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "🏠 Vienna apartments"
+      },
+      "children": [
+        "subtitle",
+        "sep1",
+        "listings",
+        "sep2",
+        "reminder"
+      ]
+    },
+    "subtitle": {
+      "type": "Text",
+      "props": {
+        "text": "2026-06-16",
+        "variant": "muted"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "listings": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "listing-0",
+        "listing-1",
+        "listing-2",
+        "listing-3",
+        "listing-4",
+        "listing-5",
+        "listing-6",
+        "listing-7",
+        "listing-8",
+        "listing-9",
+        "listing-10",
+        "listing-11"
+      ]
+    },
+    "listing-0": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Charmante 2 Zimmer im 4. Bezirk",
+        "href": "https://www.immobilienscout24.at/expose/6a2edcc47ca013173fa3fb09",
+        "source": "D4 · €943 · 40 m² · 2 Zi"
+      }
+    },
+    "listing-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Urbanes Flair Toplage Gassergasse",
+        "href": "https://www.immobilienscout24.at/expose/6a3083dbc63c6a17cc2da0da",
+        "source": "D5 · €1,050 · 50 m² · 2 Zi"
+      }
+    },
+    "listing-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Frisch renovierter Erstbezug nahe U6",
+        "href": "https://www.immobilienscout24.at/expose/6a2d29ce7ca013173fa166cb",
+        "source": "D9 · €1,050 · 40 m² · 2 Zi"
+      }
+    },
+    "listing-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Helle Altbauwohnung Nähe U3 Neubaugasse",
+        "href": "https://www.immobilienscout24.at/expose/6a301570a003cef3f4ba1433",
+        "source": "D6 · €1,121 · 50 m² · 2 Zi"
+      }
+    },
+    "listing-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "DG-Wohnung mit Terrasse, Klimaanlage",
+        "href": "https://www.immobilienscout24.at/expose/6a2fe2fda003cef3f4b9c76c",
+        "source": "D5 · €1,099 · 38 m² · 2 Zi"
+      }
+    },
+    "listing-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Village im Dritten, Baufeld 3",
+        "href": "https://www.immosuchmaschine.at/expose/45489338",
+        "source": "D3 · €1,181 · 45 m² · 2 Zi"
+      }
+    },
+    "listing-6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2,5 Zimmer Biedermeierhaus Josefstadt",
+        "href": "https://www.immodirekt.at/immobilie/6a2bf8f29faaec815c4fbd5d",
+        "source": "D8 · €1,249 · 58 m² · 2.5 Zi"
+      }
+    },
+    "listing-7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Village im Dritten, Baufeld 3",
+        "href": "https://www.immosuchmaschine.at/expose/45489332",
+        "source": "D3 · €1,297 · 54 m² · 2 Zi"
+      }
+    },
+    "listing-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Möblierte 2 Zi nähe U1 Taubstummengasse",
+        "href": "https://www.immobilienscout24.at/expose/6a2c83747ca013173f9f57a1",
+        "source": "D4 · €1,300 · 64 m² · 2 Zi"
+      }
+    },
+    "listing-9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "DG Sobieskiplatz / MedUni",
+        "href": "https://findheim.at/de/i/neues-zuhause-im-dachgeschoss-naehe-sobieskiplatz-und-meduni-e211144b",
+        "source": "D9 · €1,469 · 52 m² · 2 Zi"
+      }
+    },
+    "listing-10": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Altbau mit Balkon, Laudongasse",
+        "href": "https://www.immobilienscout24.at/expose/6a2a7ad37bdb3c69b061de92",
+        "source": "D8 · €1,481 · 65 m² · 2 Zi"
+      }
+    },
+    "listing-11": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Provisionsfrei Erstbezug 70m²",
+        "href": "https://www.immobilienscout24.at/expose/6a2b012c33f09d21b95d8f7d",
+        "source": "D8 · €1,495 · 70 m² · 2 Zi"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "reminder": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)."
+      }
+    }
+  }
+}
