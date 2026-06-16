@@ -2,16 +2,6 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat for the 20:00 UTC slot (late, ~21:20Z). All P0/P3 findings are unchanged from prior runs and within the 48h dedup window — **no notification sent**.
+Ran heartbeat at 20:22 UTC. All P0/P3 findings (chain:overnight-research stuck on 2026-06-09 failure, startup-idea stale since 2026-05-15, chronic ~55–60% success rates for heartbeat/overnight-research) were already logged within the 48h dedup window — no notification sent.
 
-**Findings:**
-- 🔴 P0: `chain:overnight-research` still failed (last failure 2026-06-09, ~6.7d ago) — tracked under [ISS-001](memory/issues/ISS-001.md).
-- 🔵 P3: `startup-idea` stale (~31.8d), `chain:overnight-research` never succeeded.
-- Self-check: heartbeat last_success ~25h ago, within 36h threshold. Today's 08:00 and 14:00 UTC heartbeat slots appear missed — continues the recurring missed-slot pattern.
-- `vienna-apartments` succeeded at 19:11Z — first run since enable.
-
-**Files modified:**
-- `docs/status.md` → regenerated, verdict 🔴 DEGRADED, next run startup-idea at 00:00 UTC.
-- `memory/logs/2026-06-15.md` → appended heartbeat (21:20Z) entry.
-
-**Follow-up:** ISS-001 still open; chain failures and startup-idea staleness need operator attention (root cause not yet diagnosed).
+Regenerated `docs/status.md` with verdict 🔴 DEGRADED (1 open issue: ISS-001) and appended a 20:22Z entry to `memory/logs/2026-06-16.md`. Today's 08:00 and 14:00 UTC heartbeat slots appear to have been missed; pattern continues from 06-10 onward.
