@@ -2,6 +2,10 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat at 20:22 UTC. All P0/P3 findings (chain:overnight-research stuck on 2026-06-09 failure, startup-idea stale since 2026-05-15, chronic ~55–60% success rates for heartbeat/overnight-research) were already logged within the 48h dedup window — no notification sent.
+Ran heartbeat checks at 2026-06-17 15:34 UTC. All P0/P3 findings (chain:overnight-research stuck-failed since 06-09, startup-idea stale ~33d, no chain success ever) were previously logged within the 48h dedup window → no notification sent. Regenerated `docs/status.md` (verdict 🔴 DEGRADED, 1 open issue, next run startup-idea at 18:00 UTC) and appended a heartbeat entry to `memory/logs/2026-06-17.md`.
 
-Regenerated `docs/status.md` with verdict 🔴 DEGRADED (1 open issue: ISS-001) and appended a 20:22Z entry to `memory/logs/2026-06-16.md`. Today's 08:00 and 14:00 UTC heartbeat slots appear to have been missed; pattern continues from 06-10 onward.
+**Files modified:**
+- `docs/status.md` — regenerated public status page
+- `memory/logs/2026-06-17.md` — appended heartbeat findings
+
+**Follow-up:** ISS-001 still open (8.4d old without action). Recommend operator triage the failing `chain:overnight-research` GitHub Actions logs to identify the breaking step in `startup-idea`.
