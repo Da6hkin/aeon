@@ -1,0 +1,157 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Vienna apartments — 2026-06-17"
+      },
+      "children": [
+        "stack-apartments",
+        "separator-1",
+        "reminder-alert"
+      ]
+    },
+    "stack-apartments": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "apt-1",
+        "apt-2",
+        "apt-3",
+        "apt-4",
+        "apt-5",
+        "apt-6",
+        "apt-7",
+        "apt-8",
+        "apt-9",
+        "apt-10",
+        "apt-11",
+        "apt-12",
+        "apt-13"
+      ]
+    },
+    "apt-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Perfekte Stadtwohnung Singles & Studenten",
+        "href": "https://www.immobilienscout24.at/expose/6a31ce9765ac7aee494d9b95",
+        "source": "D4 · €891 · 40 m² · 2 Zi"
+      }
+    },
+    "apt-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Moderne Neubauwohnung Nußdorfer Straße",
+        "href": "https://www.immobilienscout24.at/expose/6a31c8be65ac7aee494d9812",
+        "source": "D9 · €1,093 · 54 m² · 2 Zi"
+      }
+    },
+    "apt-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Altbauwohnung mit Einbauküche & Lift",
+        "href": "https://www.immobilienscout24.at/expose/6a311ba265ac7aee494cb189",
+        "source": "D9 · €1,102 · 78 m² · 2.5 Zi"
+      }
+    },
+    "apt-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3-Zimmer Altbauwohnung",
+        "href": "https://www.immodirekt.at/immobilie/6a2f94747ca013173fa5df67",
+        "source": "D6 · €1,150 · 86 m² · 3 Zi"
+      }
+    },
+    "apt-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Topwohnung mit Wahnsinnsblick",
+        "href": "https://www.immobilienscout24.at/expose/6a310a8b65ac7aee494c78e0",
+        "source": "D4 · €1,138 · 63 m² · 2 Zi"
+      }
+    },
+    "apt-6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pärchenwohnung mit 19m² Terrasse",
+        "href": "https://www.ohne-makler.at/immobilie/464143/",
+        "source": "D3 · €1,210 · 44 m² · 2 Zi · provisionsfrei"
+      }
+    },
+    "apt-7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Freundliche 2,5-Zimmer-Wohnung",
+        "href": "https://www.immobilienscout24.at/expose/6a2a8d94a4164f86ee03e6a6",
+        "source": "D7 · €1,286 · 63 m² · 2.5 Zi"
+      }
+    },
+    "apt-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Altbaumiete Nähe Theobaldgasse",
+        "href": "https://www.immobilienscout24.at/expose/6a31372465ac7aee494cddf2",
+        "source": "D6 · €1,345 · 66 m² · 2 Zi"
+      }
+    },
+    "apt-9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2-Zimmer attraktive Lage",
+        "href": "https://www.immobilienscout24.at/expose/6a3137c5df878ebbbccc12dd",
+        "source": "D6 · €1,345 · 66 m² · 2 Zi"
+      }
+    },
+    "apt-10": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Belvedere generalsanierte 2-Zimmer",
+        "href": "https://findheim.at/de/i/belvedere-generalsanierte-2-zimmerwohnung-41d1641a",
+        "source": "D4 · €1,349 · 2 Zi"
+      }
+    },
+    "apt-11": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Village im Dritten Baufeld 3",
+        "href": "https://www.immodirekt.at/immobilie/6a3168b065ac7aee494d3faa",
+        "source": "D3 · €1,359 · 48–51 m² · 2 Zi"
+      }
+    },
+    "apt-12": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Palais Rose Village im Dritten",
+        "href": "https://www.immodirekt.at/immobilie/6a30edffcdcde9d01ff963d7",
+        "source": "D3 · €1,399 · 55 m² · 2 Zi"
+      }
+    },
+    "apt-13": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3-Zimmer Altbau Hauptbahnhof/Wiedner",
+        "href": "https://www.immobilienscout24.at/expose/6a312ac9df878ebbbccc03f2",
+        "source": "D4 · €1,450 · 73 m² · 3 Zi"
+      }
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "reminder-alert": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "title": "Reminder",
+        "message": "Open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)."
+      }
+    }
+  }
+}
