@@ -2,17 +2,15 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran the heartbeat skill for the 14:00 UTC slot (~22min late, ~18h after last success — within self-check threshold).
+Heartbeat 20:00 UTC slot (running ~98min late at 21:38Z):
+- **P0 FAILED**: `chain:overnight-research` still failed since 2026-06-09 (~9.7d). Tracked under ISS-001.
+- **P0 SELF-CHECK**: heartbeat last succeeded 14:23Z today (~7.25h ago), well within 36h threshold.
+- **P3 STALE**: `startup-idea` last success 2026-05-15 (~34.8d ago, tracked under ISS-001).
+- No stuck skills, no open PRs, no urgent issues.
+- All findings already logged within 48h → **notification suppressed per dedup rules**.
 
-**Findings (all dedup-suppressed, no notification sent):**
-- 🔴 P0: `chain:overnight-research` still failed since 2026-06-09 (~9.4d) — tracked under ISS-001
-- P0 self-check OK: heartbeat succeeded ~18h ago
-- 🔵 P3: `startup-idea` stale ~34.5d (same root cause as ISS-001); `chain:overnight-research` never recorded a success
-- Info: `vienna-apartments` succeeded today (06:00 UTC slot, 68min late)
-- No open PRs, no urgent issues, no stuck skills
+Files modified:
+- `docs/status.md` — regenerated with verdict 🔴 DEGRADED, 1 open issue, next run startup-idea at 00:00 UTC.
+- `memory/logs/2026-06-18.md` — appended 21:38Z heartbeat entry.
 
-**Files modified:**
-- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, 1 open issue, next run startup-idea at 18:00 UTC
-- `memory/logs/2026-06-18.md` — appended heartbeat (14:22Z) entry
-
-**Follow-up:** Today's 08:00 UTC heartbeat slot was missed (same pattern as 06-10 through 06-17); no harness exists to dispatch missed scheduled heartbeats.
+No follow-ups needed — workflow auto-commits both files to main.
