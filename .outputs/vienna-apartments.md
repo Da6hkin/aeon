@@ -1,17 +1,16 @@
-*🏠 Vienna apartments — 2026-06-18*
+*🏠 Vienna apartments — 2026-06-19*
 
-- *D7* €928 · 59 m² · 2 rooms — [Unbefristet Altbau, Strozzigasse](https://www.immobilienscout24.at/expose/6a334fd677638d2a2bde1875)
-- *D5* €1,099 · 53 m² · 2 rooms — [2-Zimmer Neubau, Reinprechtsdorfer Str.](https://www.dibeo.at/expose/2213885)
-- *D7* €1,143 · 48 m² · 2 rooms — [Altbau Burggasse](https://www.immobilienscout24.at/expose/6a32b2cc32d84e121f897f95)
-- *D7* €1,149 · 48 m² · 2 rooms — [Altbau St.-Ulrichs-Platz](https://www.immobilienscout24.at/expose/6a32b4bd32d84e121f898345)
-- *D5* €1,150 · 56 m² · 3 rooms — [3Zi. Neubau Zentral ★](https://www.ohne-makler.at/immobilie/441218/) _(provisionsfrei)_
-- *D4* €1,161 · 56 m² · 2 rooms — [Möbliert, Wieden](https://www.immobilienscout24.at/expose/6a325ea15a89a5f0aa8e53fb)
-- *D3* €1,170 · 45 m² · 2 rooms — [Palais Rose Baufeld 1](https://www.immosuchmaschine.at/expose/45501257)
-- *D8* €1,190 · 53 m² · 2 rooms — [Ruhige 2-Zi, Josefstadt](https://www.immobilienscout24.at/expose/6a2fd7bfa003cef3f4b9b65f)
-- *D5* €1,250 · 65 m² · 3 rooms — [Charming Apt, Margareten](https://www.immobilienscout24.at/expose/6a337d32b53d51ef2adb40d3)
-- *D7* €1,271 · 60 m² · 2 rooms — [60m² Altbau-Hauptmiete ★](https://www.immobilienscout24.at/expose/6a2ae31bab3106a6c6d9b2a2) _(provisionsfrei)_
-- *D9* €1,294 · 86 m² · 2 rooms — [Altbau, Alserbachstraße](https://www.immosuchmaschine.at/expose/45495040)
-- *D6* €1,350 · 80 m² · 3 rooms — [Möbliert Mariahilf](https://www.immobilienscout24.at/expose/6a33373777638d2a2bdcf742)
-- *D5* €1,480 · 84 m² · 3 rooms — [3Zi. Loggia, all-inkl. ★](https://www.ohne-makler.at/immobilie/465515/) _(provisionsfrei)_
+- *D6* €884 · 67 m² · 2 Zi — [Moderne 2-Zimmer Wohnung](https://www.immosuchmaschine.at/expose/45505832)
+- *D8* €908 · 51 m² · 2 Zi — [Piaristengasse DG-Wohnung](https://www.immobilienscout24.at/expose/6a34200877638d2a2bdfb285)
+- *D3* €996 · 50 m² · 2 Zi — [Atelier-Apartment Arenberg Park](https://www.immosuchmaschine.at/expose/45505014)
+- *D4* €1,100 · 50 m² · 2 Zi — [Sehr Schöne 2 Zi, Zentrum/Hbf-Nähe](https://www.immosuchmaschine.at/expose/45500523)
+- *D7* €1,149 · 48 m² · 2 Zi — [Attraktive 2-Zimmer, St.-Ulrichs-Platz](https://www.immobilienscout24.at/expose/6a340d0e77638d2a2bdfa277)
+- *D5* €1,150 · 56 m² · 3 Zi — [3Zi.Wohnung WG-tauglich Neubau](https://www.immobilienscout24.at/expose/6a32fadc32d84e121f89d2cb)
+- *D7* €1,199 · 50 m² · 2 Zi — [Helle 2-Zimmer nahe Mariahilfer Str.](https://www.immodirekt.at/immobilie/6a32a6cfe7d0e7f55808e5eb)
+- *D4* €1,249 · 52 m² · 2 Zi — [++ZENTRAL++ Neubauwohnung Belvederegasse](https://www.immobilienscout24.at/expose/6a32a6d0a20bf322bab33c22)
+- *D3* €1,250 · 61 m² · 2 Zi — [Top modern + Loggia, Kollergasse](https://www.wohnnet.at/immobilien/mietwohnung-1030-wien-landstrasse-miete-2-zimmer-297448511)
+- *D4* €1,300 · 65 m² · 2 Zi — [Helle Altbau-DG, Bestlage Wieden](https://www.immobilienscout24.at/expose/6a33de8c77638d2a2bdf61fd)
+- *D8* €1,334 · 72 m² · 2 Zi — [Perfekte City-Lage, Altbauwohnung](https://www.immobilienscout24.at/expose/6a32770b558137860537c97c)
+- *D3* €1,460 · 87 m² · 3 Zi — [Sonnige Dachgeschosswohnung](https://www.immobilienscout24.at/expose/6a34568577638d2a2bdfdcf3)
 
 _Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)._
