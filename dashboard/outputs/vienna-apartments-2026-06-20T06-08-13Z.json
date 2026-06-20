@@ -1,0 +1,495 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "🏠 Vienna apartments"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "apt_1",
+        "apt_2",
+        "apt_3",
+        "apt_4",
+        "apt_5",
+        "apt_6",
+        "apt_7",
+        "apt_8",
+        "apt_9",
+        "apt_10",
+        "separator_main",
+        "reminder_note"
+      ]
+    },
+    "apt_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d3_1",
+        "badge_2zi_1",
+        "link_apt1",
+        "price_apt1"
+      ]
+    },
+    "badge_d3_1": {
+      "type": "Badge",
+      "props": {
+        "text": "D3",
+        "variant": "outline"
+      }
+    },
+    "badge_2zi_1": {
+      "type": "Badge",
+      "props": {
+        "text": "2 Zi"
+      }
+    },
+    "link_apt1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Village im Dritten Baufeld 3 (Fertigst. Okt 2026)",
+        "href": "https://findheim.at/de/i/village-im-dritten-baufeld-3-mietwohnungen-fertigstellung-oktober-2026-d9969419"
+      }
+    },
+    "price_apt1": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,165"
+      }
+    },
+    "apt_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d3_2",
+        "badge_2zi_2",
+        "link_apt2",
+        "price_apt2"
+      ]
+    },
+    "badge_d3_2": {
+      "type": "Badge",
+      "props": {
+        "text": "D3",
+        "variant": "outline"
+      }
+    },
+    "badge_2zi_2": {
+      "type": "Badge",
+      "props": {
+        "text": "2 Zi"
+      }
+    },
+    "link_apt2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Village im Dritten Baufeld 3 (Fertigst. Okt 2026)",
+        "href": "https://findheim.at/de/i/village-im-dritten-baufeld-3-mietwohnungen-fertigstellung-oktober-2026-f82b4962"
+      }
+    },
+    "price_apt2": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,234"
+      }
+    },
+    "apt_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d4_3",
+        "badge_3zi_3",
+        "badge_73m2_3",
+        "link_apt3",
+        "price_apt3"
+      ]
+    },
+    "badge_d4_3": {
+      "type": "Badge",
+      "props": {
+        "text": "D4",
+        "variant": "outline"
+      }
+    },
+    "badge_3zi_3": {
+      "type": "Badge",
+      "props": {
+        "text": "3 Zi"
+      }
+    },
+    "badge_73m2_3": {
+      "type": "Badge",
+      "props": {
+        "text": "73 m²",
+        "variant": "secondary"
+      }
+    },
+    "link_apt3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Renovierte 3-Zi Altbau Jugendstilhaus",
+        "href": "https://www.immobilienscout24.at/expose/6a312ac9df878ebbbccc03f2"
+      }
+    },
+    "price_apt3": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,450"
+      }
+    },
+    "apt_4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d5_4",
+        "badge_2zi_4",
+        "badge_70m2_4",
+        "link_apt4",
+        "price_apt4"
+      ]
+    },
+    "badge_d5_4": {
+      "type": "Badge",
+      "props": {
+        "text": "D5",
+        "variant": "outline"
+      }
+    },
+    "badge_2zi_4": {
+      "type": "Badge",
+      "props": {
+        "text": "2 Zi"
+      }
+    },
+    "badge_70m2_4": {
+      "type": "Badge",
+      "props": {
+        "text": "70 m²",
+        "variant": "secondary"
+      }
+    },
+    "link_apt4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Altbauwohnung Siebenbrunnenfeldgasse",
+        "href": "https://www.immobilienscout24.at/expose/6a33b99a77638d2a2bdf1992"
+      }
+    },
+    "price_apt4": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,090"
+      }
+    },
+    "apt_5": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d5_5",
+        "badge_3zi_5",
+        "link_apt5",
+        "price_apt5"
+      ]
+    },
+    "badge_d5_5": {
+      "type": "Badge",
+      "props": {
+        "text": "D5",
+        "variant": "outline"
+      }
+    },
+    "badge_3zi_5": {
+      "type": "Badge",
+      "props": {
+        "text": "3 Zi"
+      }
+    },
+    "link_apt5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Charmantes Wohnen, gefragte Lage",
+        "href": "https://findheim.at/de/i/preisreduktion-charmantes-wohnen-in-gefragter-lage-db0d17fa"
+      }
+    },
+    "price_apt5": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,250"
+      }
+    },
+    "apt_6": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d5_6",
+        "badge_3zi_6",
+        "badge_84m2_6",
+        "link_apt6",
+        "price_apt6"
+      ]
+    },
+    "badge_d5_6": {
+      "type": "Badge",
+      "props": {
+        "text": "D5",
+        "variant": "outline"
+      }
+    },
+    "badge_3zi_6": {
+      "type": "Badge",
+      "props": {
+        "text": "3 Zi"
+      }
+    },
+    "badge_84m2_6": {
+      "type": "Badge",
+      "props": {
+        "text": "84 m²",
+        "variant": "secondary"
+      }
+    },
+    "link_apt6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3-Zimmer mit Loggia",
+        "href": "https://www.wohnnet.at/immobilien/etagenwohnung-1050-wien-margareten-miete-3-zimmer-297448143"
+      }
+    },
+    "price_apt6": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,480"
+      }
+    },
+    "apt_7": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d6_7",
+        "badge_2zi_7",
+        "badge_54m2_7",
+        "link_apt7",
+        "price_apt7"
+      ]
+    },
+    "badge_d6_7": {
+      "type": "Badge",
+      "props": {
+        "text": "D6",
+        "variant": "outline"
+      }
+    },
+    "badge_2zi_7": {
+      "type": "Badge",
+      "props": {
+        "text": "2 Zi"
+      }
+    },
+    "badge_54m2_7": {
+      "type": "Badge",
+      "props": {
+        "text": "54 m²",
+        "variant": "secondary"
+      }
+    },
+    "link_apt7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Neubau mit Balkon, Mollardgasse 50",
+        "href": "https://www.immobilienscout24.at/expose/6a32a6d1a20bf322bab33c3b"
+      }
+    },
+    "price_apt7": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,499"
+      }
+    },
+    "apt_8": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d7_8",
+        "badge_2zi_8",
+        "badge_60m2_8",
+        "link_apt8",
+        "price_apt8"
+      ]
+    },
+    "badge_d7_8": {
+      "type": "Badge",
+      "props": {
+        "text": "D7",
+        "variant": "outline"
+      }
+    },
+    "badge_2zi_8": {
+      "type": "Badge",
+      "props": {
+        "text": "2 Zi"
+      }
+    },
+    "badge_60m2_8": {
+      "type": "Badge",
+      "props": {
+        "text": "60 m²",
+        "variant": "secondary"
+      }
+    },
+    "link_apt8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "City Apartment Burggasse",
+        "href": "https://www.immobilienscout24.at/expose/6a353da849f165b62eff5232"
+      }
+    },
+    "price_apt8": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,397"
+      }
+    },
+    "apt_9": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d8_9",
+        "badge_2zi_9",
+        "badge_81m2_9",
+        "link_apt9",
+        "price_apt9"
+      ]
+    },
+    "badge_d8_9": {
+      "type": "Badge",
+      "props": {
+        "text": "D8",
+        "variant": "outline"
+      }
+    },
+    "badge_2zi_9": {
+      "type": "Badge",
+      "props": {
+        "text": "2 Zi"
+      }
+    },
+    "badge_81m2_9": {
+      "type": "Badge",
+      "props": {
+        "text": "81 m²",
+        "variant": "secondary"
+      }
+    },
+    "link_apt9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2er-WG Nähe Haupt-Uni Wien",
+        "href": "https://www.immobilienscout24.at/expose/6a34568d77638d2a2bdfdcf9"
+      }
+    },
+    "price_apt9": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,485"
+      }
+    },
+    "apt_10": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_d9_10",
+        "badge_2zi_10",
+        "badge_72m2_10",
+        "link_apt10",
+        "price_apt10"
+      ]
+    },
+    "badge_d9_10": {
+      "type": "Badge",
+      "props": {
+        "text": "D9",
+        "variant": "outline"
+      }
+    },
+    "badge_2zi_10": {
+      "type": "Badge",
+      "props": {
+        "text": "2 Zi"
+      }
+    },
+    "badge_72m2_10": {
+      "type": "Badge",
+      "props": {
+        "text": "72 m²",
+        "variant": "secondary"
+      }
+    },
+    "link_apt10": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Stadtwohnung für 2er WG, Sechsschimmelgasse",
+        "href": "https://www.immobilienscout24.at/expose/6a34e29849f165b62efeb107"
+      }
+    },
+    "price_apt10": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,050"
+      }
+    },
+    "separator_main": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "reminder_note": {
+      "type": "Text",
+      "props": {
+        "text": "Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts).",
+        "variant": "muted"
+      }
+    }
+  }
+}
