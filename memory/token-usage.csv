@@ -73,4 +73,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-06-20,heartbeat,claude-opus-4-7,1305,5158,316228,35693
 2026-06-20,heartbeat,claude-opus-4-7,12,5108,372993,37354
 2026-06-20,heartbeat,claude-opus-4-7,19,5675,731453,39050
-2026-06-21,overnight-research,claude-opus-4-7,8,568,137782,12817
+2026-06-21,github-trending,claude-opus-4-7,25,14616,703963,75351

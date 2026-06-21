@@ -1,0 +1,551 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-06-21"
+      },
+      "children": [
+        "section_top_pick",
+        "sep1",
+        "section_ai_ml",
+        "sep2",
+        "section_devtools",
+        "sep3",
+        "section_infra",
+        "sep4",
+        "section_web_apps",
+        "sep5",
+        "section_sources"
+      ]
+    },
+    "section_top_pick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tp_heading",
+        "tp_intro",
+        "tp_repo1"
+      ]
+    },
+    "tp_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      }
+    },
+    "tp_intro": {
+      "type": "Text",
+      "props": {
+        "text": "Sits on the bottleneck every LLM-app team is hitting this year — input token cost — and 3.8k stars in one day says devs feel it."
+      }
+    },
+    "tp_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tp_repo1_header",
+        "tp_repo1_desc"
+      ]
+    },
+    "tp_repo1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "tp_repo1_link",
+        "tp_repo1_lang",
+        "tp_repo1_status"
+      ]
+    },
+    "tp_repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "chopratejas/headroom",
+        "href": "https://github.com/chopratejas/headroom",
+        "score": "★ 3795 today (42k total)"
+      }
+    },
+    "tp_repo1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "tp_repo1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "tp_repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Compresses prompts, logs, and RAG chunks before LLM ingestion — token bills drop without changing retrieval quality."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_ai_ml": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai_heading",
+        "ai_repos_stack"
+      ]
+    },
+    "ai_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      }
+    },
+    "ai_repos_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai_repo1",
+        "ai_repo2",
+        "ai_repo3"
+      ]
+    },
+    "ai_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ai_repo1_header",
+        "ai_repo1_desc"
+      ]
+    },
+    "ai_repo1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "ai_repo1_link",
+        "ai_repo1_lang",
+        "ai_repo1_status"
+      ]
+    },
+    "ai_repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "chopratejas/headroom",
+        "href": "https://github.com/chopratejas/headroom",
+        "score": "★ 3795 today (42k total)"
+      }
+    },
+    "ai_repo1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "ai_repo1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "ai_repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Compresses prompts, logs, and RAG chunks before LLM ingestion — token bills drop without changing retrieval quality."
+      }
+    },
+    "ai_repo2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ai_repo2_header",
+        "ai_repo2_desc"
+      ]
+    },
+    "ai_repo2_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "ai_repo2_link",
+        "ai_repo2_lang",
+        "ai_repo2_status"
+      ]
+    },
+    "ai_repo2_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "google-research/timesfm",
+        "href": "https://github.com/google-research/timesfm",
+        "score": "★ 433 today (25k total)"
+      }
+    },
+    "ai_repo2_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "ai_repo2_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "ai_repo2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Zero-shot forecaster from Google — point it at a time series and predict without training a per-series model."
+      }
+    },
+    "ai_repo3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "ai_repo3_header",
+        "ai_repo3_desc"
+      ]
+    },
+    "ai_repo3_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "ai_repo3_link",
+        "ai_repo3_lang",
+        "ai_repo3_status"
+      ]
+    },
+    "ai_repo3_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "calesthio/OpenMontage",
+        "href": "https://github.com/calesthio/OpenMontage",
+        "score": "★ 677 today (7k total)"
+      }
+    },
+    "ai_repo3_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "ai_repo3_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "ai_repo3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "12 pipelines and 52 tools chained as agents — raw footage in, edited cut out, no human in the loop."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dt_heading",
+        "dt_repos_stack"
+      ]
+    },
+    "dt_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      }
+    },
+    "dt_repos_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dt_repo1"
+      ]
+    },
+    "dt_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "dt_repo1_header",
+        "dt_repo1_desc"
+      ]
+    },
+    "dt_repo1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "dt_repo1_link",
+        "dt_repo1_lang",
+        "dt_repo1_status"
+      ]
+    },
+    "dt_repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "DeusData/codebase-memory-mcp",
+        "href": "https://github.com/DeusData/codebase-memory-mcp",
+        "score": "★ 1271 today (10k total)"
+      }
+    },
+    "dt_repo1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "C"
+      }
+    },
+    "dt_repo1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "dt_repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Indexes a repo into a persistent knowledge graph an LLM agent can query — replaces grep-and-pray with structured lookup."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_infra": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "inf_heading",
+        "inf_repos_stack"
+      ]
+    },
+    "inf_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h3"
+      }
+    },
+    "inf_repos_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "inf_repo1"
+      ]
+    },
+    "inf_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "inf_repo1_header",
+        "inf_repo1_desc"
+      ]
+    },
+    "inf_repo1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "inf_repo1_link",
+        "inf_repo1_lang",
+        "inf_repo1_status"
+      ]
+    },
+    "inf_repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "tursodatabase/turso",
+        "href": "https://github.com/tursodatabase/turso",
+        "score": "★ 801 today (20k total)"
+      }
+    },
+    "inf_repo1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Rust"
+      }
+    },
+    "inf_repo1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "inf_repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "SQLite rewritten in Rust with async I/O and built-in replication — drop-in for embedded apps that outgrow vanilla SQLite."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_web_apps": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "wa_heading",
+        "wa_repos_stack"
+      ]
+    },
+    "wa_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Web/Apps",
+        "level": "h3"
+      }
+    },
+    "wa_repos_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "wa_repo1"
+      ]
+    },
+    "wa_repo1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "wa_repo1_header",
+        "wa_repo1_desc"
+      ]
+    },
+    "wa_repo1_header": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "wa_repo1_link",
+        "wa_repo1_lang",
+        "wa_repo1_status"
+      ]
+    },
+    "wa_repo1_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "palmier-io/palmier-pro",
+        "href": "https://github.com/palmier-io/palmier-pro",
+        "score": "★ 902 today (4k total)"
+      }
+    },
+    "wa_repo1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Swift"
+      }
+    },
+    "wa_repo1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "wa_repo1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Native macOS NLE built prompt-first instead of timeline-first — Final Cut for the AI-edit era."
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 6/17",
+        "variant": "caption"
+      }
+    }
+  }
+}

@@ -1,22 +1,29 @@
-Temp files left in place (rm blocked by sandbox); they're git-tracked but won't be committed since we're not staging them. Skill execution complete.
+*GitHub Trending — 2026-06-21*
 
-## Summary
+*Top pick* — [chopratejas/headroom](https://github.com/chopratejas/headroom)
+Sits on the bottleneck every LLM-app team is hitting this year — input token cost — and 3.8k stars in one day says devs feel it.
 
-Executed `skills/github-trending/SKILL.md` for 2026-06-09.
+*AI/ML*
+• [chopratejas/headroom](https://github.com/chopratejas/headroom) — ★ 3795 today (42k total) · Python · [ACCELERATING]
+Compresses prompts, logs, and RAG chunks before LLM ingestion — token bills drop without changing retrieval quality.
 
-**Fetched:** 16 trending repos via WebFetch; enriched 13 with `gh api` for velocity.
+• [google-research/timesfm](https://github.com/google-research/timesfm) — ★ 433 today (25k total) · Python · [RETURNING]
+Zero-shot forecaster from Google — point it at a time series and predict without training a per-series model.
 
-**Picked 7** (4 AI/ML, 1 Devtools, 1 Infra, 1 Data):
-- Top pick: **mvanhorn/last30days-skill** (Polymarket + social-source research agent)
-- Panniantong/Agent-Reach, google/skills, MemPalace/mempalace
-- Andyyyy64/whichllm, RyanCodrai/turbovec, roboflow/supervision
+• [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) — ★ 677 today (7k total) · Python · [ACCELERATING]
+12 pipelines and 52 tools chained as agents — raw footage in, edited cut out, no human in the loop.
 
-**Dropped 9** for meta-list patterns, non-code bundles, guides, hype-shaped star counts, ambiguous forks, and one returning repo with no fresh angle.
+*Devtools*
+• [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) — ★ 1271 today (10k total) · C · [ACCELERATING]
+Indexes a repo into a persistent knowledge graph an LLM agent can query — replaces grep-and-pray with structured lookup.
 
-**Files written:**
-- `.pending-notify/1780983663.md` — queued notification (2060 chars; will fan out to Telegram/Discord/Slack post-run)
-- `memory/logs/2026-06-09.md` — daily log with picks, drops, and a note on the "Agent Skills" theme dominating today's list
+*Infra*
+• [tursodatabase/turso](https://github.com/tursodatabase/turso) — ★ 801 today (20k total) · Rust · [RETURNING]
+SQLite rewritten in Rust with async I/O and built-in replication — drop-in for embedded apps that outgrow vanilla SQLite.
 
-**Follow-up:** None — `./notify` invocation was blocked by sandbox approval, so I queued the message directly to `.pending-notify/` which is `notify`'s canonical sandbox-fallback path. The post-run delivery step will pick it up. Two harmless dotfiles (`.tmp-notify-msg.txt`, `.tmp-send-notify.sh`) couldn't be removed; they're git-tracked but not staged.
+*Web/Apps*
+• [palmier-io/palmier-pro](https://github.com/palmier-io/palmier-pro) — ★ 902 today (4k total) · Swift · [ACCELERATING]
+Native macOS NLE built prompt-first instead of timeline-first — Final Cut for the AI-edit era.
 
-**Exit:** `GITHUB_TRENDING_OK`
+---
+sources: trending=ok · gh_api=ok · kept 6/17
