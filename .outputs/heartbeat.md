@@ -2,14 +2,16 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Heartbeat ran at 20:48Z (20:00 UTC slot dispatched ~49min late).
+Ran heartbeat at 09:01Z (08:00 UTC slot, ~61min late). Reviewed `memory/cron-state.json`, `issues/INDEX.md`, `aeon.yml`, recent logs, and `gh pr list`.
 
-**Findings (all dedup'd against 48h log window — no notification sent):**
-- 🔴 `chain:overnight-research` still failed since 2026-06-09 (~11.6d) — tracked under ISS-001
-- 🔵 `startup-idea` last success 2026-05-15 (~36.8d ago, scheduled every 6h) — tracked under ISS-001
-- `vienna-apartments` healthy (06:08Z success today)
-- No stuck skills, no consecutive_failures ≥ 3, no PRs, no flagged memory items, no token-report files
+**Findings (all deduped — no notification sent):**
+- 🔴 P0: `chain:overnight-research` failed again at 2026-06-21 05:03Z (~4h ago) — same recurring issue tracked under [ISS-001]. Logged on 2026-06-20 at 09:32Z, 15:08Z, 20:48Z.
+- 🔵 P3: `startup-idea` last succeeded 2026-05-15 (~37.3d ago) — same ISS-001.
+- Heartbeat self-check OK (last success ~12.2h ago, well within 36h).
+- No stuck skills, no consecutive_failures ≥ 3, no open PRs, no flagged memory items.
 
-**Actions:**
-- Regenerated `docs/status.md` → 🔴 DEGRADED, 1 open issue, next run: startup-idea at 00:00 UTC
-- Logged 20:48Z run to `memory/logs/2026-06-20.md`
+**Files modified:**
+- `docs/status.md` — regenerated: 🔴 DEGRADED, 1 open issue, next run startup-idea at 12:00 UTC. Token pulse section omitted (no `articles/token-report-*.md`).
+- `memory/logs/2026-06-21.md` — appended heartbeat entry.
+
+**Follow-up:** ISS-001 (chain:overnight-research) remains unresolved and continues to fire daily on the 04:45 UTC slot — needs operator attention or a `skill-repair` dispatch.
