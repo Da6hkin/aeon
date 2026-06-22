@@ -1,0 +1,299 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Vienna apartments — 2026-06-22"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_d4",
+        "sep1",
+        "section_d5",
+        "sep2",
+        "section_d6",
+        "sep3",
+        "section_d7",
+        "sep4",
+        "section_d8",
+        "sep5",
+        "section_d9",
+        "sep6",
+        "alert_reminder"
+      ]
+    },
+    "section_d4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_d4",
+        "link_d4_1",
+        "link_d4_2",
+        "link_d4_3",
+        "link_d4_4"
+      ]
+    },
+    "heading_d4": {
+      "type": "Heading",
+      "props": {
+        "text": "D4 (Wieden)",
+        "level": "h3"
+      }
+    },
+    "link_d4_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Möblierte 2 Zi. nähe U1 Taubstummengasse",
+        "href": "https://www.immobilienscout24.at/expose/6a37ec0ba285f6889877970e",
+        "source": "€1,300 · 64 m² · 2 Zi"
+      }
+    },
+    "link_d4_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Generalsanierte 3-Zi-Wohnung, Hochparterre",
+        "href": "https://www.immobilienscout24.at/expose/6a36834a584ccc48d2ef88af",
+        "source": "€1,311 · 62 m² · 3 Zi"
+      }
+    },
+    "link_d4_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2-Zimmer-Wohnung am Naschmarkt",
+        "href": "https://www.immobilienscout24.at/expose/6a367c38584ccc48d2ef855d",
+        "source": "€1,340 · 58 m² · 2 Zi"
+      }
+    },
+    "link_d4_4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Helle Altbau-DG in Bestlage",
+        "href": "https://findheim.at/de/i/helle-altbau-dachgeschosswohnung-mit-65-m2-in-bestlage-des-4-bezirks-8d9454a6",
+        "source": "€1,300 · 65 m² · 2 Zi"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_d5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_d5",
+        "link_d5_1",
+        "link_d5_2",
+        "link_d5_3"
+      ]
+    },
+    "heading_d5": {
+      "type": "Heading",
+      "props": {
+        "text": "D5 (Margareten)",
+        "level": "h3"
+      }
+    },
+    "link_d5_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Neubauwohnung mit 2.5 Zimmern, vollmöbliert",
+        "href": "https://www.immodirekt.at/immobilie/6a3557bb49f165b62eff6888",
+        "source": "€1,250 · 66 m² · 2.5 Zi"
+      }
+    },
+    "link_d5_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2-Zi-Neubauwohnung mit Loggia, 5.OG",
+        "href": "https://www.immodirekt.at/immobilie/6a32a6d0e7d0e7f55808e5fe",
+        "source": "€1,469 · 53 m² · 2 Zi"
+      }
+    },
+    "link_d5_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Neubau 2023, helle 2-Zi mit Loggia",
+        "href": "https://www.immodirekt.at/immobilie/6a32a6d0e7d0e7f55808e5f4",
+        "source": "€1,475 · 55 m² · 2 Zi"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_d6": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_d6",
+        "link_d6_1"
+      ]
+    },
+    "heading_d6": {
+      "type": "Heading",
+      "props": {
+        "text": "D6 (Mariahilf)",
+        "level": "h3"
+      }
+    },
+    "link_d6_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Fully Furnished Old-Timer Apartment",
+        "href": "https://www.immobilienscout24.at/expose/6a33373777638d2a2bdcf742",
+        "source": "€1,350 · 80 m² · 3 Zi"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_d7": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_d7",
+        "link_d7_1"
+      ]
+    },
+    "heading_d7": {
+      "type": "Heading",
+      "props": {
+        "text": "D7 (Neubau)",
+        "level": "h3"
+      }
+    },
+    "link_d7_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Vollmöbliert bei U-Bahn Burggasse",
+        "href": "https://www.immobilienscout24.at/expose/6a36705b584ccc48d2ef7df9",
+        "source": "€1,270 · 61 m² · 2.5 Zi"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_d8": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_d8",
+        "link_d8_1",
+        "link_d8_2",
+        "link_d8_3"
+      ]
+    },
+    "heading_d8": {
+      "type": "Heading",
+      "props": {
+        "text": "D8 (Josefstadt)",
+        "level": "h3"
+      }
+    },
+    "link_d8_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Piaristengasse DG-Wohnung",
+        "href": "https://www.immobilienscout24.at/expose/6a34200877638d2a2bdfb285",
+        "source": "€908 · 51 m² · 2 Zi"
+      }
+    },
+    "link_d8_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Pfeilgasse 43, helle und ruhige 2-Zimmer",
+        "href": "https://www.immobilienscout24.at/expose/6a2fd7bfa003cef3f4b9b65f",
+        "source": "€1,190 · 53 m² · 2 Zi"
+      }
+    },
+    "link_d8_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Laudongasse 10, 2.5 Zi in Biedermeierhaus",
+        "href": "https://www.immodirekt.at/immobilie/6a2bf8f29faaec815c4fbd5d",
+        "source": "€1,249 · 58 m² · 2.5 Zi"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_d9": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_d9",
+        "link_d9_1"
+      ]
+    },
+    "heading_d9": {
+      "type": "Heading",
+      "props": {
+        "text": "D9 (Alsergrund)",
+        "level": "h3"
+      }
+    },
+    "link_d9_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Tauschwohnung 3-Zi, Alsergrund",
+        "href": "https://www.immobilienscout24.at/expose/6a376616a285f6889876cf1b",
+        "source": "€1,500 · 84 m² · 3 Zi"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "alert_reminder": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)."
+      }
+    }
+  }
+}
