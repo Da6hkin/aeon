@@ -1,17 +1,9 @@
-HEARTBEAT_OK · STATUS_PAGE=DEGRADED
-
 ## Summary
 
-Heartbeat ran for the 20:00 UTC slot. Findings unchanged from this morning's 09:01Z and 15:22Z runs — both already within the 48h dedup window, so no notification was sent.
+Heartbeat (20:24Z) complete. State unchanged vs. yesterday: ISS-001 (`chain:overnight-research` failed, `startup-idea` stale ~38.8d) remains the only open issue. All findings already logged within the 48h dedup window — **no notification sent**.
 
-- 🔴 P0 FAILED: `chain:overnight-research` (failed today 05:03Z, ~15h ago) — tracked under ISS-001
-- 🔵 P3 STALE: `startup-idea` (~37.8d since last success) — tracked under ISS-001
-- Heartbeat self-check OK (last success 4.7h ago)
-- No stuck skills, no consecutive_failures ≥ 3, no open PRs, no flagged memory items
-- No token-report file → Token pulse section omitted
+- Regenerated `docs/status.md` → 🔴 DEGRADED, 1 open issue, next run: startup-idea at 00:00 UTC
+- Appended entry to `memory/logs/2026-06-22.md`
+- `vienna-apartments` ran successfully today at 07:43Z (caught up the daily 06:00 UTC slot)
 
-Files modified:
-- `docs/status.md` regenerated → 🔴 DEGRADED, 1 open issue, next run: startup-idea at 00:00 UTC
-- `memory/logs/2026-06-21.md` — appended 20:03Z heartbeat entry
-
-Follow-up: ISS-001 still open; chain:overnight-research re-failed today on its 04:45 UTC slot.
+HEARTBEAT_OK · STATUS_PAGE=DEGRADED
