@@ -1,0 +1,283 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending"
+      },
+      "children": [
+        "heading_title",
+        "stack_toppick",
+        "separator_1",
+        "heading_ai",
+        "stack_ai_repos",
+        "separator_2",
+        "heading_devtools",
+        "stack_devtools",
+        "separator_3",
+        "heading_data",
+        "stack_data",
+        "separator_4",
+        "text_sources"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "GitHub Trending — 2026-06-23",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "stack_toppick": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_toppick",
+        "storylink_hyperframes_toppick",
+        "text_hyperframes_desc"
+      ]
+    },
+    "heading_toppick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "storylink_hyperframes_toppick": {
+      "type": "StoryLink",
+      "props": {
+        "title": "heygen-com/hyperframes",
+        "href": "https://github.com/heygen-com/hyperframes"
+      },
+      "children": []
+    },
+    "text_hyperframes_desc": {
+      "type": "Text",
+      "props": {
+        "text": "HTML-as-IR for video — instead of handing agents a timeline editor, hyperframes lets them author scenes in plain markup. It lowers the floor for AI video pipelines and helps explain why a half-dozen agentic video repos are trending simultaneously this week.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_ai": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_ai_repos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stack_deer",
+        "stack_voicebox",
+        "stack_cyber"
+      ]
+    },
+    "stack_deer": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink_deer",
+        "text_deer_desc"
+      ]
+    },
+    "storylink_deer": {
+      "type": "StoryLink",
+      "props": {
+        "title": "bytedance/deer-flow",
+        "href": "https://github.com/bytedance/deer-flow",
+        "source": "★738 today (73k total) · Python · [ACCELERATING]"
+      },
+      "children": []
+    },
+    "text_deer_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Long-horizon agent harness with sandbox, memory, subagents — ByteDance's open answer to Claude Code / Devin.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stack_voicebox": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink_voicebox",
+        "text_voicebox_desc"
+      ]
+    },
+    "storylink_voicebox": {
+      "type": "StoryLink",
+      "props": {
+        "title": "jamiepine/voicebox",
+        "href": "https://github.com/jamiepine/voicebox",
+        "source": "★529 today (33k total) · TypeScript · [ACCELERATING]"
+      },
+      "children": []
+    },
+    "text_voicebox_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Local AI voice studio with one-shot cloning + dictation — Spacedrive founder's voice-first companion app.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "stack_cyber": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink_cyber",
+        "text_cyber_desc"
+      ]
+    },
+    "storylink_cyber": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mukul975/Anthropic-Cybersecurity-Skills",
+        "href": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+        "source": "★956 today (19k total) · Python · [ACCELERATING]"
+      },
+      "children": []
+    },
+    "text_cyber_desc": {
+      "type": "Text",
+      "props": {
+        "text": "817 framework-mapped cybersecurity skill files — drop-in toolbelt for security agents, not another awesome-list.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink_hyperframes_dev",
+        "text_hyperframes_dev_desc"
+      ]
+    },
+    "storylink_hyperframes_dev": {
+      "type": "StoryLink",
+      "props": {
+        "title": "heygen-com/hyperframes",
+        "href": "https://github.com/heygen-com/hyperframes",
+        "source": "★395 today (30k total) · TypeScript · [ACCELERATING]"
+      },
+      "children": []
+    },
+    "text_hyperframes_dev_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Treats HTML as a video composition format — agents render scenes by editing markup instead of timeline keyframes.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "heading_data": {
+      "type": "Heading",
+      "props": {
+        "text": "Data",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "stack_data": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "storylink_stock",
+        "text_stock_desc"
+      ]
+    },
+    "storylink_stock": {
+      "type": "StoryLink",
+      "props": {
+        "title": "ZhuLinsen/daily_stock_analysis",
+        "href": "https://github.com/ZhuLinsen/daily_stock_analysis",
+        "source": "★1,557 today (46k total) · Python · [ACCELERATING]"
+      },
+      "children": []
+    },
+    "text_stock_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Pipes multi-market price + news into an LLM and pushes alerts on a daily cron — turnkey stack, not just a prompt.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "text_sources": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 5/16",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}
