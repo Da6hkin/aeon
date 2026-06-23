@@ -1,7 +1,7 @@
-The skill `skills/overnight-research/SKILL.md` does not exist in this repository. The closest available skills are:
+The skill `overnight-research` does not exist. The closest matches in `skills/` are:
 
-- `skills/autoresearch/SKILL.md`
-- `skills/deep-research/SKILL.md`
-- `skills/research-brief/SKILL.md`
+- `autoresearch` — autonomous research loop
+- `deep-research` — deep multi-source research
+- `research-brief` — research briefs
 
-Which one would you like me to run? Or did you mean a different skill name?
+Which one did you mean? Or should I create a new `overnight-research` skill?
