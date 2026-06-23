@@ -2,4 +2,17 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran the 14:00 UTC heartbeat slot. Two recurring P0/P3 conditions persist (chain:overnight-research failed at 05:50Z; startup-idea stale since 2026-05-15) — both tracked under ISS-001 and within the 48h dedup window (today's 08:50Z run already logged them), so no notification fired. Regenerated `docs/status.md` with verdict 🔴 DEGRADED and next run `startup-idea at 18:00 UTC`, and appended the 14:09Z entry to `memory/logs/2026-06-23.md`. Files modified: `docs/status.md`, `memory/logs/2026-06-23.md`. Follow-up: ISS-001 still needs root-cause investigation of the chain runner / startup-idea step.
+Ran the 20:00 UTC heartbeat slot for 2026-06-23. All flagged items were duplicates within the 48h dedup window, so no notification sent.
+
+**Findings (all known/deduped):**
+- 🔴 `chain:overnight-research` failed today at 05:50Z (ISS-001) — chain orchestration failure; inner steps succeeded.
+- 🔵 `startup-idea` last succeeded 39.8d ago (ISS-001).
+- ⚠️ `vienna-apartments` 36.7h since last success, 06:00 UTC slot missed today — still inside 48h 2× threshold, watching.
+- Heartbeat self-check OK (6.3h since last success).
+- No stuck skills, no open PRs, no urgent issues.
+
+**Files modified:**
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run: startup-idea at 00:00 UTC.
+- `memory/logs/2026-06-23.md` — appended `heartbeat (20:30Z)` entry.
+
+**Follow-up:** If `vienna-apartments` 06:00 UTC slot misses again tomorrow, it crosses the 48h flag threshold and should trigger a notification.
