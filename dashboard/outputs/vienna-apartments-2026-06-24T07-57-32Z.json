@@ -1,0 +1,111 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Vienna apartments — 2026-06-24"
+      },
+      "children": [
+        "listings-stack",
+        "separator",
+        "reminder"
+      ]
+    },
+    "listings-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "listing-1",
+        "listing-2",
+        "listing-3",
+        "listing-4",
+        "listing-5",
+        "listing-6",
+        "listing-7",
+        "listing-8"
+      ]
+    },
+    "listing-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Sonnige 3-Zi. Schlachthausgasse",
+        "href": "https://www.immobilienscout24.at/expose/6a3b6df4f4feef14291e6561",
+        "source": "D3 · €1,249 · 75 m² · 3 Zi"
+      }
+    },
+    "listing-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Village im Dritten, Baufeld 3",
+        "href": "https://www.wohnnet.at/immobilien/mietwohnung-1030-wien-landstrasse-miete-2-zimmer-297461857",
+        "source": "D3 · €1,270 · 51 m² · 2 Zi"
+      }
+    },
+    "listing-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Privatvermietung Nähe Mariahilferstr.",
+        "href": "https://www.immosuchmaschine.at/expose/45521296",
+        "source": "D6 · €787 · 50 m² · 2 Zi"
+      }
+    },
+    "listing-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Ruhelage Kaiserstraße, Garage mögl.",
+        "href": "https://www.immobilienscout24.at/expose/6a3a93231f04fb493ea0e4c0",
+        "source": "D7 · €1,500 · 86 m² · 3 Zi"
+      }
+    },
+    "listing-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2-Zi Altbau Toplage, 1080 Wien",
+        "href": "https://www.immobilienscout24.at/expose/6a38ff4f81af2ba6547cf7cf",
+        "source": "D8 · €1,100 · 69 m² · 2 Zi"
+      }
+    },
+    "listing-6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Schöne 1-Zimmer, Josefstadt",
+        "href": "https://www.immobilienscout24.at/expose/6a38e8cea285f688987a527d",
+        "source": "D8 · €1,105 · 50 m² · 1 Zi"
+      }
+    },
+    "listing-7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "City-Lage 2-Zi mit Schrankraum",
+        "href": "https://www.immobilienscout24.at/expose/6a394678a285f688987af84e",
+        "source": "D8 · €1,334 · 72 m² · 2 Zi"
+      }
+    },
+    "listing-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Helle 2-Zi mit Balkon, Gilgegasse",
+        "href": "https://www.immobilienscout24.at/expose/6a393a8281af2ba6547d65e6",
+        "source": "D9 · €1,092 · 48 m² · 2 Zi"
+      }
+    },
+    "separator": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "reminder": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "message": "Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)."
+      }
+    }
+  }
+}

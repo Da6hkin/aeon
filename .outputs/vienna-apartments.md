@@ -1,17 +1,12 @@
-*🏠 Vienna apartments — 2026-06-22*
+*🏠 Vienna apartments — 2026-06-24*
 
-- *D4* €1,300 · 64 m² · 2 Zi — [Möblierte 2 Zi. nähe U1 Taubstummengasse](https://www.immobilienscout24.at/expose/6a37ec0ba285f6889877970e)
-- *D4* €1,311 · 62 m² · 3 Zi — [Generalsanierte 3-Zi-Wohnung, Hochparterre](https://www.immobilienscout24.at/expose/6a36834a584ccc48d2ef88af)
-- *D4* €1,340 · 58 m² · 2 Zi — [2-Zimmer-Wohnung am Naschmarkt](https://www.immobilienscout24.at/expose/6a367c38584ccc48d2ef855d)
-- *D4* €1,300 · 65 m² · 2 Zi — [Helle Altbau-DG in Bestlage](https://findheim.at/de/i/helle-altbau-dachgeschosswohnung-mit-65-m2-in-bestlage-des-4-bezirks-8d9454a6)
-- *D5* €1,250 · 66 m² · 2.5 Zi — [Neubauwohnung mit 2.5 Zimmern, vollmöbliert](https://www.immodirekt.at/immobilie/6a3557bb49f165b62eff6888)
-- *D5* €1,469 · 53 m² · 2 Zi — [2-Zi-Neubauwohnung mit Loggia, 5.OG](https://www.immodirekt.at/immobilie/6a32a6d0e7d0e7f55808e5fe)
-- *D5* €1,475 · 55 m² · 2 Zi — [Neubau 2023, helle 2-Zi mit Loggia](https://www.immodirekt.at/immobilie/6a32a6d0e7d0e7f55808e5f4)
-- *D6* €1,350 · 80 m² · 3 Zi — [Fully Furnished Old-Timer Apartment](https://www.immobilienscout24.at/expose/6a33373777638d2a2bdcf742)
-- *D7* €1,270 · 61 m² · 2.5 Zi — [Vollmöbliert bei U-Bahn Burggasse](https://www.immobilienscout24.at/expose/6a36705b584ccc48d2ef7df9)
-- *D8* €908 · 51 m² · 2 Zi — [Piaristengasse DG-Wohnung](https://www.immobilienscout24.at/expose/6a34200877638d2a2bdfb285)
-- *D8* €1,190 · 53 m² · 2 Zi — [Pfeilgasse 43, helle und ruhige 2-Zimmer](https://www.immobilienscout24.at/expose/6a2fd7bfa003cef3f4b9b65f)
-- *D8* €1,249 · 58 m² · 2.5 Zi — [Laudongasse 10, 2.5 Zi in Biedermeierhaus](https://www.immodirekt.at/immobilie/6a2bf8f29faaec815c4fbd5d)
-- *D9* €1,500 · 84 m² · 3 Zi — [Tauschwohnung 3-Zi, Alsergrund](https://www.immobilienscout24.at/expose/6a376616a285f6889876cf1b)
+- *D3* €1,249 · 75 m² · 3 Zi — [Sonnige 3-Zi. Schlachthausgasse](https://www.immobilienscout24.at/expose/6a3b6df4f4feef14291e6561)
+- *D3* €1,270 · 51 m² · 2 Zi — [Village im Dritten, Baufeld 3](https://www.wohnnet.at/immobilien/mietwohnung-1030-wien-landstrasse-miete-2-zimmer-297461857)
+- *D6* €787 · 50 m² · 2 Zi — [Privatvermietung Nähe Mariahilferstr.](https://www.immosuchmaschine.at/expose/45521296)
+- *D7* €1,500 · 86 m² · 3 Zi — [Ruhelage Kaiserstraße, Garage mögl.](https://www.immobilienscout24.at/expose/6a3a93231f04fb493ea0e4c0)
+- *D8* €1,100 · 69 m² · 2 Zi — [2-Zi Altbau Toplage, 1080 Wien](https://www.immobilienscout24.at/expose/6a38ff4f81af2ba6547cf7cf)
+- *D8* €1,105 · 50 m² · 1 Zi — [Schöne 1-Zimmer, Josefstadt](https://www.immobilienscout24.at/expose/6a38e8cea285f688987a527d)
+- *D8* €1,334 · 72 m² · 2 Zi — [City-Lage 2-Zi mit Schrankraum](https://www.immobilienscout24.at/expose/6a394678a285f688987af84e)
+- *D9* €1,092 · 48 m² · 2 Zi — [Helle 2-Zi mit Balkon, Gilgegasse](https://www.immobilienscout24.at/expose/6a393a8281af2ba6547d65e6)
 
 _Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)._
