@@ -1,0 +1,485 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending — 2026-06-25"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_toppick",
+        "link_toppick",
+        "text_toppick_desc",
+        "sep1",
+        "heading_aiml",
+        "stack_aiml",
+        "sep2",
+        "heading_devtools",
+        "stack_devtools",
+        "sep3",
+        "heading_infra",
+        "stack_infra",
+        "sep4",
+        "text_footer"
+      ]
+    },
+    "heading_toppick": {
+      "type": "Heading",
+      "props": {
+        "text": "Top Pick",
+        "level": "h2"
+      }
+    },
+    "link_toppick": {
+      "type": "StoryLink",
+      "props": {
+        "title": "apple/container",
+        "href": "https://github.com/apple/container"
+      }
+    },
+    "text_toppick_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Apple's official native answer to Docker Desktop — Linux containers running in per-container lightweight VMs on Apple silicon, arriving from the platform vendor itself."
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_aiml": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "stack_aiml": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_aiml_1",
+        "repo_aiml_2",
+        "repo_aiml_3"
+      ]
+    },
+    "repo_aiml_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_aiml_1",
+        "stack_aiml_1_meta",
+        "text_aiml_1_desc"
+      ]
+    },
+    "link_aiml_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "NousResearch/hermes-agent",
+        "href": "https://github.com/NousResearch/hermes-agent"
+      }
+    },
+    "stack_aiml_1_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_aiml_1_stars",
+        "badge_aiml_1_lang",
+        "badge_aiml_1_status"
+      ]
+    },
+    "text_aiml_1_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1.2t today (202k total)",
+        "variant": "caption"
+      }
+    },
+    "badge_aiml_1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge_aiml_1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "text_aiml_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Agent runtime from the Hermes-model team — persistent state and tool use that compound across sessions, pushed today."
+      }
+    },
+    "repo_aiml_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_aiml_2",
+        "stack_aiml_2_meta",
+        "text_aiml_2_desc"
+      ]
+    },
+    "link_aiml_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "calesthio/OpenMontage",
+        "href": "https://github.com/calesthio/OpenMontage"
+      }
+    },
+    "stack_aiml_2_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_aiml_2_stars",
+        "badge_aiml_2_lang",
+        "badge_aiml_2_status"
+      ]
+    },
+    "text_aiml_2_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 3.7t today (20k total)",
+        "variant": "caption"
+      }
+    },
+    "badge_aiml_2_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge_aiml_2_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "text_aiml_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "12 pipelines and 500+ skills that turn a coding agent into a video production stack — biggest single-day surge on the page today."
+      }
+    },
+    "repo_aiml_3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_aiml_3",
+        "stack_aiml_3_meta",
+        "text_aiml_3_desc"
+      ]
+    },
+    "link_aiml_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "revfactory/harness",
+        "href": "https://github.com/revfactory/harness"
+      }
+    },
+    "stack_aiml_3_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_aiml_3_stars",
+        "badge_aiml_3_lang",
+        "badge_aiml_3_status"
+      ]
+    },
+    "text_aiml_3_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 277 today (7.8k total)",
+        "variant": "caption"
+      }
+    },
+    "badge_aiml_3_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "HTML"
+      }
+    },
+    "badge_aiml_3_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "text_aiml_3_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Meta-agent that, given a domain, generates the agent team and skill files for you instead of hand-authoring a multi-agent stack."
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_devtools": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "stack_devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_devtools_1",
+        "repo_devtools_2"
+      ]
+    },
+    "repo_devtools_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_devtools_1",
+        "stack_devtools_1_meta",
+        "text_devtools_1_desc"
+      ]
+    },
+    "link_devtools_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "stablyai/orca",
+        "href": "https://github.com/stablyai/orca"
+      }
+    },
+    "stack_devtools_1_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_devtools_1_stars",
+        "badge_devtools_1_lang",
+        "badge_devtools_1_status"
+      ]
+    },
+    "text_devtools_1_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 331 today (7.0k total)",
+        "variant": "caption"
+      }
+    },
+    "badge_devtools_1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "badge_devtools_1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "text_devtools_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Desktop and mobile control plane for running many coding agents in parallel against your own Claude or GPT subscription — no per-seat platform tax."
+      }
+    },
+    "repo_devtools_2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_devtools_2",
+        "stack_devtools_2_meta",
+        "text_devtools_2_desc"
+      ]
+    },
+    "link_devtools_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "google-labs-code/design.md",
+        "href": "https://github.com/google-labs-code/design.md"
+      }
+    },
+    "stack_devtools_2_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_devtools_2_stars",
+        "badge_devtools_2_lang",
+        "badge_devtools_2_status"
+      ]
+    },
+    "text_devtools_2_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 619 today (18k total)",
+        "variant": "caption"
+      }
+    },
+    "badge_devtools_2_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "badge_devtools_2_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "text_devtools_2_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Like AGENTS.md but for visual identity — gives coding agents a persistent structured view of your design system."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_infra": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h2"
+      }
+    },
+    "stack_infra": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "repo_infra_1"
+      ]
+    },
+    "repo_infra_1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link_infra_1",
+        "stack_infra_1_meta",
+        "text_infra_1_desc"
+      ]
+    },
+    "link_infra_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "apple/container",
+        "href": "https://github.com/apple/container"
+      }
+    },
+    "stack_infra_1_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "text_infra_1_stars",
+        "badge_infra_1_lang",
+        "badge_infra_1_status"
+      ]
+    },
+    "text_infra_1_stars": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1.8t today (43k total)",
+        "variant": "caption"
+      }
+    },
+    "badge_infra_1_lang": {
+      "type": "Badge",
+      "props": {
+        "text": "Swift"
+      }
+    },
+    "badge_infra_1_status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "text_infra_1_desc": {
+      "type": "Text",
+      "props": {
+        "text": "Native macOS container runtime — Linux containers in per-container lightweight VMs, no Docker Desktop required."
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_footer": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 6/13",
+        "variant": "muted"
+      }
+    }
+  }
+}

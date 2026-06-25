@@ -1,25 +1,28 @@
-*GitHub Trending — 2026-06-23*
+*GitHub Trending — 2026-06-25*
 
-*Top pick* — [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
-HTML-as-IR for video — instead of handing agents a timeline editor, hyperframes lets them author scenes in plain markup. It lowers the floor for AI video pipelines and helps explain why a half-dozen agentic video repos are trending simultaneously this week.
+*Top pick* — [apple/container](https://github.com/apple/container)
+Apple's official native answer to Docker Desktop — Linux containers running in per-container lightweight VMs on Apple silicon, arriving from the platform vendor itself.
 
 *AI/ML*
-• [bytedance/deer-flow](https://github.com/bytedance/deer-flow) — ★ 738 today (73k total) · Python · [ACCELERATING]
-Long-horizon agent harness with sandbox, memory, subagents — ByteDance's open answer to Claude Code / Devin.
+• [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) — ★ 1.2t today (202k total) · Python · [ACCELERATING]
+Agent runtime from the Hermes-model team — persistent state and tool use that compound across sessions, pushed today.
 
-• [jamiepine/voicebox](https://github.com/jamiepine/voicebox) — ★ 529 today (33k total) · TypeScript · [ACCELERATING]
-Local AI voice studio with one-shot cloning + dictation — Spacedrive founder's voice-first companion app.
+• [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) — ★ 3.7t today (20k total) · Python · [ACCELERATING]
+12 pipelines and 500+ skills that turn a coding agent into a video production stack — biggest single-day surge on the page today.
 
-• [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) — ★ 956 today (19k total) · Python · [ACCELERATING]
-817 framework-mapped cybersecurity skill files — drop-in toolbelt for security agents, not another awesome-list.
+• [revfactory/harness](https://github.com/revfactory/harness) — ★ 277 today (7.8k total) · HTML · [ACCELERATING]
+Meta-agent that, given a domain, generates the agent team and skill files for you instead of hand-authoring a multi-agent stack.
 
 *Devtools*
-• [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) — ★ 395 today (30k total) · TypeScript · [ACCELERATING]
-Treats HTML as a video composition format — agents render scenes by editing markup instead of timeline keyframes.
+• [stablyai/orca](https://github.com/stablyai/orca) — ★ 331 today (7.0k total) · TypeScript · [ACCELERATING]
+Desktop and mobile control plane for running many coding agents in parallel against your own Claude or GPT subscription — no per-seat platform tax.
 
-*Data*
-• [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) — ★ 1,557 today (46k total) · Python · [ACCELERATING]
-Pipes multi-market price + news into an LLM and pushes alerts on a daily cron — turnkey stack, not just a prompt.
+• [google-labs-code/design.md](https://github.com/google-labs-code/design.md) — ★ 619 today (18k total) · TypeScript · [ACCELERATING]
+Like AGENTS.md but for visual identity — gives coding agents a persistent structured view of your design system.
+
+*Infra*
+• [apple/container](https://github.com/apple/container) — ★ 1.8t today (43k total) · Swift · [ACCELERATING]
+Native macOS container runtime — Linux containers in per-container lightweight VMs, no Docker Desktop required.
 
 ---
-sources: trending=ok · gh_api=ok · kept 5/16
+sources: trending=ok · gh_api=ok · kept 6/13
