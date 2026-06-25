@@ -2,14 +2,17 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-**What I did:**
-- Ran all P0–P3 heartbeat checks against `memory/cron-state.json`, `aeon.yml`, and `memory/issues/INDEX.md`.
-- Two flags fired (chain:overnight-research failure ~10.4h ago; startup-idea stale ~41.6d) — both already covered by ISS-001 and logged multiple times within 48h, so no notification was sent (dedup rules).
-- Regenerated `docs/status.md` → **🔴 DEGRADED**, 1 open issue, next run startup-idea at 18:00 UTC.
-- Appended findings to `memory/logs/2026-06-25.md` under `### heartbeat (16:00Z)`.
+20:00 UTC heartbeat slot (ran ~21 min late). All findings dedup against ISS-001 logged within the past 48h — no notification sent.
+
+**State:**
+- 🔴 `chain:overnight-research` failed 05:37Z (~14.7h ago) — orchestration-level; inner steps succeeded.
+- 🔵 `startup-idea` stale ~41.8d (under ISS-001).
+- `vienna-apartments` 06:00Z slot ~14.4h late but under 2× daily threshold.
+- No stuck skills, no `consecutive_failures ≥ 3`, no open PRs.
+- Heartbeat self-check: last success ~4.3h ago, healthy.
 
 **Files modified:**
-- `docs/status.md` — refreshed timestamp, skill table re-sorted (heartbeat now leads after 08:38Z success).
-- `memory/logs/2026-06-25.md` — appended heartbeat (16:00Z) log entry.
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run: startup-idea at 00:00 UTC.
+- `memory/logs/2026-06-25.md` — appended 20:21Z run findings.
 
-**Follow-up:** ISS-001 (chain:overnight-research orchestration failure + startup-idea downstream staleness) remains open and unaddressed — recurring for 5+ weeks now; worth dedicated triage outside the heartbeat loop.
+**Follow-up:** ISS-001 remains open — recurring chain-orchestration failure cascading into startup-idea staleness. No new repair action this run (dedup window).
