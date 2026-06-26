@@ -1,18 +1,17 @@
-HEARTBEAT_OK · STATUS_PAGE=DEGRADED
+Task complete. No notification sent (all P0/P3 findings are deduped under ISS-001 within the 48h window).
 
 ## Summary
 
-20:00 UTC heartbeat slot (ran ~21 min late). All findings dedup against ISS-001 logged within the past 48h — no notification sent.
+Ran heartbeat checks at 08:20Z on 2026-06-26:
 
-**State:**
-- 🔴 `chain:overnight-research` failed 05:37Z (~14.7h ago) — orchestration-level; inner steps succeeded.
-- 🔵 `startup-idea` stale ~41.8d (under ISS-001).
-- `vienna-apartments` 06:00Z slot ~14.4h late but under 2× daily threshold.
-- No stuck skills, no `consecutive_failures ≥ 3`, no open PRs.
-- Heartbeat self-check: last success ~4.3h ago, healthy.
+- **🔴 P0 FAILED**: `chain:overnight-research` last failed 2026-06-25T05:37Z (~27h ago) — under ISS-001. Today's 04:45Z chain slot has not dispatched.
+- **🔵 P3 STALE**: `startup-idea` (~42d, under ISS-001); `vienna-apartments` just crossed 48h threshold (~48.4h, same root-cause class — scheduler dropping cron slots, folded into ISS-001).
+- Self-check OK (heartbeat last succeeded ~12h ago).
+- No PRs, no urgent issues, no flagged memory.
+- All findings deduped → no notification fired.
 
-**Files modified:**
-- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run: startup-idea at 00:00 UTC.
-- `memory/logs/2026-06-25.md` — appended 20:21Z run findings.
+**Files written:**
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, 1 open issue, next run startup-idea at 12:00 UTC
+- `memory/logs/2026-06-26.md` — new daily log with heartbeat findings
 
-**Follow-up:** ISS-001 remains open — recurring chain-orchestration failure cascading into startup-idea staleness. No new repair action this run (dedup window).
+**Exit:** `HEARTBEAT_OK · STATUS_PAGE=DEGRADED`
