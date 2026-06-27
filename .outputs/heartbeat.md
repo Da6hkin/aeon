@@ -2,16 +2,16 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran the heartbeat skill for the 14:00 UTC slot (~8min late).
+Ran heartbeat for the 20:00 UTC slot (~64min late, current time 21:04Z).
 
-**Findings (all dedup'd, no notification sent):**
-- 🔴 `chain:overnight-research` still failed since 2026-06-25T05:37Z; today's 04:45 chain slot never dispatched (~9.4h late). Tracked under ISS-001.
-- 🔵 `startup-idea` stale ~43.5d (schedule every 6h). Folded under ISS-001.
-- Heartbeat self-check OK (last_success 4.5h ago, well under 36h).
-- No stuck skills, no PRs, no urgent issues, no flagged memory items, no token report.
+**Findings:**
+- 🔴 P0: `chain:overnight-research` still failed (2026-06-25, ~63.5h stale) — under ISS-001, within 48h dedup window, no notify
+- 🔵 P3: `startup-idea` stale 43.8d (last success 2026-05-15) — under ISS-001, dedup'd
+- Self-check OK: heartbeat last succeeded 6.9h ago (within 36h threshold)
+- No stuck skills, no open PRs, no flagged memory items
 
 **Files modified:**
-- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, 1 open issue, next run startup-idea at 18:00 UTC.
-- `memory/logs/2026-06-27.md` — appended 14:08Z heartbeat entry.
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run startup-idea at 00:00 UTC
+- `memory/logs/2026-06-27.md` — appended 21:04Z run entry
 
-**Follow-up:** ISS-001 (scheduler dispatch reliability) remains open; no fix attempted from this run.
+No notification sent (all P0/P3 items within 48h dedup window). Status page auto-commits via the workflow.
