@@ -1,12 +1,15 @@
-*🏠 Vienna apartments — 2026-06-24*
+*🏠 Vienna apartments — 2026-06-27*
 
-- *D3* €1,249 · 75 m² · 3 Zi — [Sonnige 3-Zi. Schlachthausgasse](https://www.immobilienscout24.at/expose/6a3b6df4f4feef14291e6561)
-- *D3* €1,270 · 51 m² · 2 Zi — [Village im Dritten, Baufeld 3](https://www.wohnnet.at/immobilien/mietwohnung-1030-wien-landstrasse-miete-2-zimmer-297461857)
-- *D6* €787 · 50 m² · 2 Zi — [Privatvermietung Nähe Mariahilferstr.](https://www.immosuchmaschine.at/expose/45521296)
-- *D7* €1,500 · 86 m² · 3 Zi — [Ruhelage Kaiserstraße, Garage mögl.](https://www.immobilienscout24.at/expose/6a3a93231f04fb493ea0e4c0)
-- *D8* €1,100 · 69 m² · 2 Zi — [2-Zi Altbau Toplage, 1080 Wien](https://www.immobilienscout24.at/expose/6a38ff4f81af2ba6547cf7cf)
-- *D8* €1,105 · 50 m² · 1 Zi — [Schöne 1-Zimmer, Josefstadt](https://www.immobilienscout24.at/expose/6a38e8cea285f688987a527d)
-- *D8* €1,334 · 72 m² · 2 Zi — [City-Lage 2-Zi mit Schrankraum](https://www.immobilienscout24.at/expose/6a394678a285f688987af84e)
-- *D9* €1,092 · 48 m² · 2 Zi — [Helle 2-Zi mit Balkon, Gilgegasse](https://www.immobilienscout24.at/expose/6a393a8281af2ba6547d65e6)
+- *D3* €1,249 · 75 m² · 3.5 Zi — [sonnige und ruhige 3 Zimmerwohnung](https://www.immodirekt.at/immobilie/6a3ea45547cf2676677fcaff)
+- *D3* €1,299 · 60 m² · 2 Zi — [Möblierte ruhige Altbauwohnung: Vienna Charm](https://www.immobilienscout24.at/expose/6a3e563f698cb69461c8f332)
+- *D4* €1,300 · 64 m² · 2 Zi — [Möblierte 2 Zimmer nähe U1 Taubstummengasse](https://www.immobilienscout24.at/expose/6a3e2af8698cb69461c89cd5)
+- *D5* €1,190 · 52 m² · 2 Zi — [Moderne 2-Zimmer-Wohnung mit großen Balkon](https://findheim.at/de/i/moderne-2-zimmer-wohnung-mit-grossen-balkon-f2e11e1c)
+- *D5* €1,286 · 56 m² · 2 Zi — [Helle 2-Zimmer-Wohnung in Top-Lage Nahe u4 Pilgramgasse](https://www.immosuchmaschine.at/expose/45536376)
+- *D5* €1,318 · 58 m² · 2 Zi — [Neuwertige 2-Zimmer-Wohnung in 1050 Wien](https://www.immosuchmaschine.at/expose/45536627)
+- *D7* €1,244 · 62 m² · 2 Zi — [Erstklassige Neubauwohnung nahe Mariahilfer Straße](https://www.immobilienscout24.at/expose/6a3e6312698cb69461c909a9)
+- *D7* €1,286 · 63 m² · 2.5 Zi — [Freundliche 2,5-Zimmer-Wohnung in 1070](https://www.dibeo.at/expose/2220113)
+- *D8* €908 · 51 m² · 2 Zi — [Piaristengasse - 2 Zimmer DG-Wohnung zu vermieten](https://www.immobilienscout24.at/expose/6a34200877638d2a2bdfb285)
+- *D8* €1,190 · 53 m² · 2 Zi — [Helle und ruhige 2-Zimmer-Wohnung in Josefstadt](https://www.immobilienscout24.at/expose/6a2fd7bfa003cef3f4b9b65f)
+- *D9* €910 · 39 m² · 2 Zi — [Zweizimmerwohnung mit Loggia!](https://www.immobilienscout24.at/expose/6a3e80a147cf2676677fa89a)
 
 _Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)._
