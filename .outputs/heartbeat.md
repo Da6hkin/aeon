@@ -2,19 +2,9 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat at 08:14 UTC (08:00 slot, ~14min late).
-
-**Findings:**
-- 🔴 P0: `chain:overnight-research` failed today at 04:52Z — same recurring issue tracked under ISS-001
-- 🔵 P3: `startup-idea` last succeeded 44 days ago (~2026-05-15) — same issue under ISS-001
-- All other checks green: no stuck skills, no consecutive failure runs ≥3, no open PRs, heartbeat self-check OK
-
-**Dedup:** Both items have been logged 9+ times in the past 48h under ISS-001 → no notification sent.
-
-**Actions:**
-- Regenerated `docs/status.md` → 🔴 DEGRADED, 1 open issue, next run startup-idea 12:00 UTC
-- Appended log entry to `memory/logs/2026-06-28.md`
-
-**Files modified:**
-- `docs/status.md`
-- `memory/logs/2026-06-28.md`
+- **P0 fired:** `chain:overnight-research` failed today at 04:52Z. Same recurring symptom under [ISS-001](memory/issues/ISS-001.md) — logged 10× across the last 72h, dedup → no notification.
+- **P3 stale:** `startup-idea` last succeeded 2026-05-15 (~44.5d ago). Same ISS-001 thread, dedup → no notification.
+- **Clean:** no stuck skills, no `consecutive_failures ≥ 3`, no open PRs, no flagged memory items. Heartbeat self-check OK (last success 5.9h ago).
+- **Status page:** regenerated `docs/status.md` → 🔴 DEGRADED, 1 open issue, next run startup-idea 18:00 UTC.
+- **Files modified:** `docs/status.md`, `memory/logs/2026-06-28.md`.
+- **Follow-up:** ISS-001 still open and needs investigation by skill-repair / autoresearch (chain wrapper exits non-zero even when downstream steps succeed; startup-idea state never updates from chain runs).
