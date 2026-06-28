@@ -1,0 +1,587 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending",
+        "description": "2026-06-28"
+      },
+      "children": [
+        "top-pick-section",
+        "sep1",
+        "ai-section",
+        "sep2",
+        "devtools-section",
+        "sep3",
+        "infra-section",
+        "sep4",
+        "footer"
+      ]
+    },
+    "top-pick-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top-pick-label",
+        "repo-design-md-top"
+      ]
+    },
+    "top-pick-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Top pick",
+        "level": "h4"
+      }
+    },
+    "repo-design-md-top": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-design-md-top",
+        "desc-design-md-top",
+        "meta-design-md-top"
+      ]
+    },
+    "link-design-md-top": {
+      "type": "StoryLink",
+      "props": {
+        "title": "google-labs-code/design.md",
+        "href": "https://github.com/google-labs-code/design.md"
+      }
+    },
+    "desc-design-md-top": {
+      "type": "Text",
+      "props": {
+        "text": "DESIGN.md is the design-system analog of CLAUDE.md — a spec format for handing visual identity to coding agents. Pulling 1.5k stars/day and reshaping what AI dev tooling looks like.",
+        "variant": "body"
+      }
+    },
+    "meta-design-md-top": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-design-md-top",
+        "badge-ts-top"
+      ]
+    },
+    "stars-design-md-top": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1.5k today",
+        "variant": "caption"
+      }
+    },
+    "badge-ts-top": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ai-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "ai-label",
+        "repo-cognee",
+        "repo-ai-berkshire"
+      ]
+    },
+    "ai-label": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h4"
+      }
+    },
+    "repo-cognee": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-cognee",
+        "desc-cognee",
+        "meta-cognee"
+      ]
+    },
+    "link-cognee": {
+      "type": "StoryLink",
+      "props": {
+        "title": "topoteretes/cognee",
+        "href": "https://github.com/topoteretes/cognee"
+      }
+    },
+    "desc-cognee": {
+      "type": "Text",
+      "props": {
+        "text": "Self-hosted knowledge graph that gives agents persistent long-term memory across sessions.",
+        "variant": "body"
+      }
+    },
+    "meta-cognee": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-cognee",
+        "badge-cognee-py",
+        "badge-cognee-status"
+      ]
+    },
+    "stars-cognee": {
+      "type": "Text",
+      "props": {
+        "text": "★ 780 today (24k total)",
+        "variant": "caption"
+      }
+    },
+    "badge-cognee-py": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-cognee-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo-ai-berkshire": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-ai-berkshire",
+        "desc-ai-berkshire",
+        "meta-ai-berkshire"
+      ]
+    },
+    "link-ai-berkshire": {
+      "type": "StoryLink",
+      "props": {
+        "title": "xbtlin/ai-berkshire",
+        "href": "https://github.com/xbtlin/ai-berkshire"
+      }
+    },
+    "desc-ai-berkshire": {
+      "type": "Text",
+      "props": {
+        "text": "Multi-agent Claude Code framework running Buffett/Munger-style value-investing research on a target.",
+        "variant": "body"
+      }
+    },
+    "meta-ai-berkshire": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-ai-berkshire",
+        "badge-ai-berkshire-py",
+        "badge-ai-berkshire-status"
+      ]
+    },
+    "stars-ai-berkshire": {
+      "type": "Text",
+      "props": {
+        "text": "★ 685 today (4.4k total)",
+        "variant": "caption"
+      }
+    },
+    "badge-ai-berkshire-py": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-ai-berkshire-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "devtools-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools-label",
+        "repo-design-md-devtools",
+        "repo-opencode",
+        "repo-ppt-master"
+      ]
+    },
+    "devtools-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h4"
+      }
+    },
+    "repo-design-md-devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-design-md-devtools",
+        "desc-design-md-devtools",
+        "meta-design-md-devtools"
+      ]
+    },
+    "link-design-md-devtools": {
+      "type": "StoryLink",
+      "props": {
+        "title": "google-labs-code/design.md",
+        "href": "https://github.com/google-labs-code/design.md"
+      }
+    },
+    "desc-design-md-devtools": {
+      "type": "Text",
+      "props": {
+        "text": "Format spec for describing visual identity to coding agents — like CLAUDE.md but for design systems.",
+        "variant": "body"
+      }
+    },
+    "meta-design-md-devtools": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-design-md-devtools",
+        "badge-design-md-ts",
+        "badge-design-md-status"
+      ]
+    },
+    "stars-design-md-devtools": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1.5k today (22k total)",
+        "variant": "caption"
+      }
+    },
+    "badge-design-md-ts": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "badge-design-md-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo-opencode": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-opencode",
+        "desc-opencode",
+        "meta-opencode"
+      ]
+    },
+    "link-opencode": {
+      "type": "StoryLink",
+      "props": {
+        "title": "anomalyco/opencode",
+        "href": "https://github.com/anomalyco/opencode"
+      }
+    },
+    "desc-opencode": {
+      "type": "Text",
+      "props": {
+        "text": "Open-source AI coding agent — TUI-first, model-agnostic, ships as a single binary in your terminal.",
+        "variant": "body"
+      }
+    },
+    "meta-opencode": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-opencode",
+        "badge-opencode-ts",
+        "badge-opencode-status"
+      ]
+    },
+    "stars-opencode": {
+      "type": "Text",
+      "props": {
+        "text": "★ 392 today (180k total)",
+        "variant": "caption"
+      }
+    },
+    "badge-opencode-ts": {
+      "type": "Badge",
+      "props": {
+        "text": "TypeScript"
+      }
+    },
+    "badge-opencode-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "repo-ppt-master": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-ppt-master",
+        "desc-ppt-master",
+        "meta-ppt-master"
+      ]
+    },
+    "link-ppt-master": {
+      "type": "StoryLink",
+      "props": {
+        "title": "hugohe3/ppt-master",
+        "href": "https://github.com/hugohe3/ppt-master"
+      }
+    },
+    "desc-ppt-master": {
+      "type": "Text",
+      "props": {
+        "text": "Generates editable .pptx files with native shapes and animations — not screenshot decks; respects your template.",
+        "variant": "body"
+      }
+    },
+    "meta-ppt-master": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-ppt-master",
+        "badge-ppt-master-py",
+        "badge-ppt-master-status"
+      ]
+    },
+    "stars-ppt-master": {
+      "type": "Text",
+      "props": {
+        "text": "★ 589 today (33k total)",
+        "variant": "caption"
+      }
+    },
+    "badge-ppt-master-py": {
+      "type": "Badge",
+      "props": {
+        "text": "Python"
+      }
+    },
+    "badge-ppt-master-status": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "secondary"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "infra-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra-label",
+        "repo-simplex",
+        "repo-casaos"
+      ]
+    },
+    "infra-label": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h4"
+      }
+    },
+    "repo-simplex": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-simplex",
+        "desc-simplex",
+        "meta-simplex"
+      ]
+    },
+    "link-simplex": {
+      "type": "StoryLink",
+      "props": {
+        "title": "simplex-chat/simplex-chat",
+        "href": "https://github.com/simplex-chat/simplex-chat"
+      }
+    },
+    "desc-simplex": {
+      "type": "Text",
+      "props": {
+        "text": "Messenger with no user identifiers at all — no phone, email, or handle; pairwise one-time queues only.",
+        "variant": "body"
+      }
+    },
+    "meta-simplex": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-simplex",
+        "badge-simplex-hs",
+        "badge-simplex-status"
+      ]
+    },
+    "stars-simplex": {
+      "type": "Text",
+      "props": {
+        "text": "★ 1.5k today (14k total)",
+        "variant": "caption"
+      }
+    },
+    "badge-simplex-hs": {
+      "type": "Badge",
+      "props": {
+        "text": "Haskell"
+      }
+    },
+    "badge-simplex-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "repo-casaos": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "link-casaos",
+        "desc-casaos",
+        "meta-casaos"
+      ]
+    },
+    "link-casaos": {
+      "type": "StoryLink",
+      "props": {
+        "title": "IceWhaleTech/CasaOS",
+        "href": "https://github.com/IceWhaleTech/CasaOS"
+      }
+    },
+    "desc-casaos": {
+      "type": "Text",
+      "props": {
+        "text": "Self-hosted personal-cloud OS — puts a NAS dashboard on a Raspberry Pi in a one-line install.",
+        "variant": "body"
+      }
+    },
+    "meta-casaos": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "stars-casaos",
+        "badge-casaos-go",
+        "badge-casaos-status"
+      ]
+    },
+    "stars-casaos": {
+      "type": "Text",
+      "props": {
+        "text": "★ 502 today (36k total)",
+        "variant": "caption"
+      }
+    },
+    "badge-casaos-go": {
+      "type": "Badge",
+      "props": {
+        "text": "Go"
+      }
+    },
+    "badge-casaos-status": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "secondary"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 7/20",
+        "variant": "muted"
+      }
+    }
+  }
+}

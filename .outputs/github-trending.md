@@ -1,28 +1,31 @@
-*GitHub Trending — 2026-06-25*
+*GitHub Trending — 2026-06-28*
 
-*Top pick* — [apple/container](https://github.com/apple/container)
-Apple's official native answer to Docker Desktop — Linux containers running in per-container lightweight VMs on Apple silicon, arriving from the platform vendor itself.
+*Top pick* — [google-labs-code/design.md](https://github.com/google-labs-code/design.md)
+DESIGN.md is the design-system analog of CLAUDE.md — a spec format for handing visual identity to coding agents. Pulling 1.5k stars/day and reshaping what AI dev tooling looks like.
 
 *AI/ML*
-• [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) — ★ 1.2t today (202k total) · Python · [ACCELERATING]
-Agent runtime from the Hermes-model team — persistent state and tool use that compound across sessions, pushed today.
+• [topoteretes/cognee](https://github.com/topoteretes/cognee) — ★ 780 today (24k total) · Python · [ACCELERATING]
+Self-hosted knowledge graph that gives agents persistent long-term memory across sessions.
 
-• [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) — ★ 3.7t today (20k total) · Python · [ACCELERATING]
-12 pipelines and 500+ skills that turn a coding agent into a video production stack — biggest single-day surge on the page today.
-
-• [revfactory/harness](https://github.com/revfactory/harness) — ★ 277 today (7.8k total) · HTML · [ACCELERATING]
-Meta-agent that, given a domain, generates the agent team and skill files for you instead of hand-authoring a multi-agent stack.
+• [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire) — ★ 685 today (4.4k total) · Python · [ACCELERATING]
+Multi-agent Claude Code framework running Buffett/Munger-style value-investing research on a target.
 
 *Devtools*
-• [stablyai/orca](https://github.com/stablyai/orca) — ★ 331 today (7.0k total) · TypeScript · [ACCELERATING]
-Desktop and mobile control plane for running many coding agents in parallel against your own Claude or GPT subscription — no per-seat platform tax.
+• [google-labs-code/design.md](https://github.com/google-labs-code/design.md) — ★ 1.5k today (22k total) · TypeScript · [ACCELERATING]
+Format spec for describing visual identity to coding agents — like CLAUDE.md but for design systems.
 
-• [google-labs-code/design.md](https://github.com/google-labs-code/design.md) — ★ 619 today (18k total) · TypeScript · [ACCELERATING]
-Like AGENTS.md but for visual identity — gives coding agents a persistent structured view of your design system.
+• [anomalyco/opencode](https://github.com/anomalyco/opencode) — ★ 392 today (180k total) · TypeScript · [ACCELERATING]
+Open-source AI coding agent — TUI-first, model-agnostic, ships as a single binary in your terminal.
+
+• [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) — ★ 589 today (33k total) · Python · [ACCELERATING]
+Generates editable .pptx files with native shapes and animations — not screenshot decks; respects your template.
 
 *Infra*
-• [apple/container](https://github.com/apple/container) — ★ 1.8t today (43k total) · Swift · [ACCELERATING]
-Native macOS container runtime — Linux containers in per-container lightweight VMs, no Docker Desktop required.
+• [simplex-chat/simplex-chat](https://github.com/simplex-chat/simplex-chat) — ★ 1.5k today (14k total) · Haskell · [RETURNING]
+Messenger with no user identifiers at all — no phone, email, or handle; pairwise one-time queues only.
+
+• [IceWhaleTech/CasaOS](https://github.com/IceWhaleTech/CasaOS) — ★ 502 today (36k total) · Go · [RETURNING]
+Self-hosted personal-cloud OS — puts a NAS dashboard on a Raspberry Pi in a one-line install.
 
 ---
-sources: trending=ok · gh_api=ok · kept 6/13
+sources: trending=ok · gh_api=ok · kept 7/20
