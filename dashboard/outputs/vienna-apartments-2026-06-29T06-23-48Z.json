@@ -1,0 +1,147 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Vienna Apartments — 2026-06-29"
+      },
+      "children": [
+        "list_stack",
+        "separator_1",
+        "reminder_text"
+      ]
+    },
+    "list_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "apt_1",
+        "apt_2",
+        "apt_3",
+        "apt_4",
+        "apt_5",
+        "apt_6",
+        "apt_7",
+        "apt_8",
+        "apt_9",
+        "apt_10",
+        "apt_11",
+        "apt_12"
+      ]
+    },
+    "apt_1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2-Zimmer-Wohnung mit Balkon, Top-Lage",
+        "href": "https://www.immobilienscout24.at/expose/6a4139ca47cf267667848a1b",
+        "source": "D9 · €1,038 · 65 m² · 2.5 Zi"
+      }
+    },
+    "apt_2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "2-Zimmer Altbauwohnung in Top Lage",
+        "href": "https://www.immobilienscout24.at/expose/6a38ff4f81af2ba6547cf7cf",
+        "source": "D8 · €1,100 · 69 m² · 2 Zi"
+      }
+    },
+    "apt_3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3 Zimmer Studentenhit – Nähe Naschmarkt",
+        "href": "https://www.immobilienscout24.at/expose/6a40d49647cf2676678449c5",
+        "source": "D5 · €1,155 · 72 m² · 3 Zi"
+      }
+    },
+    "apt_4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Neuwertige 2-Zimmer-Wohnung 1050",
+        "href": "https://www.immosuchmaschine.at/expose/45536977",
+        "source": "D5 · €1,280 · 56 m² · 2 Zi"
+      }
+    },
+    "apt_5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "3 Zi. Wohnung nahe TU Wien Karlspl.",
+        "href": "https://www.immobilienscout24.at/expose/6a4197f9f5656c090fec079a",
+        "source": "D5 · €1,300 · 56 m² · 3 Zi"
+      }
+    },
+    "apt_6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Village im Dritten · Baufeld 3 (Okt 2026)",
+        "href": "https://findheim.at/de/i/village-im-dritten-baufeld-3-mietwohnungen-fertigstellung-oktober-2026-dab0925c",
+        "source": "D3 · €1,359 · 3 Zi"
+      }
+    },
+    "apt_7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Exklusive Citywohnung mit Loggia",
+        "href": "https://www.immobilienscout24.at/expose/6a3bc7f923efdfa5dccda88f",
+        "source": "D7 · €1,466 · 78 m² · 3 Zi"
+      }
+    },
+    "apt_8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Ruhelage, Grünblick, DG mit Terrassen",
+        "href": "https://www.immobilienscout24.at/expose/6a3ed0ee698cb69461c97e04",
+        "source": "D9 · €1,497 · 55 m² · 2 Zi"
+      }
+    },
+    "apt_9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Moderne 2-Zimmer mit Balkon (Mollardgasse)",
+        "href": "https://www.immodirekt.at/immobilie/6a3a6debb4eeb9e22e3993f7",
+        "source": "D6 · €1,499 · 54 m² · 2 Zi"
+      }
+    },
+    "apt_10": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Moderne 2-Zimmer mit Balkon, 3. OG (Mollardgasse)",
+        "href": "https://www.immodirekt.at/immobilie/6a3a6deab4eeb9e22e3993e4",
+        "source": "D6 · €1,499 · 54 m² · 2 Zi"
+      }
+    },
+    "apt_11": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Schöner Neubau: 2 Zi + Loggia (Zieglergasse)",
+        "href": "https://www.immobilienscout24.at/expose/6a3b925a23efdfa5dccd3cac",
+        "source": "D7 · €1,499 · 52 m² · 2 Zi"
+      }
+    },
+    "apt_12": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Palais Rose · Baufeld 1 (Okt 2026)",
+        "href": "https://findheim.at/de/i/palais-rose-baufeld-1-miete-bezugsbereit-oktober-2026-village-im-dritten-e9e21405",
+        "source": "D3 · €1,499 · 2 Zi"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "reminder_text": {
+      "type": "Text",
+      "props": {
+        "text": "Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts).",
+        "variant": "muted"
+      }
+    }
+  }
+}
