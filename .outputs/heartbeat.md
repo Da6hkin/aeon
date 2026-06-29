@@ -2,18 +2,16 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat at 20:03Z (the 20:00 UTC slot, ~3min late).
+Ran heartbeat checks. Two P0/P3 findings, both recurring under [ISS-001](memory/issues/ISS-001.md) and already logged 5× in the last 48h — dedup suppressed notification.
 
 **Findings:**
-- 🔴 P0: `chain:overnight-research` failed at 04:52Z today — recurring symptom tracked under [ISS-001](memory/issues/ISS-001.md).
-- 🔵 P3: `startup-idea` stale ~44.8d — same ISS-001.
-- No stuck skills, no consecutive_failures ≥ 3, no open PRs, no urgent issues.
-- Heartbeat self-check OK (5.9h since last success).
+- 🔴 P0 — `chain:overnight-research` failed 2026-06-28T04:52:21Z (~34h ago)
+- 🔵 P3 — `startup-idea` stale, last success 2026-05-15 (~45.5d ago, every-6h schedule)
+- Self-check: heartbeat last_success ~18.9h ago — healthy
+- No stuck skills, no consecutive failures ≥ 3, no open PRs, no flagged memory items
 
-**Dedup:** both items appear repeatedly in the last 48h of logs → **no notification sent**.
+**Files modified:**
+- `docs/status.md` — regenerated, verdict 🔴 DEGRADED, next run startup-idea at 18:00 UTC
+- `memory/logs/2026-06-29.md` — appended heartbeat (14:55Z) entry
 
-**Actions:**
-- Regenerated `docs/status.md` → 🔴 DEGRADED, open issues 1, next run `startup-idea` at 00:00 UTC.
-- Appended findings to `memory/logs/2026-06-28.md`.
-
-Files modified: `docs/status.md`, `memory/logs/2026-06-28.md`.
+**Follow-up:** ISS-001 remains open — chain:overnight-research has been failing intermittently for 5+ weeks and startup-idea's state hasn't updated since 2026-05-15. Worth a skill-repair pass when capacity allows.
