@@ -1,0 +1,188 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Vienna apartments"
+      },
+      "children": [
+        "heading",
+        "date-text",
+        "separator-1",
+        "listings-stack",
+        "separator-2",
+        "reminder-alert"
+      ]
+    },
+    "heading": {
+      "type": "Heading",
+      "props": {
+        "text": "🏠 Vienna apartments",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "date-text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-01",
+        "variant": "muted"
+      },
+      "children": []
+    },
+    "separator-1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "listings-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "listing-1",
+        "listing-2",
+        "listing-3",
+        "listing-4",
+        "listing-5",
+        "listing-6",
+        "listing-7",
+        "listing-8",
+        "listing-9",
+        "listing-10",
+        "listing-11",
+        "listing-12"
+      ]
+    },
+    "listing-1": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D7] €984 · 45 m² · 2 Zi · Erstbezug prov-frei, Spittelberg ✓",
+        "href": "https://www.immobilienscout24.at/expose/6a43c2e8413acda9d56fc46b",
+        "source": "immobilienscout24.at"
+      },
+      "children": []
+    },
+    "listing-2": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D8] €908 · 51 m² · 2 Zi · Piaristengasse DG-Wohnung",
+        "href": "https://www.immobilienscout24.at/expose/6a34200877638d2a2bdfb285",
+        "source": "immobilienscout24.at"
+      },
+      "children": []
+    },
+    "listing-3": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D7] €1,032 · 47 m² · 2 Zi · Erstbezug prov-frei, Spittelberg ✓",
+        "href": "https://www.immobilienscout24.at/expose/6a43c82d413acda9d56fcbef",
+        "source": "immobilienscout24.at"
+      },
+      "children": []
+    },
+    "listing-4": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D6] €1,033 · 52 m² · 2 Zi · Erdgeschoss Haydngasse",
+        "href": "https://www.immosuchmaschine.at/expose/45554063",
+        "source": "immosuchmaschine.at"
+      },
+      "children": []
+    },
+    "listing-5": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D8] €1,077 · 70 m² · 2 Zi · Altbauwohnung Josefstadt-Nord",
+        "href": "https://www.immobilienscout24.at/expose/6a43e21f8ccb885876225d1a",
+        "source": "immobilienscout24.at"
+      },
+      "children": []
+    },
+    "listing-6": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D5] €1,199 · 85 m² · 2 Zi · Großzügig, hell, einzigartig",
+        "href": "https://www.immodirekt.at/immobilie/6a43091a74caa309273cf61d",
+        "source": "immodirekt.at"
+      },
+      "children": []
+    },
+    "listing-7": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D1] €1,276 · 53 m² · 2 Zi · Yacht-Architektur Nähe Urania",
+        "href": "https://www.immodirekt.at/immobilie/6a42366b46532fb085cc893c",
+        "source": "immodirekt.at"
+      },
+      "children": []
+    },
+    "listing-8": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D3] €1,315 · 2 Zi · Village im Dritten, Okt 2026",
+        "href": "https://findheim.at/de/i/village-im-dritten-baufeld-3-mietwohnungen-fertigstellung-oktober-2026-07acac2a",
+        "source": "findheim.at"
+      },
+      "children": []
+    },
+    "listing-9": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D5] €1,399 · 55 m² · 2 Zi · Neubau Loggia, Schönbrunnerstr.",
+        "href": "https://www.immobilienscout24.at/expose/6a42d96074caa309273cd135",
+        "source": "immobilienscout24.at"
+      },
+      "children": []
+    },
+    "listing-10": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D4] €1,414 · 51 m² · 2 Zi · Modernes Apartment, Wieden",
+        "href": "https://www.immobilienscout24.at/expose/6a423b2546532fb085cc9125",
+        "source": "immobilienscout24.at"
+      },
+      "children": []
+    },
+    "listing-11": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D5] €1,424 · 71 m² · 2 Zi · Provisionsfreie Wohnung, Siebenbrunnengasse ✓",
+        "href": "https://www.immobilienscout24.at/expose/6a4391d0413acda9d56f7fb2",
+        "source": "immobilienscout24.at"
+      },
+      "children": []
+    },
+    "listing-12": {
+      "type": "StoryLink",
+      "props": {
+        "title": "[D4] €590 · 40 m² · 2 Zi · Unbefristete Wohnung Wieden (sehr günstig!)",
+        "href": "https://www.immodirekt.at/immobilie/6a435d5274caa309273eb30d",
+        "source": "immodirekt.at"
+      },
+      "children": []
+    },
+    "separator-2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "reminder-alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Reminder",
+        "message": "Open Claude + your logged-in Facebook browser and ask to run the full FB-group sweep (provision-free / no-income-check posts).",
+        "type": "info"
+      },
+      "children": []
+    }
+  }
+}
