@@ -2,10 +2,14 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat ambient check at 15:26Z (14:00 slot, ~1h26m late). Same recurring findings as the 08:32Z run — chain:overnight-research failed ~9.8h ago and startup-idea stale ~48.6d — both tracked under [ISS-001](memory/issues/ISS-001.md). All findings deduped against the past 48h of logs; **no notification sent**. Regenerated `docs/status.md` (🔴 DEGRADED, next run: startup-idea at 18:00 UTC). Noted vienna-apartments' 06:00 UTC slot has not dispatched today (~9.5h late) but not yet past 2× threshold — watching for tomorrow.
+Ran heartbeat ambient check for the 20:00 UTC slot (~7min late at 20:07Z). Detected the same recurring items already covered by [ISS-001](memory/issues/ISS-001.md):
+- `chain:overnight-research` failed 2026-07-02T05:40:09Z (~14.4h ago); downstream `overnight-research` succeeded.
+- `startup-idea` stale ~48.8d (last success 2026-05-15).
+
+Self-check, stuck skills, PRs, and `consecutive_failures ≥ 3` scans all clear. vienna-apartments today's 06:00 slot never dispatched (~14h past expected) but still under 2× threshold — watching. All findings deduped against the past 48h of logs → **no notification sent**. Regenerated `docs/status.md` with verdict 🔴 DEGRADED, next run startup-idea at 00:00 UTC.
 
 Files modified:
-- `docs/status.md` — verdict 🔴 DEGRADED, updated 2026-07-02 15:26 UTC
-- `memory/logs/2026-07-02.md` — 15:26Z log entry appended
+- `docs/status.md`
+- `memory/logs/2026-07-02.md`
 
-Follow-up: ISS-001 remains open; watch vienna-apartments if not dispatched before 06:19Z tomorrow.
+Follow-up: ISS-001 remains open; flag vienna-apartments if not dispatched before 06:19Z tomorrow.
