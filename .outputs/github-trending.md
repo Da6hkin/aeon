@@ -1,31 +1,13 @@
-*GitHub Trending — 2026-06-28*
+## Summary
 
-*Top pick* — [google-labs-code/design.md](https://github.com/google-labs-code/design.md)
-DESIGN.md is the design-system analog of CLAUDE.md — a spec format for handing visual identity to coding agents. Pulling 1.5k stars/day and reshaping what AI dev tooling looks like.
+Ran the `github-trending` skill. Fetched 20 candidates via WebFetch, enriched survivors with `gh api` velocity metadata, filtered noise (meta-lists, tutorials, low-signal, redundant), and curated 7 picks across 4 buckets. Top pick: **usestrix/strix** — AI pentest agent, 30k stars in ~11 months, sustained ~91 stars/day, up 1.2k today.
 
-*AI/ML*
-• [topoteretes/cognee](https://github.com/topoteretes/cognee) — ★ 780 today (24k total) · Python · [ACCELERATING]
-Self-hosted knowledge graph that gives agents persistent long-term memory across sessions.
+Kept: strix, browser-use/video-use, HKUDS/Vibe-Trading, ogulcancelik/herdr, diegosouzapw/OmniRoute, TencentCloud/CubeSandbox, allenai/olmocr.
 
-• [xbtlin/ai-berkshire](https://github.com/xbtlin/ai-berkshire) — ★ 685 today (4.4k total) · Python · [ACCELERATING]
-Multi-agent Claude Code framework running Buffett/Munger-style value-investing research on a target.
+Dropped 13 (msitarzewski/agency-agents as meta-list-adjacent, microsoft/AI-For-Beginners as tutorial, VulnClaw as redundant with strix, etc.).
 
-*Devtools*
-• [google-labs-code/design.md](https://github.com/google-labs-code/design.md) — ★ 1.5k today (22k total) · TypeScript · [ACCELERATING]
-Format spec for describing visual identity to coding agents — like CLAUDE.md but for design systems.
+Files modified:
+- `.pending-notify/1782971052.md` — 1978-char notification queued (direct `./notify` blocked by shell-substitution guard; post-run step delivers from `.pending-notify/`)
+- `memory/logs/2026-07-02.md` — run log
 
-• [anomalyco/opencode](https://github.com/anomalyco/opencode) — ★ 392 today (180k total) · TypeScript · [ACCELERATING]
-Open-source AI coding agent — TUI-first, model-agnostic, ships as a single binary in your terminal.
-
-• [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) — ★ 589 today (33k total) · Python · [ACCELERATING]
-Generates editable .pptx files with native shapes and animations — not screenshot decks; respects your template.
-
-*Infra*
-• [simplex-chat/simplex-chat](https://github.com/simplex-chat/simplex-chat) — ★ 1.5k today (14k total) · Haskell · [RETURNING]
-Messenger with no user identifiers at all — no phone, email, or handle; pairwise one-time queues only.
-
-• [IceWhaleTech/CasaOS](https://github.com/IceWhaleTech/CasaOS) — ★ 502 today (36k total) · Go · [RETURNING]
-Self-hosted personal-cloud OS — puts a NAS dashboard on a Raspberry Pi in a one-line install.
-
----
-sources: trending=ok · gh_api=ok · kept 7/20
+Exit: `GITHUB_TRENDING_OK`.
