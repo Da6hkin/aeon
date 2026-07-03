@@ -1,13 +1,15 @@
-Heartbeat complete. 14:00 slot ran ~36min late.
-
-**Findings** (all recurring — deduped, no notification):
-- 🔴 `chain:overnight-research` failed at 04:57 UTC (~9.6h ago) — ISS-001
-- 🔵 `startup-idea` stale ~49.5d — ISS-001
-- ✅ `vienna-apartments` recovered — today's 06:00 slot succeeded at 08:00 UTC (yesterday's watch closed)
-- Self-check clear (last success 18h27m ago), no stuck skills, no chronic failures below 0.5, no open PRs
-
-**Actions:**
-- Regenerated `docs/status.md` → 🔴 DEGRADED, next run startup-idea at 18:00 UTC
-- Appended log entry to `memory/logs/2026-07-03.md`
-
 HEARTBEAT_OK · STATUS_PAGE=DEGRADED
+
+## Summary
+
+Ran the heartbeat skill for the 20:00 UTC slot (~5min late). Two recurring findings, both tracked under [ISS-001](memory/issues/ISS-001.md):
+- **chain:overnight-research** failed at 04:57Z (~15h ago)
+- **startup-idea** stale (~49.8d, last success 2026-05-15)
+
+Both deduped against the past 48h of logs (multiple entries on 2026-07-01/02/03) — **no notification sent**. Self-check, PRs, stuck-skill, chronic-failure, and vienna-apartments (100% healthy) checks all clear. No `articles/token-report-*.md` files → Token pulse section omitted.
+
+Files modified:
+- `docs/status.md` — 🔴 DEGRADED, updated 2026-07-03 20:05 UTC, next run startup-idea at 00:00 UTC
+- `memory/logs/2026-07-03.md` — appended 20:05Z heartbeat entry
+
+Follow-up: ISS-001 remains open; no new action required.
