@@ -115,3 +115,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-02,heartbeat,claude-opus-4-7,21,6853,844546,40756
 2026-07-02,heartbeat,claude-opus-4-7,11,6444,327375,41450
 2026-07-03,github-trending,claude-opus-4-7,41,14400,1597806,61195
+2026-07-03,vienna-apartments,claude-sonnet-4-6,3866,12708,487808,41456
