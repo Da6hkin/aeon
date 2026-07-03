@@ -1,13 +1,20 @@
+Skill run complete.
+
 ## Summary
 
-Ran the `github-trending` skill. Fetched 20 candidates via WebFetch, enriched survivors with `gh api` velocity metadata, filtered noise (meta-lists, tutorials, low-signal, redundant), and curated 7 picks across 4 buckets. Top pick: **usestrix/strix** — AI pentest agent, 30k stars in ~11 months, sustained ~91 stars/day, up 1.2k today.
+Ran `github-trending`. Fetched 17 candidates via WebFetch, enriched 7 survivors with `gh api` velocity data, and curated 6 picks across 3 buckets:
 
-Kept: strix, browser-use/video-use, HKUDS/Vibe-Trading, ogulcancelik/herdr, diegosouzapw/OmniRoute, TencentCloud/CubeSandbox, allenai/olmocr.
+- **Top pick**: [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) — cross-lab story (OpenAI ships a Codex runner as a Claude Code plugin).
+- **AI/ML** (4): codex-plugin-cc, obra/superpowers, affaan-m/ECC, JuliusBrussee/caveman.
+- **Devtools** (1): ChromeDevTools/chrome-devtools-mcp.
+- **Web/Apps** (1): santifer/career-ops.
 
-Dropped 13 (msitarzewski/agency-agents as meta-list-adjacent, microsoft/AI-For-Beginners as tutorial, VulnClaw as redundant with strix, etc.).
+Dropped 3 as dedup against 2026-07-02 picks (strix, video-use, Vibe-Trading) and 8 as noise (meta-list, tutorial, low-signal, weak-differentiation).
 
 Files modified:
-- `.pending-notify/1782971052.md` — 1978-char notification queued (direct `./notify` blocked by shell-substitution guard; post-run step delivers from `.pending-notify/`)
-- `memory/logs/2026-07-02.md` — run log
+- `.pending-notify/1783054816.md` — queued notification (~1.75k chars).
+- `memory/logs/2026-07-03.md` — new daily log with picks, drops, and reasoning.
 
-Exit: `GITHUB_TRENDING_OK`.
+`./notify` direct invocation is blocked by the workflow's shell-substitution guard (same as yesterday), so the notification is queued via `.pending-notify/` for the post-run delivery step.
+
+`GITHUB_TRENDING_OK`
