@@ -1,20 +1,15 @@
-Skill run complete.
-
 ## Summary
 
-Ran `github-trending`. Fetched 17 candidates via WebFetch, enriched 7 survivors with `gh api` velocity data, and curated 6 picks across 3 buckets:
+Ran the `github-trending` skill for 2026-07-04. Fetched 19 daily trending repos via WebFetch and enriched candidates via `gh api`.
 
-- **Top pick**: [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) — cross-lab story (OpenAI ships a Codex runner as a Claude Code plugin).
-- **AI/ML** (4): codex-plugin-cc, obra/superpowers, affaan-m/ECC, JuliusBrussee/caveman.
-- **Devtools** (1): ChromeDevTools/chrome-devtools-mcp.
-- **Web/Apps** (1): santifer/career-ops.
+**Picked 4/19 across 3 buckets:**
+- **Top pick — facebook/astryx** (Web/Apps, ACCELERATING): first-party "agent-ready" design system
+- **harvard-edge/cs249r_book** (AI/ML, RETURNING): ML-as-systems-engineering textbook
+- **agentskills/agentskills** (Devtools, ACCELERATING): skill primitive standardization
+- **rommapp/romm** (Web/Apps, RETURNING): self-hosted ROM library
 
-Dropped 3 as dedup against 2026-07-02 picks (strix, video-use, Vibe-Trading) and 8 as noise (meta-list, tutorial, low-signal, weak-differentiation).
+**Dropped 15:** 7 for dedup against 2026-07-02/03 picks (usestrix/strix, openai/codex-plugin-cc, JuliusBrussee/caveman, ChromeDevTools/chrome-devtools-mcp, obra/superpowers, ogulcancelik/herdr, TencentCloud/CubeSandbox) and 8 for noise (meta-list, established repos without news catalyst).
 
-Files modified:
-- `.pending-notify/1783054816.md` — queued notification (~1.75k chars).
-- `memory/logs/2026-07-03.md` — new daily log with picks, drops, and reasoning.
+Notification (~1463 chars) queued at `.pending-notify/1783140590.md` for post-run delivery. Log entry at `memory/logs/2026-07-04.md`.
 
-`./notify` direct invocation is blocked by the workflow's shell-substitution guard (same as yesterday), so the notification is queued via `.pending-notify/` for the post-run delivery step.
-
-`GITHUB_TRENDING_OK`
+GITHUB_TRENDING_OK
