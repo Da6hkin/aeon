@@ -1,0 +1,329 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "🏠 Vienna apartments",
+        "description": "2026-07-04"
+      },
+      "children": [
+        "stack_main"
+      ]
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "listings_stack",
+        "sep1",
+        "ohne_section",
+        "sep2",
+        "reminder_section"
+      ]
+    },
+    "listings_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "listing1",
+        "listing2",
+        "listing3",
+        "listing4",
+        "listing5"
+      ]
+    },
+    "listing1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "listing1_meta",
+        "listing1_link"
+      ]
+    },
+    "listing1_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_d8_1",
+        "stat_price_1",
+        "text_size_1"
+      ]
+    },
+    "badge_d8_1": {
+      "type": "Badge",
+      "props": {
+        "text": "D8"
+      }
+    },
+    "stat_price_1": {
+      "type": "Stat",
+      "props": {
+        "value": "€908"
+      }
+    },
+    "text_size_1": {
+      "type": "Text",
+      "props": {
+        "text": "51 m² · 2 Zi"
+      }
+    },
+    "listing1_link": {
+      "type": "Link",
+      "props": {
+        "label": "Piaristengasse DG-Wohnung",
+        "href": "https://www.immobilienscout24.at/expose/6a34200877638d2a2bdfb285"
+      }
+    },
+    "listing2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "listing2_meta",
+        "listing2_link"
+      ]
+    },
+    "listing2_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_d5_2",
+        "stat_price_2",
+        "text_size_2"
+      ]
+    },
+    "badge_d5_2": {
+      "type": "Badge",
+      "props": {
+        "text": "D5"
+      }
+    },
+    "stat_price_2": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,107"
+      }
+    },
+    "text_size_2": {
+      "type": "Text",
+      "props": {
+        "text": "75 m² · 3 Zi"
+      }
+    },
+    "listing2_link": {
+      "type": "Link",
+      "props": {
+        "label": "3-Zimmer Margareten ⚠️ Tausch",
+        "href": "https://www.immobilienscout24.at/expose/6a4772a7c6cd567b08a2b04f"
+      }
+    },
+    "listing3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "listing3_meta",
+        "listing3_link"
+      ]
+    },
+    "listing3_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_d5_3",
+        "stat_price_3",
+        "text_size_3"
+      ]
+    },
+    "badge_d5_3": {
+      "type": "Badge",
+      "props": {
+        "text": "D5"
+      }
+    },
+    "stat_price_3": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,355"
+      }
+    },
+    "text_size_3": {
+      "type": "Text",
+      "props": {
+        "text": "50 m² · 2 Zi"
+      }
+    },
+    "listing3_link": {
+      "type": "Link",
+      "props": {
+        "label": "Moderne DG-Wohnung",
+        "href": "https://www.immobilienscout24.at/expose/6a47b4d684e196410f922ab9"
+      }
+    },
+    "listing4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "listing4_meta",
+        "listing4_link"
+      ]
+    },
+    "listing4_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_d6_4",
+        "stat_price_4",
+        "text_size_4"
+      ]
+    },
+    "badge_d6_4": {
+      "type": "Badge",
+      "props": {
+        "text": "D6"
+      }
+    },
+    "stat_price_4": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,390"
+      }
+    },
+    "text_size_4": {
+      "type": "Text",
+      "props": {
+        "text": "76 m² · 2 Zi"
+      }
+    },
+    "listing4_link": {
+      "type": "Link",
+      "props": {
+        "label": "Großzügige 2-Zimmer Mariahilf",
+        "href": "https://www.immobilienscout24.at/expose/6a477fcd6674576fa6a80612"
+      }
+    },
+    "listing5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "listing5_meta",
+        "listing5_link"
+      ]
+    },
+    "listing5_meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_d4_5",
+        "stat_price_5",
+        "text_size_5"
+      ]
+    },
+    "badge_d4_5": {
+      "type": "Badge",
+      "props": {
+        "text": "D4"
+      }
+    },
+    "stat_price_5": {
+      "type": "Stat",
+      "props": {
+        "value": "€1,459"
+      }
+    },
+    "text_size_5": {
+      "type": "Text",
+      "props": {
+        "text": "87 m² · 3.5 Zi"
+      }
+    },
+    "listing5_link": {
+      "type": "Link",
+      "props": {
+        "label": "WG-tauglich Altbau U1 Südtiroler Platz",
+        "href": "https://www.immobilienscout24.at/expose/6a47b98084e196410f922efb"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "ohne_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_ohne_label",
+        "text_ohne_content"
+      ]
+    },
+    "text_ohne_label": {
+      "type": "Text",
+      "props": {
+        "text": "ohne-makler.at",
+        "variant": "lead"
+      }
+    },
+    "text_ohne_content": {
+      "type": "Text",
+      "props": {
+        "text": "0 new (D5 over budget, others outside target districts)",
+        "variant": "caption"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "reminder_section": {
+      "type": "Alert",
+      "props": {
+        "title": "Reminder",
+        "message": "Open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts).",
+        "type": "info"
+      }
+    }
+  }
+}
