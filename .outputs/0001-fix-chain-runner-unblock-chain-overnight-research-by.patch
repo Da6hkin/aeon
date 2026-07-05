@@ -1,0 +1,80 @@
+From c0b8c0b64774a7c80018815ea265d7be941e050c Mon Sep 17 00:00:00 2001
+From: aeonframework <aeonframework@proton.me>
+Date: Sun, 5 Jul 2026 05:14:25 +0000
+Subject: [PATCH] fix(chain-runner): unblock chain:overnight-research by fixing
+ two workflow bugs
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Root-caused ISS-001 (chain has been failing since 2026-05-15, starving
+startup-idea / idea-capture / morning-brief downstream state).
+
+Bug 1 - chain-runner.yml jq regex
+  test("skill: ${skill}("; "i") has an unmatched `(`. jq errors, stderr
+  is swallowed, run_id discovery returns empty, dispatch_skill loops 60s
+  then returns 1, `set -e` aborts the chain at Step 1/4. Replaced with an
+  exact-match / startswith filter so display titles like `skill: foo` and
+  `skill: foo (var)` both match while `skill: foo-bar` does not.
+
+Bug 2 - messages.yml scheduler double-dispatches chain names as skills
+  The skill parser matches any 2-space-indented `<name>:` line, which
+  includes entries under `chains:` (same indent depth). Every 04:45 UTC
+  fire produced both a proper `chain: overnight-research` run AND a bogus
+  `skill: overnight-research` run (no SKILL.md exists — Claude just spun
+  up to write a diagnosis). Added an IN_CHAINS_SECTION guard.
+
+Verification plan: next 04:45Z fire should produce one run (the chain),
+the chain should reach Step 4/4, and startup-idea state should update.
+
+Co-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>
+---
+ .github/workflows/chain-runner.yml |  2 +-
+ .github/workflows/messages.yml     | 14 ++++++++++++++
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
+diff --git a/.github/workflows/chain-runner.yml b/.github/workflows/chain-runner.yml
+index 2071799..de73c77 100644
+--- a/.github/workflows/chain-runner.yml
++++ b/.github/workflows/chain-runner.yml
+@@ -60,7 +60,7 @@ jobs:
+               sleep 5
+               run_id=$(gh run list --workflow=aeon.yml -L 10 \
+                 --json databaseId,displayTitle,createdAt \
+-                -q "[.[] | select(.displayTitle | test(\"skill: ${skill}(\"; \"i\")) | select(.createdAt >= \"${before_ts}\")] | .[0].databaseId" \
++                -q "[.[] | select(.displayTitle == \"skill: ${skill}\" or (.displayTitle | startswith(\"skill: ${skill} (\"))) | select(.createdAt >= \"${before_ts}\")] | .[0].databaseId" \
+                 2>/dev/null || true)
+               [ -n "$run_id" ] && [ "$run_id" != "null" ] && break
+               run_id=""
+diff --git a/.github/workflows/messages.yml b/.github/workflows/messages.yml
+index 55a5793..9d3cb1c 100644
+--- a/.github/workflows/messages.yml
++++ b/.github/workflows/messages.yml
+@@ -103,10 +103,24 @@ jobs:
+           fi
+ 
+           # --- Parse aeon.yml ---
++          # Skip the `chains:` block: chain entries use the same 2-space indent as
++          # skills, so without this guard chain names get double-dispatched as skills.
+           declare -A SKILL_ENABLED SKILL_SCHEDULE SKILL_VAR
+           SKILL_ORDER=()
+           CURRENT_SKILL=""
++          IN_CHAINS_SECTION=false
+           while IFS= read -r line; do
++            # Track chains: section boundary — any new top-level key ends it.
++            if [[ "$line" =~ ^chains: ]]; then
++              IN_CHAINS_SECTION=true
++              CURRENT_SKILL=""
++              continue
++            fi
++            if [[ "$line" =~ ^[a-zA-Z0-9_-]+: ]]; then
++              IN_CHAINS_SECTION=false
++            fi
++            $IN_CHAINS_SECTION && continue
++
+             # Inline format: skill-name: { enabled: true, schedule: "..." }
+             if [[ "$line" =~ ^\ \ ([a-zA-Z0-9_-]+):\ *\{(.+)\} ]]; then
+               CURRENT_SKILL="${BASH_REMATCH[1]}"
+-- 
+2.54.0
+
