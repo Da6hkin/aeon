@@ -2,10 +2,10 @@ HEARTBEAT_OK · STATUS_PAGE=DEGRADED
 
 ## Summary
 
-Ran heartbeat ambient check (08:00 slot, ~12min late). All P0 flags are recurring items already tracked under ISS-001 (chain:overnight-research failed ~3h ago; startup-idea stale ~51d) — both root-caused earlier today with a patch stashed for the operator. No notification sent (deduped against three prior heartbeat runs on 2026-07-04, all within 48h). Regenerated `docs/status.md` with verdict 🔴 DEGRADED and updated ISS-001 category to `prompt-bug`.
+Ran heartbeat ambient check for the 14:00 UTC slot (~29 min late at 14:29Z). All P0/P1/P2/P3 findings are repeats of ISS-001 (`chain:overnight-research` failed at 05:09Z; `startup-idea` stale ~51.5d) — both were root-caused earlier today with a stashed patch awaiting operator merge. Every finding was deduped against the last 48h of logs, so **no notification was sent**. Regenerated `docs/status.md` with verdict 🔴 DEGRADED (1 open issue, next run `startup-idea` at 18:00 UTC).
 
 Files modified:
-- `docs/status.md` — overall DEGRADED, next run startup-idea at 12:00 UTC
-- `memory/logs/2026-07-05.md` — heartbeat log entry appended
+- `docs/status.md` — refreshed timestamp and next-run pointer
+- `memory/logs/2026-07-05.md` — appended 14:29Z heartbeat entry
 
-Follow-up: ISS-001 remains open (status `fixing`); awaits operator applying the patch stashed at `.outputs/0001-fix-chain-runner-unblock-chain-overnight-research-by.patch`.
+Follow-up: ISS-001 remains open (`status: fixing`); no new action from this run.
