@@ -1,15 +1,19 @@
+Skill executed. Curated 5 picks (2 buckets: AI/ML, Devtools) from 18 candidates. Notification queued at `.pending-notify/1783227590.md` (1519 chars), log written to `memory/logs/2026-07-05.md`.
+
 ## Summary
 
-Ran the `github-trending` skill for 2026-07-04. Fetched 19 daily trending repos via WebFetch and enriched candidates via `gh api`.
+Ran the `github-trending` skill. Fetched 18 trending repos via WebFetch, enriched survivors with `gh api` for velocity, and curated 5 picks after dropping 6 for dedup (against 07-03/07-04 features) and 7 for noise (meta-lists, established mainstream repos, weak differentiation).
 
-**Picked 4/19 across 3 buckets:**
-- **Top pick — facebook/astryx** (Web/Apps, ACCELERATING): first-party "agent-ready" design system
-- **harvard-edge/cs249r_book** (AI/ML, RETURNING): ML-as-systems-engineering textbook
-- **agentskills/agentskills** (Devtools, ACCELERATING): skill primitive standardization
-- **rommapp/romm** (Web/Apps, RETURNING): self-hosted ROM library
+**Top pick:** `usestrix/strix` — fourth straight day trending with its biggest single-day spike yet (1,904 today, 36k total). Agentic pentesting is compounding into a real user base rather than a viral flash.
 
-**Dropped 15:** 7 for dedup against 2026-07-02/03 picks (usestrix/strix, openai/codex-plugin-cc, JuliusBrussee/caveman, ChromeDevTools/chrome-devtools-mcp, obra/superpowers, ogulcancelik/herdr, TencentCloud/CubeSandbox) and 8 for noise (meta-list, established repos without news catalyst).
+**All picks (5):**
+- AI/ML: usestrix/strix [ACCELERATING], alibaba/page-agent [ACCELERATING], Zackriya-Solutions/meetily [RETURNING]
+- Devtools: ogulcancelik/herdr [ACCELERATING], dotnet/skills [RETURNING]
 
-Notification (~1463 chars) queued at `.pending-notify/1783140590.md` for post-run delivery. Log entry at `memory/logs/2026-07-04.md`.
+**Judgment calls logged:** strix and herdr are second-pass features after a 3-day gap (outside 2-day dedup window), both justified by fresh momentum. dotnet/skills passes the noise floor by 9 stars but earns keep for being the first big-vendor entry into the skills format.
 
-GITHUB_TRENDING_OK
+Files modified:
+- `.pending-notify/1783227590.md` — notification content (post-run notify step will deliver)
+- `memory/logs/2026-07-05.md` — activity log
+
+`GITHUB_TRENDING_OK`
