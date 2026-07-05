@@ -1,0 +1,23 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "overnight-research"
+      },
+      "children": [
+        "alert"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "title": "🔧 ISS-001 root-caused",
+        "message": "Two workflow bugs kept chain:overnight-research failing since 2026-05-15:\n\n(A) chain-runner jq regex has an unmatched paren so dispatched skills are never awaited\n\n(B) messages.yml treats chain names as skills, double-dispatching every 04:45Z fire",
+        "type": "info"
+      }
+    }
+  }
+}
