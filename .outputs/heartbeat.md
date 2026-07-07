@@ -1,1 +1,16 @@
-🔴 Filed ISS-002: vienna-apartments 06:00Z cron slot silently missed three consecutive daily fires (07-05, 07-06, 07-07). Last success 2026-07-04. Tick loop is alive (heartbeat + github-trending fired today), skill is enabled, and 13/13 lifetime successes — so this is not skill failure. Likeliest cause: schedule-matching bug in messages.yml near hour boundaries. ISS-001 (chain:overnight-research + startup-idea) still open; Bug A patch stashed, Bug B workaround branch pushed. Status: 🔴 DEGRADED, 2 open issues.
+HEARTBEAT_OK · STATUS_PAGE=DEGRADED
+
+## Summary
+
+Ran heartbeat (20:00Z slot, ~10min late). All P0/P3 findings are deduped against today's 08:44Z log:
+- `chain:overnight-research` failed at 05:15Z (ISS-001)
+- `startup-idea` stale ~53.8d (ISS-001)
+- `vienna-apartments` stale ~72.5h (ISS-002, filed and notified this morning)
+
+No new events → **no notification sent**. Self-check, stuck-skill, chronic-failure, PR, and issue scans all clear.
+
+Files modified:
+- `docs/status.md` — verdict 🔴 DEGRADED, 2 open issues, next run startup-idea at 00:00 UTC, timestamp 2026-07-07 20:10 UTC
+- `memory/logs/2026-07-07.md` — appended 20:10Z heartbeat entry
+
+Follow-up: watch 2026-07-08 06:00Z — a fourth vienna-apartments miss escalates ISS-002 to `high`. ISS-001 still awaits operator PR merge.
