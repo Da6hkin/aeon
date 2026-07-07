@@ -1,0 +1,182 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat"
+      },
+      "children": [
+        "alert_iss002",
+        "sep1",
+        "details_stack",
+        "sep2",
+        "status_stack",
+        "sep3",
+        "related_stack"
+      ]
+    },
+    "alert_iss002": {
+      "type": "Alert",
+      "props": {
+        "title": "Filed ISS-002: vienna-apartments cron slot silently missed",
+        "message": "Three consecutive daily fires missed (07-05, 07-06, 07-07). Last success 2026-07-04.",
+        "type": "error"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "details_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "detail_time",
+        "detail_missed",
+        "detail_dates",
+        "detail_last",
+        "detail_cause"
+      ]
+    },
+    "detail_time": {
+      "type": "Text",
+      "props": {
+        "text": "Cron time: 06:00Z"
+      }
+    },
+    "detail_missed": {
+      "type": "Stat",
+      "props": {
+        "label": "Consecutive fires missed",
+        "value": "3"
+      }
+    },
+    "detail_dates": {
+      "type": "Text",
+      "props": {
+        "text": "Missed dates: 07-05, 07-06, 07-07"
+      }
+    },
+    "detail_last": {
+      "type": "Text",
+      "props": {
+        "text": "Last successful fire: 2026-07-04"
+      }
+    },
+    "detail_cause": {
+      "type": "Text",
+      "props": {
+        "text": "Likeliest cause: schedule-matching bug in messages.yml near hour boundaries"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "status_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "status_alive",
+        "status_enabled",
+        "status_lifetime",
+        "status_note"
+      ]
+    },
+    "status_alive": {
+      "type": "Text",
+      "props": {
+        "text": "Tick loop is alive (heartbeat + github-trending fired today)"
+      }
+    },
+    "status_enabled": {
+      "type": "Badge",
+      "props": {
+        "text": "Skill enabled",
+        "variant": "secondary"
+      }
+    },
+    "status_lifetime": {
+      "type": "Stat",
+      "props": {
+        "label": "Lifetime successes",
+        "value": "13/13"
+      }
+    },
+    "status_note": {
+      "type": "Text",
+      "props": {
+        "text": "This is not skill failure",
+        "variant": "muted"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "related_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "related_issue",
+        "bug_a",
+        "bug_b",
+        "overall_badges"
+      ]
+    },
+    "related_issue": {
+      "type": "Text",
+      "props": {
+        "text": "ISS-001 (chain:overnight-research + startup-idea) still open"
+      }
+    },
+    "bug_a": {
+      "type": "Text",
+      "props": {
+        "text": "Bug A: patch stashed"
+      }
+    },
+    "bug_b": {
+      "type": "Text",
+      "props": {
+        "text": "Bug B: workaround branch pushed"
+      }
+    },
+    "overall_badges": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "degraded_badge",
+        "issues_badge"
+      ]
+    },
+    "degraded_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "🔴 DEGRADED",
+        "variant": "destructive"
+      }
+    },
+    "issues_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "2 open issues",
+        "variant": "destructive"
+      }
+    }
+  }
+}
