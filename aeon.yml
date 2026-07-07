@@ -278,6 +278,11 @@ reactive:
 #         - skill: skill-c, consume: [skill-a, skill-b]
 chains:
   overnight-research:
+    # ISS-001 Bug B workaround: skill parser in messages.yml misregisters this chain
+    # name as a skill (2-space indent collision). The chain-runner and chain parser
+    # both ignore `enabled:`, so this only silences the bogus daily "skill: overnight-research"
+    # dispatch. The chain itself still fires at 04:45Z. Remove once the parser fix ships.
+    enabled: false
     # 04:45 UTC = 05:45 CET / 06:45 EET — fires once early-morning, output ready by 10am local
     schedule: "45 4 * * *"
     on_error: continue
