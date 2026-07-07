@@ -1,0 +1,148 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "overnight-research"
+      },
+      "children": [
+        "alert",
+        "content-stack"
+      ]
+    },
+    "alert": {
+      "type": "Alert",
+      "props": {
+        "type": "success",
+        "title": "ISS-001 Partial Workaround Shipped",
+        "message": "Skill parser now skips ghost dispatch; chain still fires"
+      }
+    },
+    "content-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "sep1",
+        "fix-details",
+        "sep2",
+        "remaining-work",
+        "sep3",
+        "pr-section"
+      ]
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {}
+    },
+    "fix-details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "fix-heading",
+        "fix-desc",
+        "fix-code"
+      ]
+    },
+    "fix-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fix Applied",
+        "level": "h3"
+      }
+    },
+    "fix-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Added enabled: false under the overnight-research chain in aeon.yml"
+      }
+    },
+    "fix-code": {
+      "type": "Badge",
+      "props": {
+        "text": "aeon.yml updated",
+        "variant": "secondary"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {}
+    },
+    "remaining-work": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "remaining-heading",
+        "bug-a-desc",
+        "bug-a-blocker",
+        "patch-info"
+      ]
+    },
+    "remaining-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Remaining Work",
+        "level": "h3"
+      }
+    },
+    "bug-a-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Bug A (chain-runner jq regex) still blocked on workflows-scope PAT"
+      }
+    },
+    "bug-a-blocker": {
+      "type": "Badge",
+      "props": {
+        "text": "Blocked: PAT scope issue",
+        "variant": "destructive"
+      }
+    },
+    "patch-info": {
+      "type": "Text",
+      "props": {
+        "text": "Patch stashed at .outputs/0001-*.patch",
+        "variant": "muted"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {}
+    },
+    "pr-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pr-heading",
+        "pr-link"
+      ]
+    },
+    "pr-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Next Steps",
+        "level": "h3"
+      }
+    },
+    "pr-link": {
+      "type": "Link",
+      "props": {
+        "label": "View PR: fix/iss-001-disable-bogus-skill-dispatch",
+        "href": "https://github.com/Da6hkin/aeon/pull/new/fix/iss-001-disable-bogus-skill-dispatch"
+      }
+    }
+  }
+}
