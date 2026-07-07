@@ -1,0 +1,482 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "GitHub Trending",
+        "description": "2026-07-07"
+      },
+      "children": [
+        "top_pick_section",
+        "sep1",
+        "aiml_section",
+        "sep2",
+        "devtools_section",
+        "sep3",
+        "infra_section",
+        "sep4",
+        "other_section",
+        "sep5",
+        "footer"
+      ]
+    },
+    "top_pick_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "top_pick_label",
+        "story_taste_top",
+        "top_pick_desc"
+      ]
+    },
+    "top_pick_label": {
+      "type": "Text",
+      "props": {
+        "text": "Top pick",
+        "variant": "lead"
+      }
+    },
+    "story_taste_top": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Leonxlnx/taste-skill",
+        "href": "https://github.com/Leonxlnx/taste-skill"
+      }
+    },
+    "top_pick_desc": {
+      "type": "Text",
+      "props": {
+        "text": "1,458 stars in a day is the loudest signal yet that \"LLM output critics\" are becoming a shipped category — a composable Claude skill instead of a hand-rolled judge loop.",
+        "variant": "body"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "aiml_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "aiml_heading",
+        "project_taste",
+        "project_last30days",
+        "project_claude_video"
+      ]
+    },
+    "aiml_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "AI/ML",
+        "level": "h2"
+      }
+    },
+    "project_taste": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_taste",
+        "badges_taste",
+        "desc_taste"
+      ]
+    },
+    "story_taste": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Leonxlnx/taste-skill",
+        "href": "https://github.com/Leonxlnx/taste-skill",
+        "score": "★ 1,458 today (59.3k total)"
+      }
+    },
+    "badges_taste": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_js_taste",
+        "badge_accel_taste"
+      ]
+    },
+    "badge_js_taste": {
+      "type": "Badge",
+      "props": {
+        "text": "JavaScript",
+        "variant": "secondary"
+      }
+    },
+    "badge_accel_taste": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_taste": {
+      "type": "Text",
+      "props": {
+        "text": "Codifies \"good taste\" as a reusable Claude skill — reject LLM slop before it ships, without writing your own critique chain.",
+        "variant": "body"
+      }
+    },
+    "project_last30days": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_last30days",
+        "badges_last30days",
+        "desc_last30days"
+      ]
+    },
+    "story_last30days": {
+      "type": "StoryLink",
+      "props": {
+        "title": "mvanhorn/last30days-skill",
+        "href": "https://github.com/mvanhorn/last30days-skill",
+        "score": "★ 458 today (49.9k total)"
+      }
+    },
+    "badges_last30days": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_python_l30",
+        "badge_accel_l30"
+      ]
+    },
+    "badge_python_l30": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "badge_accel_l30": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_last30days": {
+      "type": "Text",
+      "props": {
+        "text": "One skill hits Reddit/X/YouTube/HN/Polymarket and returns a grounded summary — replaces per-source scraper glue.",
+        "variant": "body"
+      }
+    },
+    "project_claude_video": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_claude_video",
+        "badges_claude_video",
+        "desc_claude_video"
+      ]
+    },
+    "story_claude_video": {
+      "type": "StoryLink",
+      "props": {
+        "title": "bradautomates/claude-video",
+        "href": "https://github.com/bradautomates/claude-video",
+        "score": "★ 427 today (4.4k total)"
+      }
+    },
+    "badges_claude_video": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_python_cv",
+        "badge_accel_cv"
+      ]
+    },
+    "badge_python_cv": {
+      "type": "Badge",
+      "props": {
+        "text": "Python",
+        "variant": "secondary"
+      }
+    },
+    "badge_accel_cv": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_claude_video": {
+      "type": "Text",
+      "props": {
+        "text": "/watch downloads a video, extracts frames + transcript, hands the bundle to Claude — video understanding without a multimodal API.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "devtools_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "devtools_heading",
+        "project_codexbar"
+      ]
+    },
+    "devtools_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Devtools",
+        "level": "h2"
+      }
+    },
+    "project_codexbar": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_codexbar",
+        "badges_codexbar",
+        "desc_codexbar"
+      ]
+    },
+    "story_codexbar": {
+      "type": "StoryLink",
+      "props": {
+        "title": "steipete/CodexBar",
+        "href": "https://github.com/steipete/CodexBar",
+        "score": "★ 598 today (16.8k total)"
+      }
+    },
+    "badges_codexbar": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_swift",
+        "badge_accel_cb"
+      ]
+    },
+    "badge_swift": {
+      "type": "Badge",
+      "props": {
+        "text": "Swift",
+        "variant": "secondary"
+      }
+    },
+    "badge_accel_cb": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_codexbar": {
+      "type": "Text",
+      "props": {
+        "text": "Menu-bar readout of Codex + Claude Code usage without logging into either dashboard — cost visibility for anyone burning both.",
+        "variant": "body"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "infra_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "infra_heading",
+        "project_zvec"
+      ]
+    },
+    "infra_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Infra",
+        "level": "h2"
+      }
+    },
+    "project_zvec": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_zvec",
+        "badges_zvec",
+        "desc_zvec"
+      ]
+    },
+    "story_zvec": {
+      "type": "StoryLink",
+      "props": {
+        "title": "alibaba/zvec",
+        "href": "https://github.com/alibaba/zvec",
+        "score": "★ 382 today (13.6k total)"
+      }
+    },
+    "badges_zvec": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_cpp",
+        "badge_accel_zvec"
+      ]
+    },
+    "badge_cpp": {
+      "type": "Badge",
+      "props": {
+        "text": "C++",
+        "variant": "secondary"
+      }
+    },
+    "badge_accel_zvec": {
+      "type": "Badge",
+      "props": {
+        "text": "ACCELERATING",
+        "variant": "default"
+      }
+    },
+    "desc_zvec": {
+      "type": "Text",
+      "props": {
+        "text": "Alibaba's in-process vector DB — same \"no server\" ergonomics as sqlite-vec, aimed at C++/Java embed paths.",
+        "variant": "body"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "other_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "other_heading",
+        "project_ruview"
+      ]
+    },
+    "other_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Other",
+        "level": "h2"
+      }
+    },
+    "project_ruview": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "story_ruview",
+        "badges_ruview",
+        "desc_ruview"
+      ]
+    },
+    "story_ruview": {
+      "type": "StoryLink",
+      "props": {
+        "title": "ruvnet/RuView",
+        "href": "https://github.com/ruvnet/RuView",
+        "score": "★ 470 today (77.7k total)"
+      }
+    },
+    "badges_ruview": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge_rust",
+        "badge_returning"
+      ]
+    },
+    "badge_rust": {
+      "type": "Badge",
+      "props": {
+        "text": "Rust",
+        "variant": "secondary"
+      }
+    },
+    "badge_returning": {
+      "type": "Badge",
+      "props": {
+        "text": "RETURNING",
+        "variant": "outline"
+      }
+    },
+    "desc_ruview": {
+      "type": "Text",
+      "props": {
+        "text": "Commodity WiFi CSI → presence + vital-sign detection, no camera required — a surveillance-free sensor primitive. (Fits none of the named buckets — physical-layer sensing.)",
+        "variant": "body"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "footer": {
+      "type": "Text",
+      "props": {
+        "text": "sources: trending=ok · gh_api=ok · kept 6/16",
+        "variant": "caption"
+      }
+    }
+  }
+}
