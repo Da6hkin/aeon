@@ -1,11 +1,21 @@
-*🏠 Vienna apartments — 2026-07-04*
+Done. Here's the summary:
 
-- *D8* €908 · 51 m² · 2 Zi — [Piaristengasse DG-Wohnung](https://www.immobilienscout24.at/expose/6a34200877638d2a2bdfb285)
-- *D5* €1,107 · 75 m² · 3 Zi — [3-Zimmer Margareten ⚠️ Tausch](https://www.immobilienscout24.at/expose/6a4772a7c6cd567b08a2b04f)
-- *D5* €1,355 · 50 m² · 2 Zi — [Moderne DG-Wohnung](https://www.immobilienscout24.at/expose/6a47b4d684e196410f922ab9)
-- *D6* €1,390 · 76 m² · 2 Zi — [Großzügige 2-Zimmer Mariahilf](https://www.immobilienscout24.at/expose/6a477fcd6674576fa6a80612)
-- *D4* €1,459 · 87 m² · 3.5 Zi — [WG-tauglich Altbau U1 Südtiroler Platz](https://www.immobilienscout24.at/expose/6a47b98084e196410f922efb)
+## Summary
 
-_ohne-makler.at: 0 new (D5 over budget, others outside target districts)._
+**vienna-apartments** ran for 2026-07-08.
 
-_Reminder: open Claude + your logged-in Facebook browser and ask me to run the full FB-group sweep (provision-free / no-income-check posts)._
+- Fetched all 8 immosuchmaschine.at district pages (D1,3,4,5,6,7,8,9) + ohne-makler.at (no qualifying listings there — all outside target districts or over budget)
+- Deduplicated against 5 URLs from the last successful run on 2026-07-04
+- Found **11 new qualifying listings** across D3, D4, D5, D6, D7, D8, D9
+
+**Top picks:**
+| District | Price | Size | Highlight |
+|----------|-------|------|-----------|
+| D6 | €899 | 49m²/2Zi | Mollardgasse — best value |
+| D5 | €1,024 | 53m²/2Zi | Kohlgasse 47, Balkon |
+| D5 | €1,100 | 71m²/2Zi | Renoviert möbliert, Matzleinsdorfer Platz |
+| D8 | €1,467 | 85m²/3Zi | Altbau mit Garten, Blindengasse 53 |
+
+**Files written:**
+- `.pending-notify/vienna-apartments-20260708.md` — notification queued for post-run Telegram/Discord/Slack delivery
+- `memory/logs/2026-07-08.md` — activity log with all 11 sent URLs for tomorrow's dedup
