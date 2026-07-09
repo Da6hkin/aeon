@@ -1,0 +1,30 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "reflect"
+      },
+      "children": [
+        "text-content",
+        "text-date"
+      ]
+    },
+    "text-content": {
+      "type": "Text",
+      "props": {
+        "text": "Memory consolidated",
+        "variant": "body"
+      }
+    },
+    "text-date": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-09",
+        "variant": "caption"
+      }
+    }
+  }
+}
