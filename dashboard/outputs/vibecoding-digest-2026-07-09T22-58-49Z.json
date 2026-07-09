@@ -1,0 +1,281 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "vibecoding-digest",
+        "description": "r/vibecoding — 2026-07-09"
+      },
+      "children": [
+        "heading_title",
+        "separator_1",
+        "alert_error",
+        "separator_2",
+        "section_tools",
+        "separator_3",
+        "section_community",
+        "separator_4",
+        "section_sources"
+      ]
+    },
+    "heading_title": {
+      "type": "Heading",
+      "props": {
+        "text": "vibecoding-digest",
+        "level": "h1"
+      },
+      "children": []
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "alert_error": {
+      "type": "Alert",
+      "props": {
+        "title": "VIBECODING_DIGEST_ERROR",
+        "message": "Reddit unreachable (domain blocked at sandbox level; curl 403 + WebFetch blocked on all reddit.com variants)",
+        "type": "error"
+      },
+      "children": []
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_tools": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_tools",
+        "grid_metrics"
+      ]
+    },
+    "heading_tools": {
+      "type": "Heading",
+      "props": {
+        "text": "Tools Pulse (Secondary Sources, July 2026)",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "grid_metrics": {
+      "type": "Grid",
+      "props": {
+        "columns": 3,
+        "gap": "md"
+      },
+      "children": [
+        "stat_claude_code",
+        "stat_cursor",
+        "stat_chatgpt",
+        "stat_gemini",
+        "stat_replit",
+        "stat_windsurf"
+      ]
+    },
+    "stat_claude_code": {
+      "type": "Stat",
+      "props": {
+        "label": "Claude Code",
+        "value": "226"
+      },
+      "children": []
+    },
+    "stat_cursor": {
+      "type": "Stat",
+      "props": {
+        "label": "Cursor",
+        "value": "219"
+      },
+      "children": []
+    },
+    "stat_chatgpt": {
+      "type": "Stat",
+      "props": {
+        "label": "ChatGPT/Codex",
+        "value": "~150"
+      },
+      "children": []
+    },
+    "stat_gemini": {
+      "type": "Stat",
+      "props": {
+        "label": "Gemini",
+        "value": "91"
+      },
+      "children": []
+    },
+    "stat_replit": {
+      "type": "Stat",
+      "props": {
+        "label": "Replit",
+        "value": "~80"
+      },
+      "children": []
+    },
+    "stat_windsurf": {
+      "type": "Stat",
+      "props": {
+        "label": "Windsurf",
+        "value": "73"
+      },
+      "children": []
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_community": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_community",
+        "community_members",
+        "themes_stack",
+        "community_updates"
+      ]
+    },
+    "heading_community": {
+      "type": "Heading",
+      "props": {
+        "text": "Community Context",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "community_members": {
+      "type": "Stat",
+      "props": {
+        "label": "r/vibecoding Members",
+        "value": "307K",
+        "delta": "+870%",
+        "trend": "up"
+      },
+      "children": []
+    },
+    "themes_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "themes_label",
+        "badge_claude_vs_cursor",
+        "badge_hosted_platforms",
+        "badge_lovable_security"
+      ]
+    },
+    "themes_label": {
+      "type": "Text",
+      "props": {
+        "text": "Active Themes:",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "badge_claude_vs_cursor": {
+      "type": "Badge",
+      "props": {
+        "text": "Claude Code vs Cursor supremacy",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_hosted_platforms": {
+      "type": "Badge",
+      "props": {
+        "text": "70% wall on hosted platforms",
+        "variant": "default"
+      },
+      "children": []
+    },
+    "badge_lovable_security": {
+      "type": "Badge",
+      "props": {
+        "text": "Lovable security reckoning",
+        "variant": "destructive"
+      },
+      "children": []
+    },
+    "community_updates": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "update_windsurf",
+        "update_sonnet"
+      ]
+    },
+    "update_windsurf": {
+      "type": "Text",
+      "props": {
+        "text": "Windsurf → Devin Desktop (June 2)",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "update_sonnet": {
+      "type": "Text",
+      "props": {
+        "text": "Sonnet 5 1M-ctx shipped June 30",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "separator_4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "section_sources": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "heading_sources",
+        "source_status"
+      ]
+    },
+    "heading_sources": {
+      "type": "Heading",
+      "props": {
+        "text": "Source Status",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "source_status": {
+      "type": "Alert",
+      "props": {
+        "message": "top=fail · hot=fail · rising=fail",
+        "type": "warning"
+      },
+      "children": []
+    }
+  }
+}
