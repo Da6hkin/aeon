@@ -142,3 +142,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-09,heartbeat,claude-opus-4-7,2187,18440,900663,62333
 2026-07-09,heartbeat,claude-opus-4-7,10,7049,285490,46701
 2026-07-09,heartbeat,claude-opus-4-7,16,7676,574032,40644
+2026-07-09,money-radar,claude-opus-4-7,30,20479,1644954,110022
