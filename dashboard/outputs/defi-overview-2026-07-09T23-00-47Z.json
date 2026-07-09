@@ -1,0 +1,410 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "DeFi — 2026-07-09",
+        "description": "Mixed: DEX volume surging +6.5%, stables show USDe/structured-product outflows alongside RWA inflows"
+      },
+      "children": [
+        "tvl-section",
+        "sep1",
+        "movers-section",
+        "sep2",
+        "fees-section",
+        "sep3",
+        "dex-section",
+        "sep4",
+        "stables-section",
+        "sep5",
+        "yields-section",
+        "sep6",
+        "sources-section"
+      ]
+    },
+    "tvl-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "tvl-heading",
+        "tvl-stack"
+      ]
+    },
+    "tvl-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "TVL Top Chains",
+        "level": "h2"
+      }
+    },
+    "tvl-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "tvl-note",
+        "eth-stat",
+        "sol-stat",
+        "bsc-stat"
+      ]
+    },
+    "tvl-note": {
+      "type": "Text",
+      "props": {
+        "text": "(change_1d unavailable from endpoint)",
+        "variant": "caption"
+      }
+    },
+    "eth-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Ethereum",
+        "value": "$38.9B"
+      }
+    },
+    "sol-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Solana",
+        "value": "$5.0B"
+      }
+    },
+    "bsc-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "BSC",
+        "value": "$4.9B"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "movers-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "movers-heading",
+        "movers-note",
+        "justlend-text",
+        "ethena-text"
+      ]
+    },
+    "movers-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Movers",
+        "level": "h2"
+      }
+    },
+    "movers-note": {
+      "type": "Text",
+      "props": {
+        "text": "No chain (≥5%, ≥$500M) or protocol (≥10%, ≥$100M) cleared threshold today. Sub-threshold:",
+        "variant": "caption"
+      }
+    },
+    "justlend-text": {
+      "type": "Text",
+      "props": {
+        "text": "↑ JustLend +4.9% ($3.4B, Tron lending) — no obvious catalyst"
+      }
+    },
+    "ethena-text": {
+      "type": "Text",
+      "props": {
+        "text": "↓ Ethena USDe −3.2% ($4.3B, basis trading) — supply also down 3.4%; unwinding correlated"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "fees-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fees-heading",
+        "fees-summary",
+        "fees-stack"
+      ]
+    },
+    "fees-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fees Leaders (24h)",
+        "level": "h2"
+      }
+    },
+    "fees-summary": {
+      "type": "Stat",
+      "props": {
+        "label": "Total Fees",
+        "value": "$56.8M",
+        "delta": "+3.3% 1d, +7.2% 7d",
+        "trend": "up"
+      }
+    },
+    "fees-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "lido-text",
+        "sky-text",
+        "curve-text"
+      ]
+    },
+    "lido-text": {
+      "type": "Text",
+      "props": {
+        "text": "1. Lido — $1.10M (−2.1% vs yesterday)"
+      }
+    },
+    "sky-text": {
+      "type": "Text",
+      "props": {
+        "text": "2. Sky Lending — $987K (−0.5%)"
+      }
+    },
+    "curve-text": {
+      "type": "Text",
+      "props": {
+        "text": "3. Curve DEX — $152K (+59.7% vs 7d avg — demand outpacing TVL)"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "dex-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "dex-heading",
+        "dex-main-stat",
+        "dex-top-heading",
+        "dex-top-items",
+        "dex-surge-heading",
+        "dex-surge-items"
+      ]
+    },
+    "dex-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "DEX Volume (24h)",
+        "level": "h2"
+      }
+    },
+    "dex-main-stat": {
+      "type": "Stat",
+      "props": {
+        "label": "Total DEX Volume",
+        "value": "$7.92B",
+        "delta": "+6.5% 1d, +4.6% 7d",
+        "trend": "up"
+      }
+    },
+    "dex-top-heading": {
+      "type": "Text",
+      "props": {
+        "text": "Top exchanges:",
+        "variant": "lead"
+      }
+    },
+    "dex-top-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "orca-text",
+        "curve-dex-text",
+        "raydium-text"
+      ]
+    },
+    "orca-text": {
+      "type": "Text",
+      "props": {
+        "text": "Orca $168M (−25.7%)"
+      }
+    },
+    "curve-dex-text": {
+      "type": "Text",
+      "props": {
+        "text": "Curve $107M (+27.5%)"
+      }
+    },
+    "raydium-text": {
+      "type": "Text",
+      "props": {
+        "text": "Raydium $88M (−8.2%)"
+      }
+    },
+    "dex-surge-heading": {
+      "type": "Text",
+      "props": {
+        "text": "Surges:",
+        "variant": "lead"
+      }
+    },
+    "dex-surge-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "pendle-text",
+        "dodo-text"
+      ]
+    },
+    "pendle-text": {
+      "type": "Text",
+      "props": {
+        "text": "Pendle +151%"
+      }
+    },
+    "dodo-text": {
+      "type": "Text",
+      "props": {
+        "text": "DODO +91%"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stables-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "stables-heading",
+        "usde-text",
+        "buidl-text",
+        "usdg-text",
+        "usds-text",
+        "usd1-text",
+        "core-stables-text"
+      ]
+    },
+    "stables-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Stables — Notable 24h Moves",
+        "level": "h2"
+      }
+    },
+    "usde-text": {
+      "type": "Text",
+      "props": {
+        "text": "↓ USDe −3.4% ($4.26B) — basis trade unwinding, matches protocol TVL drop"
+      }
+    },
+    "buidl-text": {
+      "type": "Text",
+      "props": {
+        "text": "↑ BUIDL +4.4% ($3.19B) — BlackRock RWA inflows continuing"
+      }
+    },
+    "usdg-text": {
+      "type": "Text",
+      "props": {
+        "text": "↓ USDG −2.5%"
+      }
+    },
+    "usds-text": {
+      "type": "Text",
+      "props": {
+        "text": "↓ USDS −1.4%"
+      }
+    },
+    "usd1-text": {
+      "type": "Text",
+      "props": {
+        "text": "↓ USD1 −1.2%"
+      }
+    },
+    "core-stables-text": {
+      "type": "Text",
+      "props": {
+        "text": "USDT +0.2%, USDC flat — core stables anchored"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "yields-section": {
+      "type": "Alert",
+      "props": {
+        "title": "Real Yield / Incentive Yield",
+        "message": "Endpoint unavailable today (response exceeds WebFetch limit)",
+        "type": "info"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sources-heading",
+        "sources-text"
+      ]
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Data Sources",
+        "level": "h3"
+      }
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "llama_tvl=ok(no_deltas)  llama_dex=ok  llama_fees=ok  llama_stables=ok  llama_yields=fail",
+        "variant": "caption"
+      }
+    }
+  }
+}
