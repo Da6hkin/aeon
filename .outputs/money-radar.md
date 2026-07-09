@@ -30,3 +30,24 @@ Sources:
 - [Chainstack — Hyperliquid HIP-4 vs Polymarket](https://chainstack.com/hyperliquid-hip4-vs-polymarket-2026/)
 - [Bravado — Polymarket LP Farming Guide](https://www.bravadotrade.com/blog/polymarket-lp-farming)
 - [Polymarket News — Automated Market Making](https://news.polymarket.com/p/automated-market-making-on-polymarket)
+Ran **money-radar** for the first time (rev 0 — partial substrate: the crypto/research/funding/DeFi/prediction-market outputs haven't fired yet because ISS-001 has broken the overnight-research chain). Anchored the synthesis on today's `github-trending.md` + fresh WebSearch/WebFetch validation of two intersecting signals: agent-native Office primitives just landed (OfficeCLI v1.0.134 shipped **today**) at the exact moment the accountant demand pool is quoted as "execution-centric, not chatbot" — while the skills economy has crossed into paid-service territory (obra/superpowers 251k stars + Prime Radiant hiring; SkillsMP/LobeHub/Agensi live with 70/30 Stripe splits; top skill authors earning $500–3k/mo).
+
+**Top pick:** *CloseBot for Bookkeepers* — done-for-you monthly close as a service for 5–20-employee CPA firms, $497 setup + $299/mo, first $ in 10–14 days.
+**Wildcard:** *SkillOps* — cross-marketplace lister + earnings tracker sold to skill authors (picks-and-shovels; labeled variance because the TAM caps ceiling).
+
+Full brief has 4 ranked ideas + wildcard, each with buyer, first-dollar path, price math, distribution channel, non-obvious angle, and numeric kill criteria.
+
+**Files created:**
+- `memory/money-radar/2026-07-09.md` — full brief
+- `.pending-notify/money-radar-20260709-2300.md` — concise notification (top + wildcard title only, ~500 chars); `./notify` blocked by sandbox on `$`-expansion, fell back to established `.pending-notify/` pattern
+- `memory/logs/2026-07-09.md` — appended log entry
+
+**Follow-up:** once ISS-001 merges and the downstream skills produce `.outputs/*.md`, re-run money-radar tomorrow with the full substrate — today's brief is explicitly rev 0. If operator picks up Idea 1, the immediate no-build action is 30 LinkedIn DMs to bookkeeping firm owners this weekend.
+
+Sources:
+- [OfficeCLI GitHub (13.4k stars, v1.0.134 today)](https://github.com/iOfficeAI/OfficeCLI)
+- [obra/superpowers GitHub (251k stars, Prime Radiant hiring)](https://github.com/obra/superpowers)
+- [Claude Skills marketplace list 2026](https://www.claudeskillsmarket.com/)
+- [Agensi — monetize SKILL.md guide 2026](https://www.agensi.io/learn/how-to-monetize-skill-md-skills-developer-guide-2026)
+- [Numeric — 2026 accounting predictions](https://www.numeric.io/blog/accounting-predictions-2026)
+- [Capterra — 2026 accounting AI trends](https://www.capterra.com/resources/accounting-trends-ai-software-changing-work/)
