@@ -144,6 +144,7 @@ skills:
   reflect: { enabled: true, schedule: "0 18 * * *", model: "claude-sonnet-4-6" }
 
   action-converter: { enabled: false, schedule: "0 18 * * *" }
+  money-radar: { enabled: true, schedule: "0 8,19 * * *" } # twice daily 08:00 + 19:00 UTC — cross-stream synthesis of all skill outputs into ranked, money-first, non-obvious ideas → memory/money-radar/ (08:00 catches overnight-chain output; 19:00 catches the full day; opus: idea quality is the point)
   startup-idea:
     {
       enabled: false,
