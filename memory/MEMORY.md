@@ -3,7 +3,7 @@
 
 ## Operator profile
 - **Solo technical builder.** Ships real products fast and independently.
-- **Proven win:** shipped "promy" — a product that made **~$20k in ~2 months** solo. This is the repeatable muscle; the fastest path to money reuses it.
+- **Proven win:** shipped a product solo that made **~$20k in ~2 months**. This is the repeatable muscle; the fastest path to money reuses it.
 - **Other income seen:** ~$8k from an early presale/whitelist allocation (came from being early + visible), ~$13k from memecoin trading (variance, not a strategy — do not treat as a plan).
 - **Realistic build budget:** weeks, not months, for an MVP; low cash. Prefers shortest time-to-first-dollar.
 - **Distribution today:** thin/early — building audience/reputation is an open lever.
@@ -23,7 +23,7 @@
 - Notifications: Telegram. Models: most scheduled skills on sonnet for cost; chain quality steps + money-radar on opus.
 
 ## Next priorities
-- Ship the next product faster than promy (target: weeks). Let money-radar + the research chain feed the "what to build" decision.
+- Ship the next product faster than the last (~2 months → target: weeks). Let money-radar + the research chain feed the "what to build" decision.
 - Add free keys to widen signal: GH_GLOBAL (self-heal + ship code), CoinGecko/Alchemy (crypto data). XAI (paid) unlocks X/Twitter audience-building.
 - Build audience/distribution in public (weekly-shiplog drafts the posts).
 
