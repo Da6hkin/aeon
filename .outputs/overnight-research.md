@@ -1,1 +1,9 @@
-🔧 ISS-001 partial workaround shipped: added `enabled: false` under the `overnight-research` chain in aeon.yml. Skill parser skips the ghost dispatch; chain still fires. Bug A (chain-runner jq regex) still blocked on workflows-scope PAT — patch stashed at .outputs/0001-*.patch. PR to click: https://github.com/Da6hkin/aeon/pull/new/fix/iss-001-disable-bogus-skill-dispatch
+The skill `skills/overnight-research/SKILL.md` doesn't exist. There's no directory for `overnight-research` in `skills/`.
+
+Available skills that might match your intent:
+- `deep-research` — deep multi-source fact-checked research
+- `autoresearch` — automated research
+- `research-brief` — research briefing
+- `paper-digest` / `paper-pick` — academic paper research
+
+Would you like me to run one of these instead, or would you like to create an `overnight-research` skill first?
