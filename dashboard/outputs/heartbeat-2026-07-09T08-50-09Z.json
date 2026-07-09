@@ -1,0 +1,166 @@
+{
+  "root": "card_main",
+  "state": {},
+  "elements": {
+    "card_main": {
+      "type": "Card",
+      "props": {
+        "title": "Heartbeat",
+        "description": "Skill health and monitoring"
+      },
+      "children": [
+        "alert_degraded",
+        "sep1",
+        "stack_main"
+      ]
+    },
+    "alert_degraded": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "🔴 DEGRADED",
+        "message": "ISS-001 chain:overnight-research still blocked"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "stack_main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "section_issue",
+        "sep2",
+        "section_analysis"
+      ]
+    },
+    "section_issue": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_iss002",
+        "badge_escalation",
+        "text_topic",
+        "text_miss_date",
+        "text_watch_window",
+        "text_last_dispatch",
+        "text_tick_info"
+      ]
+    },
+    "heading_iss002": {
+      "type": "Heading",
+      "props": {
+        "text": "ISS-002",
+        "level": "h3"
+      }
+    },
+    "badge_escalation": {
+      "type": "Badge",
+      "props": {
+        "text": "Re-escalated: low → medium",
+        "variant": "secondary"
+      }
+    },
+    "text_topic": {
+      "type": "Text",
+      "props": {
+        "text": "Topic: vienna-apartments 06:00Z slot",
+        "variant": "lead"
+      }
+    },
+    "text_miss_date": {
+      "type": "Text",
+      "props": {
+        "text": "Missed again on 2026-07-09",
+        "variant": "body"
+      }
+    },
+    "text_watch_window": {
+      "type": "Text",
+      "props": {
+        "text": "Watch window: day 2/3",
+        "variant": "caption"
+      }
+    },
+    "text_last_dispatch": {
+      "type": "Text",
+      "props": {
+        "text": "Last dispatch: 2026-07-08 06:42Z",
+        "variant": "caption"
+      }
+    },
+    "text_tick_info": {
+      "type": "Text",
+      "props": {
+        "text": "Tick loop alive (heartbeat ran) — this is skill-specific",
+        "variant": "muted"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "section_analysis": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "heading_diagnosis",
+        "text_pattern",
+        "stack_hypotheses"
+      ]
+    },
+    "heading_diagnosis": {
+      "type": "Heading",
+      "props": {
+        "text": "Diagnosis",
+        "level": "h4"
+      }
+    },
+    "text_pattern": {
+      "type": "Text",
+      "props": {
+        "text": "Alternating fire/miss pattern indicates:",
+        "variant": "body"
+      }
+    },
+    "stack_hypotheses": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "badge_h1",
+        "badge_h4"
+      ]
+    },
+    "badge_h1": {
+      "type": "Badge",
+      "props": {
+        "text": "H1: Tick-drift (favored)",
+        "variant": "default"
+      }
+    },
+    "badge_h4": {
+      "type": "Badge",
+      "props": {
+        "text": "H4: Dispatch-API failure (ruled out)",
+        "variant": "outline"
+      }
+    }
+  }
+}
