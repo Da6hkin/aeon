@@ -1,0 +1,293 @@
+{
+  "root": "main_card",
+  "state": {},
+  "elements": {
+    "main_card": {
+      "type": "Card",
+      "props": {
+        "title": "Skill Health — 2026-07-09"
+      },
+      "children": [
+        "critical_alert",
+        "critical_section",
+        "warnings_section",
+        "no_data_section",
+        "healthy_section",
+        "summary_section"
+      ]
+    },
+    "critical_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "🔴 CRITICAL",
+        "message": "1 critical issue detected",
+        "type": "error"
+      }
+    },
+    "critical_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "critical_item"
+      ]
+    },
+    "critical_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "critical_title",
+        "critical_status",
+        "critical_fix",
+        "critical_action"
+      ]
+    },
+    "critical_title": {
+      "type": "Text",
+      "props": {
+        "text": "chain:overnight-research",
+        "variant": "lead"
+      }
+    },
+    "critical_status": {
+      "type": "Text",
+      "props": {
+        "text": "last_status=failed (05:11Z today, pre-fix)"
+      }
+    },
+    "critical_fix": {
+      "type": "Text",
+      "props": {
+        "text": "Fix merged to main (ISS-001 resolved 2026-07-09)"
+      }
+    },
+    "critical_action": {
+      "type": "Badge",
+      "props": {
+        "text": "Confirm on 2026-07-10 04:45Z fire — INVESTIGATE",
+        "variant": "destructive"
+      }
+    },
+    "warnings_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "warnings_item"
+      ]
+    },
+    "warnings_item": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "warnings_title",
+        "warnings_stat",
+        "warnings_detail"
+      ]
+    },
+    "warnings_title": {
+      "type": "Text",
+      "props": {
+        "text": "⚠️ heartbeat",
+        "variant": "lead"
+      }
+    },
+    "warnings_stat": {
+      "type": "Progress",
+      "props": {
+        "value": 77,
+        "max": 100,
+        "label": "Success Rate"
+      }
+    },
+    "warnings_detail": {
+      "type": "Text",
+      "props": {
+        "text": "109/141 runs, 0 consecutive failures — monitoring only",
+        "variant": "caption"
+      }
+    },
+    "no_data_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "no_data_title",
+        "no_data_list",
+        "no_data_note"
+      ]
+    },
+    "no_data_title": {
+      "type": "Heading",
+      "props": {
+        "text": "⚪ No Data (11)",
+        "level": "h3"
+      }
+    },
+    "no_data_list": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "skill_paper_digest",
+        "skill_defi_overview",
+        "skill_monitor_kalshi",
+        "skill_unlock_monitor",
+        "skill_deal_flow",
+        "skill_vibecoding_digest",
+        "skill_health",
+        "skill_reflect",
+        "skill_money_radar",
+        "skill_ai_framework_watch",
+        "skill_weekly_shiplog"
+      ]
+    },
+    "skill_paper_digest": {
+      "type": "Badge",
+      "props": {
+        "text": "paper-digest"
+      }
+    },
+    "skill_defi_overview": {
+      "type": "Badge",
+      "props": {
+        "text": "defi-overview"
+      }
+    },
+    "skill_monitor_kalshi": {
+      "type": "Badge",
+      "props": {
+        "text": "monitor-kalshi"
+      }
+    },
+    "skill_unlock_monitor": {
+      "type": "Badge",
+      "props": {
+        "text": "unlock-monitor"
+      }
+    },
+    "skill_deal_flow": {
+      "type": "Badge",
+      "props": {
+        "text": "deal-flow"
+      }
+    },
+    "skill_vibecoding_digest": {
+      "type": "Badge",
+      "props": {
+        "text": "vibecoding-digest"
+      }
+    },
+    "skill_health": {
+      "type": "Badge",
+      "props": {
+        "text": "skill-health"
+      }
+    },
+    "skill_reflect": {
+      "type": "Badge",
+      "props": {
+        "text": "reflect"
+      }
+    },
+    "skill_money_radar": {
+      "type": "Badge",
+      "props": {
+        "text": "money-radar"
+      }
+    },
+    "skill_ai_framework_watch": {
+      "type": "Badge",
+      "props": {
+        "text": "ai-framework-watch"
+      }
+    },
+    "skill_weekly_shiplog": {
+      "type": "Badge",
+      "props": {
+        "text": "weekly-shiplog"
+      }
+    },
+    "no_data_note": {
+      "type": "Text",
+      "props": {
+        "text": "All newly enabled 2026-07-09; first fires pending — DISPATCH-SKILL",
+        "variant": "muted"
+      }
+    },
+    "healthy_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "healthy_stat"
+      ]
+    },
+    "healthy_stat": {
+      "type": "Stat",
+      "props": {
+        "label": "🟢 Healthy Skills",
+        "value": "0"
+      }
+    },
+    "summary_section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "summary_title",
+        "summary_stats"
+      ]
+    },
+    "summary_title": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary",
+        "level": "h3"
+      }
+    },
+    "summary_stats": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "md"
+      },
+      "children": [
+        "open_issues",
+        "resolved_issues"
+      ]
+    },
+    "open_issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Open Issues",
+        "value": "0"
+      }
+    },
+    "resolved_issues": {
+      "type": "Stat",
+      "props": {
+        "label": "Resolved This Run",
+        "value": "0"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "hash": "9275abca56f97f029cd30c8d33dbda6ce3ede16eb1829589622035f12ac9b073",
+  "last_notified_at": "2026-07-09T18:30:00Z",
+  "last_run_at": "2026-07-09T18:30:00Z",
+  "classification": {
+    "critical": ["chain:overnight-research"],
+    "degraded": [],
+    "flapping": [],
+    "warning": ["heartbeat"],
+    "healthy_count": 0,
+    "no_data": [
+      "paper-digest",
+      "defi-overview",
+      "monitor-kalshi",
+      "unlock-monitor",
+      "deal-flow",
+      "vibecoding-digest",
+      "skill-health",
+      "reflect",
+      "money-radar",
+      "ai-framework-watch",
+      "weekly-shiplog"
+    ]
+  }
+}
