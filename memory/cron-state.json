@@ -57,5 +57,33 @@
     "consecutive_failures": 0,
     "success_rate": 1,
     "last_dispatch": "2026-07-08T06:42:01Z"
+  },
+  "paper-digest": {
+    "last_dispatch": "2026-07-09T22:53:02Z",
+    "last_status": "dispatched"
+  },
+  "defi-overview": {
+    "last_dispatch": "2026-07-09T22:53:02Z",
+    "last_status": "dispatched"
+  },
+  "monitor-kalshi": {
+    "last_dispatch": "2026-07-09T22:53:02Z",
+    "last_status": "dispatched"
+  },
+  "vibecoding-digest": {
+    "last_dispatch": "2026-07-09T22:53:02Z",
+    "last_status": "dispatched"
+  },
+  "skill-health": {
+    "last_dispatch": "2026-07-09T22:53:02Z",
+    "last_status": "dispatched"
+  },
+  "reflect": {
+    "last_dispatch": "2026-07-09T22:53:02Z",
+    "last_status": "dispatched"
+  },
+  "money-radar": {
+    "last_dispatch": "2026-07-09T22:53:02Z",
+    "last_status": "dispatched"
   }
 }
