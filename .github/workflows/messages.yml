@@ -130,7 +130,12 @@ jobs:
               CURRENT_SKILL=""
               continue
             fi
-            # Multi-line format
+            # Multi-line format (bare `name:` on its own line) and the
+            # block/brace variant (`name:` then `{ ... }` across several lines).
+            # Attribute lines are matched with a `^\ +` prefix (any indent) so
+            # the 6-space-indented keys inside a `{ }` block parse too — the
+            # original `^    ` (exactly 4 spaces) silently dropped them, so every
+            # block-format skill was unparseable and could never fire.
             if [[ "$line" =~ ^\ \ ([a-zA-Z0-9_-]+):\ *$ ]]; then
               CURRENT_SKILL="${BASH_REMATCH[1]}"
               SKILL_ORDER+=("$CURRENT_SKILL")
@@ -138,13 +143,13 @@ jobs:
               SKILL_SCHEDULE["$CURRENT_SKILL"]=""
               SKILL_VAR["$CURRENT_SKILL"]=""
             fi
-            if [[ "$line" =~ ^\ \ \ \ enabled:\ *false ]] && [ -n "$CURRENT_SKILL" ]; then
+            if [[ "$line" =~ ^\ +enabled:\ *false ]] && [ -n "$CURRENT_SKILL" ]; then
               SKILL_ENABLED["$CURRENT_SKILL"]="false"
             fi
-            if [[ "$line" =~ ^\ \ \ \ schedule:\ *\"([^\"]+)\" ]] && [ -n "$CURRENT_SKILL" ]; then
+            if [[ "$line" =~ ^\ +schedule:\ *\"([^\"]+)\" ]] && [ -n "$CURRENT_SKILL" ]; then
               SKILL_SCHEDULE["$CURRENT_SKILL"]="${BASH_REMATCH[1]}"
             fi
-            if [[ "$line" =~ ^\ \ \ \ var:\ *\"([^\"]+)\" ]] && [ -n "$CURRENT_SKILL" ]; then
+            if [[ "$line" =~ ^\ +var:\ *\"([^\"]+)\" ]] && [ -n "$CURRENT_SKILL" ]; then
               SKILL_VAR["$CURRENT_SKILL"]="${BASH_REMATCH[1]}"
             fi
           done < aeon.yml
