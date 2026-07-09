@@ -1,0 +1,304 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "Kalshi Monitor — 2026-07-09"
+      },
+      "children": [
+        "verdict-text",
+        "alert-no-watchlist",
+        "sep1",
+        "fed-funds-section",
+        "sep2",
+        "cpi-section",
+        "sep3",
+        "alerts-section",
+        "sep4",
+        "trending-section",
+        "sep5",
+        "sources-section"
+      ]
+    },
+    "verdict-text": {
+      "type": "Text",
+      "props": {
+        "text": "Cut pricing deepens — T3.75 shed 4pp to 16% on tight book; June CPI markets pricing deflation ahead of July 14 release.",
+        "variant": "lead"
+      },
+      "children": []
+    },
+    "alert-no-watchlist": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "title": "No watchlist set",
+        "message": "Ran in discovery mode. Add tickers to skills/monitor-kalshi/watchlist.md to track persistently. Discovered 2 active econ events for this run."
+      },
+      "children": []
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "fed-funds-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "fed-funds-heading",
+        "fed-funds-badge",
+        "fed-funds-table",
+        "fed-funds-mover"
+      ]
+    },
+    "fed-funds-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Fed Funds Rate After July Meeting",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "fed-funds-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "KXFED-26JUL • Economics"
+      },
+      "children": []
+    },
+    "fed-funds-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Market",
+          "Prob",
+          "Δ24h",
+          "Range",
+          "Vol",
+          "Spread"
+        ],
+        "rows": [
+          [
+            "Rate above 3.75%",
+            "16%",
+            "−4pp ▼",
+            "15–20%",
+            "$7.5k",
+            "1pp"
+          ],
+          [
+            "Rate above 3.25%",
+            "99%",
+            "0pp —",
+            "stable",
+            "$64.5k",
+            "1pp"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "fed-funds-mover": {
+      "type": "Text",
+      "props": {
+        "text": "Mover: above 3.75% — 84% cut probability priced for July 29 FOMC; tightest book in the event",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "cpi-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "cpi-heading",
+        "cpi-badge",
+        "cpi-table",
+        "cpi-mover"
+      ]
+    },
+    "cpi-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CPI June",
+        "level": "h2"
+      },
+      "children": []
+    },
+    "cpi-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "KXCPI-26JUN • Economics (closes July 14, 5 days)"
+      },
+      "children": []
+    },
+    "cpi-table": {
+      "type": "Table",
+      "props": {
+        "columns": [
+          "Market",
+          "Prob",
+          "Δ24h",
+          "Range",
+          "Vol",
+          "Spread"
+        ],
+        "rows": [
+          [
+            "CPI > −0.3%",
+            "79%",
+            "−7pp ▼",
+            "78–91%",
+            "$4.2k",
+            "6pp thin"
+          ],
+          [
+            "CPI > −0.2%",
+            "33%",
+            "−1pp —",
+            "29–37%",
+            "$1.5k",
+            "2pp"
+          ]
+        ]
+      },
+      "children": []
+    },
+    "cpi-mover": {
+      "type": "Text",
+      "props": {
+        "text": "Mover: CPI > −0.3% fell −7pp; modal outcome is CPI between −0.2% and −0.3% (deflation). Thin book (6pp spread) limits conviction — watch for tightening into Tuesday data.",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "alerts-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alerts-heading",
+        "alerts-text"
+      ]
+    },
+    "alerts-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "ALERTS (>5pp, non-thin book)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "alerts-text": {
+      "type": "Text",
+      "props": {
+        "text": "None",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "trending-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "trending-heading",
+        "trending-item1",
+        "trending-item2"
+      ]
+    },
+    "trending-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Trending (not in watchlist — consider adding)",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "trending-item1": {
+      "type": "Text",
+      "props": {
+        "text": "KXFED-26JUL — $72k+ 24h vol, July 29 FOMC cut/hold; most liquid econ market found today",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "trending-item2": {
+      "type": "Text",
+      "props": {
+        "text": "KXCPI-26JUN — $10k+ 24h vol, closes July 14; deflationary print consensus forming",
+        "variant": "body"
+      },
+      "children": []
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      },
+      "children": []
+    },
+    "sources-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "sources-heading",
+        "sources-text"
+      ]
+    },
+    "sources-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Sources",
+        "level": "h3"
+      },
+      "children": []
+    },
+    "sources-text": {
+      "type": "Text",
+      "props": {
+        "text": "events=degraded (discovery via direct ticker) candlesticks=ok orderbook=ok",
+        "variant": "caption"
+      },
+      "children": []
+    }
+  }
+}

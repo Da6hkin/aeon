@@ -38,6 +38,9 @@ See `memory/topics/system-health.md` for issue history and operational patterns.
 - Add free keys to widen signal: `GH_GLOBAL` with workflows scope (self-heal + ship code), CoinGecko/Alchemy (crypto data). XAI (paid) unlocks X/Twitter audience-building.
 - Build audience/distribution in public (weekly-shiplog drafts the posts).
 
+## Kalshi signals
+- **2026-07-09:** KXCPI-26JUN pricing US deflation for June (CPI modal outcome −0.2% to −0.3%, data July 14). KXFED-26JUL T3.75 at 16% → 84% cut probability at July 29 FOMC.
+
 ## Lessons learned
 - Digest format: Markdown, clickable links, under ~4000 chars.
 - Always save files AND commit before logging.
