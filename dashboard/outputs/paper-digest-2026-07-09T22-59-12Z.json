@@ -1,0 +1,348 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Paper Digest — 2026-07-09",
+        "description": "3 agent-infra results, 1 real-money on-chain deployment proof, 1 benchmark gap (55% failure = builder window)"
+      },
+      "children": [
+        "summary-stack",
+        "sep1",
+        "papers-grid",
+        "sep2",
+        "footer-section"
+      ]
+    },
+    "summary-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "badge-infra",
+        "badge-onchain",
+        "badge-bench"
+      ]
+    },
+    "badge-infra": {
+      "type": "Badge",
+      "props": {
+        "text": "3 agent-infra results",
+        "variant": "default"
+      }
+    },
+    "badge-onchain": {
+      "type": "Badge",
+      "props": {
+        "text": "1 on-chain deployment",
+        "variant": "secondary"
+      }
+    },
+    "badge-bench": {
+      "type": "Badge",
+      "props": {
+        "text": "1 benchmark gap",
+        "variant": "outline"
+      }
+    },
+    "sep1": {
+      "type": "Separator"
+    },
+    "papers-grid": {
+      "type": "Grid",
+      "props": {
+        "columns": 1,
+        "gap": "lg"
+      },
+      "children": [
+        "paper1",
+        "paper2",
+        "paper3",
+        "paper4",
+        "paper5"
+      ]
+    },
+    "paper1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "p1-heading",
+        "p1-desc",
+        "p1-meta"
+      ]
+    },
+    "p1-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Single-Rollout Async RL",
+        "level": "h4"
+      }
+    },
+    "p1-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Single-rollout + token-clip beats GRPO on SWE-Bench Verified/AIME/IMO",
+        "variant": "body"
+      }
+    },
+    "p1-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "p1-badge",
+        "p1-stat"
+      ]
+    },
+    "p1-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "agent-infra",
+        "variant": "outline"
+      }
+    },
+    "p1-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "↑6"
+      }
+    },
+    "paper2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "p2-heading",
+        "p2-desc",
+        "p2-meta"
+      ]
+    },
+    "p2-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "ClawGUI",
+        "level": "h4"
+      }
+    },
+    "p2-desc": {
+      "type": "Text",
+      "props": {
+        "text": "Unified GUI agent train/eval/deploy in one framework: parallel RL + 6 benchmarks + cross-platform",
+        "variant": "body"
+      }
+    },
+    "p2-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "p2-badge",
+        "p2-stat"
+      ]
+    },
+    "p2-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "agent-infra",
+        "variant": "outline"
+      }
+    },
+    "p2-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "↑143"
+      }
+    },
+    "paper3": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "p3-heading",
+        "p3-desc",
+        "p3-meta"
+      ]
+    },
+    "p3-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Automating Embodied Agent Architectures",
+        "level": "h4"
+      }
+    },
+    "p3-desc": {
+      "type": "Text",
+      "props": {
+        "text": "AgentCanvas+KDLoop auto-search beats hand-designed agent architectures",
+        "variant": "body"
+      }
+    },
+    "p3-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "p3-badge",
+        "p3-stat"
+      ]
+    },
+    "p3-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "agent-infra",
+        "variant": "outline"
+      }
+    },
+    "p3-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "↑5"
+      }
+    },
+    "paper4": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "p4-heading",
+        "p4-desc",
+        "p4-meta"
+      ]
+    },
+    "p4-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Onchain LM Agent Controls",
+        "level": "h4"
+      }
+    },
+    "p4-desc": {
+      "type": "Text",
+      "props": {
+        "text": "3,505 real-money trading agents, 7.5M invocations, 99.9% settlement on-chain",
+        "variant": "body"
+      }
+    },
+    "p4-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "p4-badge",
+        "p4-stat"
+      ]
+    },
+    "p4-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "on-chain deployment",
+        "variant": "secondary"
+      }
+    },
+    "p4-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "↑6"
+      }
+    },
+    "paper5": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "p5-heading",
+        "p5-desc",
+        "p5-meta"
+      ]
+    },
+    "p5-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "CocoaBench",
+        "level": "h4"
+      }
+    },
+    "p5-desc": {
+      "type": "Text",
+      "props": {
+        "text": "SOTA unified agents fail 55% of tasks (vision+search+coding combined); early-mover reliability gap",
+        "variant": "body"
+      }
+    },
+    "p5-meta": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "p5-badge",
+        "p5-stat"
+      ]
+    },
+    "p5-badge": {
+      "type": "Badge",
+      "props": {
+        "text": "benchmark gap",
+        "variant": "outline"
+      }
+    },
+    "p5-stat": {
+      "type": "Stat",
+      "props": {
+        "value": "↑37"
+      }
+    },
+    "sep2": {
+      "type": "Separator"
+    },
+    "footer-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "footer-label",
+        "footer-link"
+      ]
+    },
+    "footer-label": {
+      "type": "Text",
+      "props": {
+        "text": "Full:",
+        "variant": "muted"
+      }
+    },
+    "footer-link": {
+      "type": "Link",
+      "props": {
+        "label": "articles/paper-digest-2026-07-09.md",
+        "href": "articles/paper-digest-2026-07-09.md"
+      }
+    }
+  }
+}
