@@ -10,7 +10,7 @@ skills:
   daily-routine: { enabled: false, schedule: "0 7 * * *" }
   rss-digest: { enabled: false, schedule: "0 7 * * *" }
   hacker-news-digest: { enabled: false, schedule: "0 7 * * *" } # top HN stories filtered by MEMORY.md interests
-  paper-digest: { enabled: true, schedule: "0 7 * * *" }
+  paper-digest: { enabled: true, schedule: "0 7 * * *", model: "claude-sonnet-4-6" }
   vienna-apartments: { enabled: false, schedule: "0 6 * * *", model: "claude-sonnet-4-6", var: "1,3,4,5,6,7,8,9" } # 8 AM Vienna — commission-free central-district rentals to Telegram (disabled: apartment found 2026-07-09)
 
   reddit-digest: { enabled: false, schedule: "0 7 * * *" }
@@ -40,10 +40,10 @@ skills:
   defi-monitor: { enabled: false, schedule: "0 12 * * *" }
   treasury-info: { enabled: false, schedule: "0 12 * * *" }
   distribute-tokens: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — var: distribution list label
-  defi-overview: { enabled: false, schedule: "0 12 * * *" }
+  defi-overview: { enabled: true, schedule: "0 12 * * *", model: "claude-sonnet-4-6" }
 
   monitor-polymarket: { enabled: false, schedule: "30 12 * * *", model: "claude-sonnet-4-6" } # monitor specific markets for 24h price moves and volume changes
-  monitor-kalshi: { enabled: false, schedule: "0 13 * * *", model: "claude-sonnet-4-6" } # monitor Kalshi prediction markets for 24h price moves and volume
+  monitor-kalshi: { enabled: true, schedule: "0 13 * * *", model: "claude-sonnet-4-6" } # monitor Kalshi prediction markets for 24h price moves and volume
   monitor-runners: { enabled: false, schedule: "0 12 * * *" }
   token-pick: { enabled: false, schedule: "0 12 * * *" }
   token-report: { enabled: false, schedule: "30 12 * * *", model: "claude-sonnet-4-6" } # daily token price/volume from GeckoTerminal
@@ -57,7 +57,7 @@ skills:
   market-context-refresh: { enabled: false, schedule: "0 13 * * *", model: "claude-sonnet-4-6" } # fetch live crypto macro data, update memory
   narrative-tracker: { enabled: false, schedule: "30 13 * * *" } # track rising/peaking/fading narratives
   polymarket-comments: { enabled: false, schedule: "0 13 * * *" } # top comments from trending Polymarket markets
-  unlock-monitor: { enabled: false, schedule: "0 10 * * 1" } # weekly token unlock/vesting tracker
+  unlock-monitor: { enabled: true, schedule: "0 10 * * 1", model: "claude-sonnet-4-6" } # weekly token unlock/vesting tracker
 
   # --- Afternoon (2 PM UTC) ---
   article: { enabled: false, schedule: "0 14 * * *" }
@@ -71,7 +71,7 @@ skills:
 
   security-digest: { enabled: false, schedule: "0 14 * * *" }
   idea-capture: { enabled: false, schedule: "0 14 * * *" }
-  deal-flow: { enabled: false, schedule: "0 14 * * 1" } # weekly funding round tracker
+  deal-flow: { enabled: true, schedule: "0 14 * * 1", model: "claude-sonnet-4-6" } # weekly funding round tracker
   reg-monitor: { enabled: false, schedule: "0 14 * * 3" } # regulatory developments tracker
 
   # --- Repo intelligence (3 PM UTC) ---
@@ -116,7 +116,7 @@ skills:
   tweet-roundup: { enabled: false, schedule: "0 17 * * *", var: "" } # latest tweets on configurable topics
   agent-buzz: { enabled: false, schedule: "30 17 * * *" } # top AI agent tweets by influence
   farcaster-digest: { enabled: false, schedule: "0 17 * * *" } # trending Farcaster casts
-  vibecoding-digest: { enabled: false, schedule: "30 17 * * *" } # r/vibecoding trending posts
+  vibecoding-digest: { enabled: true, schedule: "30 17 * * *", model: "claude-sonnet-4-6" } # r/vibecoding trending posts
   channel-recap: { enabled: false, schedule: "0 17 * * 0", var: "" } # weekly — recap from Telegram channel (set var to channel username)
 
   # --- Feed generation (5:30 PM UTC, after content skills) ---
@@ -137,11 +137,11 @@ skills:
 
   # --- Evening / meta (6 PM UTC) ---
   goal-tracker: { enabled: false, schedule: "0 18 * * *" }
-  skill-health: { enabled: true, schedule: "0 18 * * *" }
+  skill-health: { enabled: true, schedule: "0 18 * * *", model: "claude-sonnet-4-6" }
   skill-analytics: { enabled: false, schedule: "30 18 * * 3", model: "claude-sonnet-4-6" } # Wednesday — fleet-level skill-run analytics: ranked run counts, exit-taxonomy distribution, anomaly flags (significance-gated)
 
   self-improve: { enabled: false, schedule: "0 18 1/2 * *" } # every other day — improve agent skills/prompts/config
-  reflect: { enabled: true, schedule: "0 18 * * *" }
+  reflect: { enabled: true, schedule: "0 18 * * *", model: "claude-sonnet-4-6" }
 
   action-converter: { enabled: false, schedule: "0 18 * * *" }
   startup-idea:
@@ -200,7 +200,7 @@ skills:
   spawn-instance: { enabled: false, schedule: "workflow_dispatch", var: "" } # on-demand — var: "name: purpose"
   fleet-control: { enabled: false, schedule: "0 9,15 * * *" } # fleet health checks twice daily, dispatch via var
   weekly-review: { enabled: false, schedule: "0 19 * * 1" }
-  weekly-shiplog: { enabled: true, schedule: "0 9 * * 1" } # Monday — narrative of everything shipped last week
+  weekly-shiplog: { enabled: true, schedule: "0 9 * * 1", model: "claude-sonnet-4-6" } # Monday — narrative of everything shipped last week
   skill-leaderboard: { enabled: false, schedule: "0 17 * * 0", model: "claude-sonnet-4-6" } # Sunday — rank popular skills across forks
   fork-contributor-leaderboard: { enabled: false, schedule: "30 17 * * 0", model: "claude-sonnet-4-6" } # Sunday — rank community contributors across forks and upstream PRs
   contributor-reward:
@@ -242,7 +242,7 @@ skills:
   onboard: { enabled: false, schedule: "workflow_dispatch", var: "" } # one-shot setup validator — checks secrets/workflows/memory writability and notifies a checklist with fix commands; pair with ./onboard CLI
 
   # --- Fallback (must be last) ---
-  heartbeat: { enabled: true, schedule: "0 8,14,20 * * *" }
+  heartbeat: { enabled: true, schedule: "0 8,14,20 * * *", model: "claude-sonnet-4-6" }
 
 # Reactive triggers — event-driven skill dispatch based on cron-state.json conditions.
 # Skills with schedule: "reactive" are never cron-matched. Instead, the scheduler
