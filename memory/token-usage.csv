@@ -150,3 +150,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-10,money-radar,claude-opus-4-7,31,28474,2125493,187253
 2026-07-10,monitor-kalshi,claude-sonnet-4-6,438,29092,1769848,75770
 2026-07-10,heartbeat,claude-sonnet-4-6,9,10767,460178,64953
+2026-07-10,vibecoding-digest,claude-sonnet-4-6,178,13276,2274680,67494
