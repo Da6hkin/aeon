@@ -1,27 +1,24 @@
-*Kalshi monitor — 2026-07-09*
-verdict: cut pricing deepens — T3.75 shed 4pp to 16% on tight book; June CPI markets pricing deflation ahead of July 14 release.
+*Kalshi monitor — 2026-07-10*
+verdict: CPI deflation positioning ahead of July 14 print — extreme intraday swings (T-0.2 hit 65%→37%) signal heavy churn; modal −0.2% to −0.3% locked at 51%; book tightened from 6pp thin to 2pp tight since yesterday.
 
-⚠️ No watchlist set — ran in discovery mode. Add tickers to `skills/monitor-kalshi/watchlist.md` to track persistently. Discovered 2 active econ events for this run.
+⚠️ No watchlist set — ran in discovery mode. Add tickers to `skills/monitor-kalshi/watchlist.md` to track persistently.
 
-**Fed Funds Rate After July Meeting** (KXFED-26JUL) — Economics
+**CPI in June** (KXCPI-26JUN) — Economics · print July 14 (4 days)
 | Market | prob | Δ24h | range | vol | spread |
-|---|---|---|---|---|---|
-| Rate above 3.75% | 16% | −4pp ▼ | 15–20% | $7.5k | 1pp |
-| Rate above 3.25% | 99% | 0pp — | stable | $64.5k | 1pp |
-mover: above 3.75% — 84% cut probability priced for July 29 FOMC; tightest book in the event
+|--------|------|------|-------|-----|--------|
+| CPI > −0.1% | 16% | +4pp ▲ | 10–42% | $2.8k | 2pp |
+| CPI > −0.2% | 37% | +3pp ▲ | 29–65% | $2.4k | 2pp |
+| CPI > −0.3% | 88% | −3pp ▼ | 78–94% | $3.0k | 2pp |
+mover: CPI > −0.2% — intraday spike to 65% on tight book before reverting to 37% (28pp intraday range); implied modal: −0.3% to −0.2% at 51% prob; prior thin-book note now resolved (was 6pp yesterday)
 
-**CPI June** (KXCPI-26JUN) — Economics (closes July 14, 5 days)
-| Market | prob | Δ24h | range | vol | spread |
-|---|---|---|---|---|---|
-| CPI > −0.3% | 79% | −7pp ▼ | 78–91% | $4.2k | 6pp thin |
-| CPI > −0.2% | 33% | −1pp — | 29–37% | $1.5k | 2pp |
-mover: CPI > −0.3% fell −7pp; modal outcome is CPI between −0.2% and −0.3% (deflation). Thin book (6pp spread) limits conviction — watch for tightening into Tuesday data.
+**Fed funds rate after Jul 2026 meeting** (KXFED-26JUL) — continued from yesterday
+Rate > 3.75%: 14% (−4pp ▼, tight 1pp, $5.1k) — same direction and magnitude as yesterday (−4pp ▼), demoted. Cut prob 86%.
 
 **ALERTS** (>5pp, non-thin book)
-none
+None this run.
 
-**Trending (not in watchlist — consider adding)**
-- KXFED-26JUL — $72k+ 24h vol, July 29 FOMC cut/hold; most liquid econ market found today
-- KXCPI-26JUN — $10k+ 24h vol, closes July 14; deflationary print consensus forming
+**Trending (not tracked)**
+- No new high-vol events found via general endpoint (returned only long-horizon markets).
+- Add KXFED-26JUL + KXCPI-26JUN to watchlist.md for persistent daily tracking.
 
-sources: events=degraded (discovery via direct ticker) candlesticks=ok orderbook=ok
+sources: events=degraded (general endpoint; tickers probed directly) candlesticks=ok orderbook=ok
