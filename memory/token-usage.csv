@@ -147,4 +147,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-10,startup-idea,claude-opus-4-7,3679,24463,1872978,140350
 2026-07-10,idea-capture,claude-opus-4-7,7,721,102782,16211
 2026-07-10,morning-brief,claude-opus-4-7,1717,15470,1206701,139565
-2026-07-10,heartbeat,claude-sonnet-4-6,12,18107,695207,63603
+2026-07-10,paper-digest,claude-sonnet-4-6,1890,18971,1106979,82531
