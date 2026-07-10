@@ -145,6 +145,7 @@ skills:
 
   action-converter: { enabled: false, schedule: "0 18 * * *" }
   money-radar: { enabled: true, schedule: "0 8,19 * * *" } # twice daily 08:00 + 19:00 UTC — cross-stream synthesis of all skill outputs into ranked, money-first, non-obvious ideas → memory/money-radar/ (08:00 catches overnight-chain output; 19:00 catches the full day; opus: idea quality is the point)
+  lead-finder: { enabled: true, schedule: "workflow_dispatch", var: "underwater" } # on-demand — find + qualify real reachable sales leads for a product/ICP (var: underwater | agent-firewall | free-text ICP) → memory/leads/ (opus: qualification quality matters)
   startup-idea:
     {
       enabled: false,
