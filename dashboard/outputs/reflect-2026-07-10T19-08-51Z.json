@@ -1,0 +1,56 @@
+{
+  "root": "card-reflect",
+  "state": {},
+  "elements": {
+    "card-reflect": {
+      "type": "Card",
+      "props": {
+        "title": "reflect"
+      },
+      "children": [
+        "stack-main"
+      ]
+    },
+    "stack-main": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "text-header",
+        "stat-skills",
+        "alert-iss003",
+        "text-keydate"
+      ]
+    },
+    "text-header": {
+      "type": "Text",
+      "props": {
+        "text": "Memory consolidated — 2026-07-10. Chain healthy."
+      }
+    },
+    "stat-skills": {
+      "type": "Stat",
+      "props": {
+        "label": "Skills Active",
+        "value": "10+"
+      }
+    },
+    "alert-iss003": {
+      "type": "Alert",
+      "props": {
+        "type": "warning",
+        "title": "ISS-003 Open",
+        "message": "vibecoding-digest Reddit block needs prefetch-reddit.sh"
+      }
+    },
+    "text-keydate": {
+      "type": "Text",
+      "props": {
+        "text": "Key date: CPI print + 4 weekly skills fire Mon 2026-07-14",
+        "variant": "lead"
+      }
+    }
+  }
+}
