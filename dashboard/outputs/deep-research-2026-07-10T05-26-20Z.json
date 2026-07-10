@@ -1,0 +1,265 @@
+{
+  "root": "root_card",
+  "state": {},
+  "elements": {
+    "root_card": {
+      "type": "Card",
+      "props": {
+        "title": "Deep Research — 2026-07-10"
+      },
+      "children": [
+        "main_stack"
+      ]
+    },
+    "main_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "topic_heading",
+        "topic_text",
+        "sep1",
+        "metadata_heading",
+        "metadata_text",
+        "sep2",
+        "summary_heading",
+        "summary_text",
+        "sep3",
+        "findings_heading",
+        "findings_stack",
+        "sep4",
+        "strongest_heading",
+        "strongest_text",
+        "sep5",
+        "question_heading",
+        "question_text",
+        "sep6",
+        "report_link"
+      ]
+    },
+    "topic_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Topic",
+        "level": "h2"
+      }
+    },
+    "topic_text": {
+      "type": "Text",
+      "props": {
+        "text": "Autonomous AI agents on Base + Liquid Protocol/DIEM + new agent infra opportunities"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "metadata_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Research Metadata",
+        "level": "h2"
+      }
+    },
+    "metadata_text": {
+      "type": "Text",
+      "props": {
+        "text": "Mode: deep — 33 sources (T1:15 T2:13 T3:5) — 4 papers"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "summary_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Summary",
+        "level": "h2"
+      }
+    },
+    "summary_text": {
+      "type": "Text",
+      "props": {
+        "text": "Base has become the default execution environment for autonomous crypto agents. AgentKit, Base MCP (May 26), Agentic Wallets, Coinbase for Agents (Jun 11) shipped in a single 12-month arc; Chainalysis records 100M+ x402 payments on Base through Q1 2026. But agent transactions are still ~0.0001% of $46T annual stablecoin volume, and the median tx size has shifted decisively above $1 (95% of volume vs 49% a year ago) — micropayments is not the winning use case."
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "findings_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Key Findings",
+        "level": "h2"
+      }
+    },
+    "findings_stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "finding1",
+        "finding2",
+        "finding3",
+        "finding4"
+      ]
+    },
+    "finding1": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "finding1_badge",
+        "finding1_text"
+      ]
+    },
+    "finding1_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Conf: H"
+      }
+    },
+    "finding1_text": {
+      "type": "Text",
+      "props": {
+        "text": "Base is default: AgentKit + Base MCP + Coinbase for Agents saturate the stack"
+      }
+    },
+    "finding2": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "finding2_badge",
+        "finding2_text"
+      ]
+    },
+    "finding2_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Conf: H"
+      }
+    },
+    "finding2_text": {
+      "type": "Text",
+      "props": {
+        "text": "x402 real but tiny; $1+ median tx: sub-cent micropayments not the wedge"
+      }
+    },
+    "finding3": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "finding3_badge",
+        "finding3_text"
+      ]
+    },
+    "finding3_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Conf: H"
+      }
+    },
+    "finding3_text": {
+      "type": "Text",
+      "props": {
+        "text": "Security is first-order limiter: $600M+ H1 2026 losses, 88% of AI-agent orgs report incidents"
+      }
+    },
+    "finding4": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "finding4_badge",
+        "finding4_text"
+      ]
+    },
+    "finding4_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "Conf: M-H",
+        "variant": "secondary"
+      }
+    },
+    "finding4_text": {
+      "type": "Text",
+      "props": {
+        "text": "Identity/attestation/policy layer is the opening: ERC-8004 + Warden SPEx + AP2 unstandardized"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "strongest_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Strongest Data",
+        "level": "h2"
+      }
+    },
+    "strongest_text": {
+      "type": "Text",
+      "props": {
+        "text": "169M x402 payments across 590K buyers and 100K sellers year one (InfoQ, 2026-07-06)"
+      }
+    },
+    "sep5": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "question_heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Biggest Open Question",
+        "level": "h2"
+      }
+    },
+    "question_text": {
+      "type": "Text",
+      "props": {
+        "text": "Does Google AP2 with 60+ partners (PayPal, Mastercard, Amex) rebase agent payments off crypto rails?"
+      }
+    },
+    "sep6": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "report_link": {
+      "type": "StoryLink",
+      "props": {
+        "title": "Full Report",
+        "href": "articles/deep-research-2026-07-10.md",
+        "source": "Deep Research"
+      }
+    }
+  }
+}
