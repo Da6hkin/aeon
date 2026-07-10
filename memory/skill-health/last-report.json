@@ -1,25 +1,13 @@
 {
-  "hash": "9275abca56f97f029cd30c8d33dbda6ce3ede16eb1829589622035f12ac9b073",
-  "last_notified_at": "2026-07-09T18:30:00Z",
-  "last_run_at": "2026-07-09T18:30:00Z",
+  "hash": "f5b6384e779c1e5ee209ac556e587502ef299d38d6d26fcc523cf9759082e39d",
+  "last_notified_at": "2026-07-10T18:00:00Z",
+  "last_run_at": "2026-07-10T18:00:00Z",
   "classification": {
-    "critical": ["chain:overnight-research"],
+    "critical": [],
     "degraded": [],
     "flapping": [],
     "warning": ["heartbeat"],
-    "healthy_count": 0,
-    "no_data": [
-      "paper-digest",
-      "defi-overview",
-      "monitor-kalshi",
-      "unlock-monitor",
-      "deal-flow",
-      "vibecoding-digest",
-      "skill-health",
-      "reflect",
-      "money-radar",
-      "ai-framework-watch",
-      "weekly-shiplog"
-    ]
+    "healthy_count": 8,
+    "no_data": ["unlock-monitor", "deal-flow", "ai-framework-watch", "weekly-shiplog"]
   }
 }
