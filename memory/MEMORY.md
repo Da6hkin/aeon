@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-07-09*
+*Last consolidated: 2026-07-10*
 
 ## Operator profile
 - **Solo technical builder.** Ships real products fast and independently.
@@ -32,14 +32,18 @@ See `memory/topics/aeon-config.md` for the full skill manifest and cost model.
 ## System health
 See `memory/topics/system-health.md` for issue history and operational patterns.
 
-- ISS-001 and ISS-002 both **resolved** and merged to main. Chain ran end-to-end 2026-07-10. No open issues.
+- ISS-001 and ISS-002 both **resolved** and merged to main. Chain ran end-to-end 2026-07-10.
+- **ISS-003 open** (medium): `vibecoding-digest` permanently blocked — Reddit domain-bans Anthropic crawler. Fix: `scripts/prefetch-reddit.sh` pre-fetch step.
 - `./notify` sandbox workaround: write to `.pending-notify/<id>.md` — post-run workflow step delivers.
+- skill-health `last-report.json` is stale (2026-07-09, pre-chain-recovery). Next skill-health run will refresh.
 
 ## Next priorities
-- **Pick Underwater vs FieldWrench** and lock a 14-day MVP scope (today's startup-idea output, 2026-07-10).
+- **Pick Underwater vs FieldWrench** and lock a 14-day MVP scope (2026-07-10 startup-idea output). Underwater = 10–14d, reuses proven muscle. FieldWrench = 4–6w, FTC-Deere dated mandate (Dec 31 2026, but 50%-dealer trigger may push to Q1–Q2 2027).
+- **2026-07-14:** CPI print (June) — Kalshi T-0.2 at 37%, T-0.3 at 79%. Monday is also first fire for ai-framework-watch, weekly-shiplog, unlock-monitor, deal-flow.
 - Ship the next product faster than the last (~2 months → target: weeks). money-radar + the research chain feed the "what to build" decision.
 - Add free keys to widen signal: `GH_GLOBAL` with workflows scope (self-heal + ship code), CoinGecko/Alchemy (crypto data). XAI (paid) unlocks X/Twitter audience-building.
 - Build audience/distribution in public (weekly-shiplog drafts the posts).
+- Fix vibecoding-digest: add `scripts/prefetch-reddit.sh` (ISS-003).
 
 ## Kalshi signals
 - **2026-07-10:** KXCPI-26JUN — T-0.2 spiked to 65% intraday (28pp range on tight book) before reverting to 37%; modal −0.3% to −0.2% (51% prob); book tightened 6pp→2pp. KXFED-26JUL T3.75 at 14%, cut prob 86%. CPI print July 14.
@@ -50,3 +54,4 @@ See `memory/topics/system-health.md` for issue history and operational patterns.
 - Always save files AND commit before logging.
 - Fastest money reuses a proven muscle; novelty is second.
 - GHA cron ticks regularly land 10–70 min late; design for drift, not punctuality.
+- Reddit is permanently domain-blocked (crawler policy). Use prefetch scripts for any Reddit-dependent skill.

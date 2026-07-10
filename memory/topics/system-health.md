@@ -1,12 +1,25 @@
 # System Health
 
-*Last updated: 2026-07-09*
+*Last updated: 2026-07-10*
 
-## Current status: DEGRADED → pending recovery
+## Current status: OK (1 open issue)
 
-Branch `claude/aeon-max-improvements-ix8xy5` was pushed 2026-07-09 and fixes both open issues. Status page should return to **OK** after this branch is merged and the next scheduled cycles confirm.
+Chain ran end-to-end on 2026-07-10 for the first time in ~30 days. ISS-001 and ISS-002 are resolved and merged to main. One open issue: ISS-003 (vibecoding-digest Reddit block).
 
-**Operator action required:** merge `claude/aeon-max-improvements-ix8xy5`.
+---
+
+## Open issues
+
+### ISS-003 — vibecoding-digest permanently blocked (Reddit domain-ban)
+
+**Severity:** medium  
+**Category:** permanent-limitation  
+**Detected:** 2026-07-09 (first run of skill), confirmed 2026-07-10  
+**Affected skill:** vibecoding-digest
+
+All Reddit endpoints return 403/block for the Anthropic crawler: curl (403), WebFetch on old.reddit.com / www.reddit.com / api.reddit.com (all blocked), teddit.net (blocked), libreddit.kavin.rocks (403), WebSearch reddit.com (domain-blocked by crawler policy). This is a permanent structural limitation, not a transient failure.
+
+**Fix:** Add `scripts/prefetch-reddit.sh` that runs before Claude starts (full env + network access). Pre-fetch the three Reddit JSON endpoints for r/vibecoding (top/hot/rising) and cache to `.reddit-cache/vibecoding.json`.
 
 ---
 
@@ -20,7 +33,9 @@ Branch `claude/aeon-max-improvements-ix8xy5` was pushed 2026-07-09 and fixes bot
 
 **Downstream damage:** `startup-idea`, `idea-capture`, `morning-brief` (chain Steps 2–4) silently starved since 2026-05-15.
 
-**Fix:** Bug A → exact match in chain-runner.yml; Bug B → `IN_SKILLS` section guard in messages.yml. Also found and fixed a third parser bug: block-format attributes (6-space indent) were invisible to the parser (needed at 4-space) — this was why `ai-framework-watch` never fired standalone.
+**Fix:** Bug A → exact match in chain-runner.yml; Bug B → `IN_SKILLS` section guard in messages.yml. Also found and fixed a third parser bug: block-format attributes (6-space indent) were invisible to the parser — this was why `ai-framework-watch` never fired standalone.
+
+**Confirmed:** Chain ran clean 2026-07-10 (all 4 parallel steps + startup-idea + idea-capture + morning-brief succeeded).
 
 ### ISS-002 — vienna-apartments 06:00Z slot silently dropped (resolved 2026-07-09)
 
@@ -32,9 +47,10 @@ Branch `claude/aeon-max-improvements-ix8xy5` was pushed 2026-07-09 and fixes bot
 
 ---
 
-## Operational patterns observed
+## Operational patterns
 
 - **Tick drift is normal:** GHA cron ticks regularly land 10–70 min late. The 08:00Z heartbeat slot is the worst offender (~40–70 min late most days).
 - **`./notify` sandbox issue:** direct `./notify` invocation fails in Actions sandbox when using shell command substitution (heredoc/backtick). Established fallback: write to `.pending-notify/<id>.md` — the post-run workflow step delivers it.
-- **skill-health not yet populated:** `memory/skill-health/*.json` directory is empty; skill-health was just enabled 2026-07-09 and hasn't run yet.
-- **heartbeat success rate:** 77% (108/140 as of 2026-07-09) — slightly below the 80% ideal but above the critical 50% threshold. Chronicle of clock-drift miss-logs rather than real failures.
+- **skill-health `last-report.json` stale:** Generated 2026-07-09 at 18:30Z (before chain recovery). Shows chain:overnight-research as CRITICAL — now incorrect. Next skill-health run will refresh.
+- **heartbeat success rate:** ~77% (as of 2026-07-10) — slightly below 80% ideal but above the critical 50% threshold. Reflects tick-drift miss-logs rather than real failures.
+- **Reddit permanently blocked:** reddit.com is domain-blocked by both sandbox curl layer and WebFetch (Anthropic crawler ban). All Reddit-dependent skills need a `scripts/prefetch-*.sh` pre-fetch workaround.
