@@ -4,7 +4,7 @@
 
 | ID | Title | Severity | Category | Detected | Affected Skills |
 |----|-------|----------|----------|----------|-----------------|
-| _none_ | | | | | |
+| [ISS-003](ISS-003.md) | vibecoding-digest permanently blocked — Reddit domain-blocks Anthropic crawler | medium | permanent-limitation | 2026-07-09 | vibecoding-digest |
 
 ## Resolved
 
