@@ -145,3 +145,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-09,money-radar,claude-opus-4-7,27,19760,1286359,84729
 2026-07-10,repo-scanner,claude-opus-4-7,55,63412,3917175,148798
 2026-07-10,startup-idea,claude-opus-4-7,3679,24463,1872978,140350
+2026-07-10,idea-capture,claude-opus-4-7,7,721,102782,16211
