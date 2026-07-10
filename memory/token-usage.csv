@@ -148,3 +148,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-10,idea-capture,claude-opus-4-7,7,721,102782,16211
 2026-07-10,morning-brief,claude-opus-4-7,1717,15470,1206701,139565
 2026-07-10,money-radar,claude-opus-4-7,31,28474,2125493,187253
+2026-07-10,defi-overview,claude-sonnet-4-6,2110,20975,1399407,71150
