@@ -1,13 +1,17 @@
-*Skill Health — 2026-07-09*
-HEALTH: CRITICAL(1)
+Skill-health audit complete. Here's the summary:
 
-🔴 CRITICAL
-- chain:overnight-research — last_status=failed (05:11Z today, pre-fix). Fix merged to main (ISS-001 resolved 2026-07-09). Confirm on 2026-07-10 04:45Z fire — INVESTIGATE
+## Summary
 
-⚠️ WARNING
-- heartbeat — 77% success rate (109/141 runs, 0 consecutive failures) — monitoring only
+**HEALTH: WARNING(1)** — significant improvement from yesterday's CRITICAL.
 
-⚪ NO DATA (11): paper-digest, defi-overview, monitor-kalshi, unlock-monitor, deal-flow, vibecoding-digest, skill-health, reflect, money-radar, ai-framework-watch, weekly-shiplog — DISPATCH-SKILL (all newly enabled 2026-07-09; first fires pending)
-🟢 HEALTHY: 0
+**Classification (13 enabled skills):**
 
-Open issues: 0 · Resolved this run: 0
+| Status | Skills |
+|--------|--------|
+| 🟢 HEALTHY (8) | chain:overnight-research (**recovered from CRITICAL** ✓), paper-digest, defi-overview, monitor-kalshi, vibecoding-digest, skill-health, reflect, money-radar |
+| ⚠️ WARNING (1) | heartbeat — 78% success rate (111/143), consecutive_failures: 0 — tick-drift noise, not real failures |
+| ⚪ NO DATA (4) | unlock-monitor, deal-flow, ai-framework-watch, weekly-shiplog — all first fire Mon 2026-07-14 |
+
+**Issues:** 1 open (ISS-003 — vibecoding-digest Reddit domain block, permanent-limitation). Not resolved: cron-state shows "success" but that's a false positive — every run logs `VIBECODING_DIGEST_ERROR` with 0 posts. Fix requires `scripts/prefetch-reddit.sh`.
+
+**Key insight:** The state hash changed from the previous report (chain:overnight-research dropped from CRITICAL), so a notification was queued in `.pending-notify/skill-health-20260710.md` for post-run delivery.
