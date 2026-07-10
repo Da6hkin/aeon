@@ -17,6 +17,10 @@
 - Crypto: Liquid Protocol / DIEM ecosystem, on-chain agents, payment/coordination layers, Polymarket, trading tooling
 - Broadly: any fast, buildable SaaS/tool with a clear first paying customer
 
+## About This Repo
+- github: aaronjmars
+- [Repo catalog](topics/repos.md) — GitHub fleet with prioritized opportunities (32 repos, last scanned 2026-07-10)
+
 ## Active setup (Aeon)
 See `memory/topics/aeon-config.md` for the full skill manifest and cost model.
 
