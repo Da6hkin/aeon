@@ -28,17 +28,16 @@ See `memory/topics/aeon-config.md` for the full skill manifest and cost model.
 - **Standalones:** paper-digest, defi-overview, monitor-kalshi, vibecoding-digest, money-radar, skill-health, reflect, heartbeat (3×/day), ai-framework-watch, weekly-shiplog, unlock-monitor, deal-flow
 - **Disabled:** vienna-apartments (apartment found), startup-idea standalone (chain-only)
 - **Notifications:** Telegram. Models: standalone skills on sonnet; chain quality steps + money-radar on opus.
-- **Pending merge:** branch `claude/aeon-max-improvements-ix8xy5` — fixes ISS-001 (chain-runner jq bug + messages.yml parser) and ISS-002 (catch-up window). Operator must merge before the fixes go live.
 
 ## System health
 See `memory/topics/system-health.md` for issue history and operational patterns.
 
-- ISS-001 and ISS-002 both **resolved** in the branch above. No open issues.
+- ISS-001 and ISS-002 both **resolved** and merged to main. Chain ran end-to-end 2026-07-10. No open issues.
 - `./notify` sandbox workaround: write to `.pending-notify/<id>.md` — post-run workflow step delivers.
 
 ## Next priorities
-- **Merge the branch** (`claude/aeon-max-improvements-ix8xy5`) to restore the overnight-research chain and fix tick-drift.
-- Ship the next product faster than the last (~2 months → target: weeks). Let money-radar + the research chain feed the "what to build" decision.
+- **Pick Underwater vs FieldWrench** and lock a 14-day MVP scope (today's startup-idea output, 2026-07-10).
+- Ship the next product faster than the last (~2 months → target: weeks). money-radar + the research chain feed the "what to build" decision.
 - Add free keys to widen signal: `GH_GLOBAL` with workflows scope (self-heal + ship code), CoinGecko/Alchemy (crypto data). XAI (paid) unlocks X/Twitter audience-building.
 - Build audience/distribution in public (weekly-shiplog drafts the posts).
 
