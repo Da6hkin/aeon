@@ -1,18 +1,19 @@
+Skill run complete.
+
 ## Summary
 
-Ran **money-radar (rev 1)** with the fully-restored overnight-research chain — first time all 8 signal streams (`deep-research`, `startup-idea`, `hacker-news-digest`, `paper-digest`, `defi-overview`, `monitor-kalshi`, `github-trending`, `repo-scanner`) produced fresh outputs on the same day. Fresh WebSearch validation confirmed **ERC-8004 at 21,562+ live agents on 8004scan.io** and **FTC-Deere Dec-31-2026 mandate** with a new timing wrinkle (50%-dealer rollout trigger).
+Ran **money-radar (rev 2, late-day re-run)** on 2026-07-10. Rev 1 shipped this morning with the fully-restored overnight-research chain — this re-run compared the freshest `.outputs/*.md` against that brief and found **no strong new edge**. Published a short "incremental change" update per the skill's dedup guardrail rather than padding with filler ideas.
 
-**Top pick:** *Underwater* — per-customer LLM cost-vs-revenue Slack alerts for AI-native SaaS founders about to reprice; first $ in 10–14d, $299/mo × 5 teams = ~$1.7k MRR.
+**Rankings unchanged:** Underwater > Agent Firewall > FieldWrench > wildcard AgentLens.
 
-**Money-radar-defining pick (#2):** *Agent Firewall* — hosted ERC-8004 attestation + policy engine + prompt-injection scanner for on-chain agents. Only emerges from cross-stream synthesis (deep-research + paper-digest + Grok/Bankr $174K incident).
+**Three genuine deltas since morning:**
+1. **Retracted rev 1 connection #4** — Kalshi CPI T-0.3 arbitrage window closed inside 24h (book tightened 6pp→2pp before July 14 print). Clean outcome; no idea depended on it.
+2. **USDe basis-trade unwind day 2** (−6.4% after yesterday's −3.2%). Fresh WebSearch confirms Ethena TVL ~50% off Oct-25 peak. Nudges Idea 2 to per-agent flat pricing (not per-tx) since DEX volume reversed −14.5%.
+3. **New paper MPFlow** (arXiv 2607.08703, Amboss/Stillmark, 267 BTC on live Lightning) = 4th real-money on-chain agent cohort documented this week. Concrete Agent Firewall adjustment: add Amboss/Voltage/Breez as a 5th day-1 DM cohort.
 
-**Ambitious dated bet (#3):** *FieldWrench* — indie ag-shop diagnostic + audit-trail aligned with the FTC-Deere mandate, kill-criterion tightened for the new dealer-rollout risk.
+**Files:**
+- `memory/money-radar/2026-07-10.md` — appended Rev 2 section
+- `.pending-notify/money-radar-20260710-rev2.md` — 518-char notification (sandbox fallback)
+- `memory/logs/2026-07-10.md` — appended `### money-radar (rev 2)` entry + Summary
 
-**Wildcard:** *AgentLens* — public leaderboard for the 3,505 real-money on-chain trading agents documented in arXiv 2604.26091, $19/mo follower-alerts tier, labeled variance (Investment Adviser framing risk, TAM ceiling).
-
-Files:
-- `memory/money-radar/2026-07-10.md` — full brief (5 connections + 3 ideas + wildcard + notes)
-- `.pending-notify/money-radar-20260710.md` — 415-char notification (top pick + wildcard title), sandbox fallback per established pattern
-- `memory/logs/2026-07-10.md` — appended `### money-radar` entry + Summary
-
-**Follow-up:** none from this skill. Next money-radar run gets the same rich substrate; watch for `unlock-monitor` + `deal-flow` on Monday which will add capital-flow signals.
+**Follow-up:** none. If paper-digest ships a 5th real-money agent cohort tomorrow, Agent Firewall shifts from "ship in weeks" to "ship this weekend."
