@@ -1,5 +1,5 @@
 # Long-term Memory
-*Last consolidated: 2026-07-10*
+*Last consolidated: 2026-07-11*
 
 ## Operator profile
 - **Solo technical builder.** Ships real products fast and independently.
@@ -32,14 +32,16 @@ See `memory/topics/aeon-config.md` for the full skill manifest and cost model.
 ## System health
 See `memory/topics/system-health.md` for issue history and operational patterns.
 
-- ISS-001 and ISS-002 both **resolved** and merged to main. Chain ran end-to-end 2026-07-10.
+- ISS-001 and ISS-002 both **resolved** and merged to main. Chain ran end-to-end 2026-07-10+11.
 - **ISS-003 open** (medium): `vibecoding-digest` permanently blocked — Reddit domain-bans Anthropic crawler. Fix: `scripts/prefetch-reddit.sh` pre-fetch step.
 - `./notify` sandbox workaround: write to `.pending-notify/<id>.md` — post-run workflow step delivers.
-- skill-health `last-report.json` is stale (2026-07-09, pre-chain-recovery). Next skill-health run will refresh.
+- skill-health `last-report.json` refreshed 2026-07-10 (post-chain-recovery): chain=HEALTHY, heartbeat=WARNING 78%.
+- **defi-overview degradations**: `/v2/chains change_1d` absent 3+ consecutive days; yields endpoint >10MB 2+ days. Consider `scripts/prefetch-defi.sh`.
+- **monitor-kalshi**: empty watchlist → daily discovery overhead. Add KXCPI-26JUN + KXFED-26JUL to watchlist before July 14 CPI print.
 
 ## Next priorities
-- **Pick Underwater vs FieldWrench** and lock a 14-day MVP scope (2026-07-10 startup-idea output). Underwater = 10–14d, reuses proven muscle. FieldWrench = 4–6w, FTC-Deere dated mandate (Dec 31 2026, but 50%-dealer trigger may push to Q1–Q2 2027).
-- **2026-07-14:** CPI print (June) — Kalshi T-0.2 at 37%, T-0.3 at 79%. Monday is also first fire for ai-framework-watch, weekly-shiplog, unlock-monitor, deal-flow.
+- **Cut 6-idea pile to 1 pick** — ranked 2026-07-11: #1 Underwater (10–14d, 30-day GPT-5.6 window, proven muscle), #2 Regression Sentinel (2–3w, AI-PR regression checker), #3 Sybil-Resistant Rep Aggregator (3–4w, sharpened Agent Firewall via Xiong ERC-8004 empirical break), #4 FieldWrench (4–6w, FTC-Deere mandate Dec 31 2026 but 50%-dealer trigger may push to Q1–Q2 2027). Attestly **retracted** — AWS AgentCore Evaluations bundled the wedge.
+- **2026-07-14:** CPI print (June) + first fire for ai-framework-watch, weekly-shiplog, unlock-monitor, deal-flow. Run monitor-kalshi that day to capture settlement.
 - Ship the next product faster than the last (~2 months → target: weeks). money-radar + the research chain feed the "what to build" decision.
 - Add free keys to widen signal: `GH_GLOBAL` with workflows scope (self-heal + ship code), CoinGecko/Alchemy (crypto data). XAI (paid) unlocks X/Twitter audience-building.
 - Build audience/distribution in public (weekly-shiplog drafts the posts).
@@ -56,3 +58,5 @@ See `memory/topics/system-health.md` for issue history and operational patterns.
 - Fastest money reuses a proven muscle; novelty is second.
 - GHA cron ticks regularly land 10–70 min late; design for drift, not punctuality.
 - Reddit is permanently domain-blocked (crawler policy). Use prefetch scripts for any Reddit-dependent skill.
+- DeFi endpoint drift: `/v2/chains change_1d` and the yields dataset go stale/oversize without warning. Never assume endpoint availability; always design a graceful fallback.
+- Prediction market skills with empty watchlists burn discovery overhead every run. Seed the watchlist with known event IDs as soon as they're confirmed relevant.

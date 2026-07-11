@@ -1,0 +1,40 @@
+{
+  "root": "card_reflect",
+  "state": {},
+  "elements": {
+    "card_reflect": {
+      "type": "Card",
+      "props": {
+        "title": "Reflect"
+      },
+      "children": [
+        "stack_content"
+      ]
+    },
+    "stack_content": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "alert_status",
+        "date_text"
+      ]
+    },
+    "alert_status": {
+      "type": "Alert",
+      "props": {
+        "message": "Memory consolidated",
+        "type": "success"
+      }
+    },
+    "date_text": {
+      "type": "Text",
+      "props": {
+        "text": "2026-07-11",
+        "variant": "caption"
+      }
+    }
+  }
+}

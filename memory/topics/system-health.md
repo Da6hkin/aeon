@@ -1,6 +1,6 @@
 # System Health
 
-*Last updated: 2026-07-10*
+*Last updated: 2026-07-11*
 
 ## Current status: OK (1 open issue)
 
@@ -51,6 +51,8 @@ All Reddit endpoints return 403/block for the Anthropic crawler: curl (403), Web
 
 - **Tick drift is normal:** GHA cron ticks regularly land 10–70 min late. The 08:00Z heartbeat slot is the worst offender (~40–70 min late most days).
 - **`./notify` sandbox issue:** direct `./notify` invocation fails in Actions sandbox when using shell command substitution (heredoc/backtick). Established fallback: write to `.pending-notify/<id>.md` — the post-run workflow step delivers it.
-- **skill-health `last-report.json` stale:** Generated 2026-07-09 at 18:30Z (before chain recovery). Shows chain:overnight-research as CRITICAL — now incorrect. Next skill-health run will refresh.
-- **heartbeat success rate:** ~77% (as of 2026-07-10) — slightly below 80% ideal but above the critical 50% threshold. Reflects tick-drift miss-logs rather than real failures.
+- **skill-health `last-report.json`:** Refreshed 2026-07-10 post-chain-recovery. Current state: chain=HEALTHY, heartbeat=WARNING (78%), 4 weekly skills=NO DATA (awaiting 2026-07-14 first fire).
+- **heartbeat success rate:** ~77–78% (as of 2026-07-11) — slightly below 80% ideal but above the critical 50% threshold. Reflects tick-drift miss-logs rather than real failures.
 - **Reddit permanently blocked:** reddit.com is domain-blocked by both sandbox curl layer and WebFetch (Anthropic crawler ban). All Reddit-dependent skills need a `scripts/prefetch-*.sh` pre-fetch workaround.
+- **defi-overview endpoint degradations:** `/v2/chains change_1d` has been absent for 3+ consecutive days (likely permanent endpoint change). Yields dataset is >10MB and unreachable via WebFetch for 2+ consecutive days. defi-overview now estimates chain-level TVL without deltas and carries forward stale stETH yield. Fix candidate: `scripts/prefetch-defi.sh` for key chain TVLs + occasional yields spot-fetch.
+- **monitor-kalshi empty watchlist:** skill runs in discovery mode every day (polling the /events endpoint for active markets). Candidate improvement: seed the watchlist with known event IDs (e.g. KXCPI-26JUN, KXFED-26JUL) to eliminate discovery overhead and avoid missing markets when the /events endpoint only returns long-horizon contracts.
