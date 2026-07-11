@@ -153,5 +153,4 @@ date,skill,model,input_tokens,output_tokens,cache_read,cache_creation
 2026-07-10,vibecoding-digest,claude-sonnet-4-6,178,13276,2274680,67494
 2026-07-10,skill-health,claude-sonnet-4-6,6266,18806,1596458,82369
 2026-07-10,heartbeat,claude-sonnet-4-6,10,15736,503934,74232
-2026-07-11,hacker-news-digest,claude-opus-4-7,69,32551,4632678,66665
-2026-07-11,deep-research,claude-opus-4-7,4622,40420,3447053,122551
+2026-07-11,repo-scanner,claude-opus-4-7,370,71067,4902019,142013

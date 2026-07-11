@@ -1,5 +1,5 @@
-# GitHub Repos — 2026-07-10
-Last scan: 2026-07-10
+# GitHub Repos — 2026-07-11
+Last scan: 2026-07-11
 Owner: aaronjmars
 Totals: 32 repos · 30 active · 1 maintained · 1 stale · 13 forks
 Status: REPO_SCANNER_OK
@@ -17,17 +17,17 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 ## Active (≤30d)
 | Repo | Priority | What | Stack | Opportunities | ★ | Issues/PRs | Last push |
 |------|----------|------|-------|---------------|---|------------|-----------|
-| [miroshark-aeon](https://github.com/aaronjmars/miroshark-aeon) | MED | Public Aeon agent automation driving the MiroShark repo. | Node/JS | MISSING_CONTRIBUTING | 17 | 0/4 | 2026-07-09 |
-| [aeon-agent](https://github.com/aaronjmars/aeon-agent) | MED | Public Aeon agent automation driving the Aeon framework repo. | Node/JS | MISSING_CONTRIBUTING | 10 | 0/4 | 2026-07-09 |
-| [minitor](https://github.com/aaronjmars/minitor) | MED | Monitor the current thing — a personal dashboard for the internet. | Next.js | MISSING_CLAUDE_MD | 12 | 0/0 | 2026-07-09 |
-| [polymarket-tg-bot](https://github.com/aaronjmars/polymarket-tg-bot) | HIGH | Telegram bot that monitors Polymarket and alerts on new prediction markets with category filters. | Node/TS | MISSING_LICENSE, MISSING_CLAUDE_MD | 7 | 0/2 | 2026-07-09 |
-| [magi](https://github.com/aaronjmars/magi) | HIGH | AI-powered semantic meme search engine for Farcaster with Frames integration. | Next.js | MISSING_LICENSE, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 11 | 0/5 | 2026-07-09 |
-| [tweazy](https://github.com/aaronjmars/tweazy) | HIGH | Query Twitter with AI in one click, monetized via x402, MCP, CDP Smart Wallets & Paymaster. | Next.js | README_STUB, MISSING_CONTRIBUTING | 48 | 0/5 | 2026-07-09 |
-| [soul.md](https://github.com/aaronjmars/soul.md) | HIGH | Framework for building AI-agent personalities that Claude Code / OpenClaw can ingest as an "AI soul". | Node/JS | README_STUB, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 606 | 0/1 | 2026-07-09 |
-| [blank-page-prototyping](https://github.com/aaronjmars/blank-page-prototyping) | HIGH | Figma-IRL — snap a photo of a sketch and generate a working HTML site via GPT-4o. | Next.js | MISSING_LICENSE, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 11 | 0/2 | 2026-07-09 |
-| [openroutercli](https://github.com/aaronjmars/openroutercli) | HIGH | CLI for every OpenRouter endpoint — built for humans and LLM agents; published on npm. | Node/JS | MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 10 | 0/2 | 2026-07-09 |
-| [web3-research-mcp](https://github.com/aaronjmars/web3-research-mcp) | HIGH | Deep-research MCP server for crypto — free & fully local, published on npm. | Node/TS | README_STUB, MISSING_CONTRIBUTING | 161 | 0/4 | 2026-07-09 |
-| [MiroShark](https://github.com/aaronjmars/MiroShark) | HIGH | Universal swarm-intelligence engine that simulates outcomes for ~$1 in under 10 minutes. | Python (+ Node frontend) | README_STUB, MISSING_CONTRIBUTING | 1358 | 1/0 | 2026-07-08 |
+| [aeon-agent](https://github.com/aaronjmars/aeon-agent) | HIGH | Public agent automation of aeon. | Node/JS | README_STUB, MISSING_CONTRIBUTING | 10 | 0/0 | 2026-07-11 |
+| [miroshark-aeon](https://github.com/aaronjmars/miroshark-aeon) | HIGH | Public agent automation of miroshark. | Node/JS | README_STUB, MISSING_CONTRIBUTING | 17 | 0/0 | 2026-07-10 |
+| [minitor](https://github.com/aaronjmars/minitor) | MED | Monitor the current thing — a personal dashboard for the internet. | Next.js | MISSING_CLAUDE_MD | 12 | 0/0 | 2026-07-10 |
+| [MiroShark](https://github.com/aaronjmars/MiroShark) | HIGH | Universal swarm-intelligence engine that simulates outcomes for ~$1 in under 10 minutes. | Python + Node frontend | README_STUB, MISSING_CONTRIBUTING | 1358 | 1/1 | 2026-07-10 |
+| [tweazy](https://github.com/aaronjmars/tweazy) | HIGH | Query Twitter with AI in one click, monetized via x402, MCP, CDP Smart Wallets & Paymaster. | Next.js | README_STUB, MISSING_CONTRIBUTING | 48 | 0/0 | 2026-07-10 |
+| [web3-research-mcp](https://github.com/aaronjmars/web3-research-mcp) | HIGH | Deep-research MCP server for crypto — free & fully local, published on npm. | Node/TS | README_STUB, MISSING_CONTRIBUTING | 161 | 0/0 | 2026-07-10 |
+| [openroutercli](https://github.com/aaronjmars/openroutercli) | HIGH | CLI for every OpenRouter endpoint — built for humans and LLM agents; published on npm. | Node/JS | MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 10 | 0/0 | 2026-07-10 |
+| [soul.md](https://github.com/aaronjmars/soul.md) | HIGH | Framework for building AI-agent personalities that Claude Code / OpenClaw can ingest as an "AI soul". | JavaScript | README_STUB, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 609 | 0/0 | 2026-07-10 |
+| [magi](https://github.com/aaronjmars/magi) | HIGH | AI-powered semantic meme search engine for Farcaster with Frames integration. | Next.js | MISSING_LICENSE, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 11 | 0/0 | 2026-07-10 |
+| [polymarket-tg-bot](https://github.com/aaronjmars/polymarket-tg-bot) | HIGH | Telegram bot that monitors Polymarket and alerts on new prediction markets with category filters. | Node/TS | MISSING_LICENSE, MISSING_CLAUDE_MD | 7 | 0/0 | 2026-07-10 |
+| [blank-page-prototyping](https://github.com/aaronjmars/blank-page-prototyping) | HIGH | Figma-IRL — snap a photo of a sketch and generate a working HTML site via GPT-4o. | Next.js | MISSING_LICENSE, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 11 | 0/0 | 2026-07-10 |
 | [torlink](https://github.com/aaronjmars/torlink) | HIGH | Zero-setup terminal torrent finder/downloader with curated sources (fork of baairon/torlink). | Node/TS | MISSING_DEPENDABOT, MISSING_CLAUDE_MD | 0 | 0/0 | 2026-07-08 |
 | [claude-explorer](https://github.com/aaronjmars/claude-explorer) | HIGH | Import, classify (via OpenRouter), and search your Claude AI conversation export in PostgreSQL. | Node/Express | MISSING_LICENSE, MISSING_CLAUDE_MD | 6 | 0/0 | 2026-07-08 |
 | [farcaster-scraper](https://github.com/aaronjmars/farcaster-scraper) | HIGH | CLI that uses the Neynar API to fetch and filter Farcaster content by likes/recasts/imgur URLs. | Node/JS | MISSING_LICENSE, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 14 | 0/0 | 2026-07-08 |
@@ -35,12 +35,12 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 | [agents-cli](https://github.com/aaronjmars/agents-cli) | MED | CLI + skills that turn coding assistants into experts at building agents on Gemini Enterprise Agent Platform (fork of google/agents-cli). | Python | MISSING_CLAUDE_MD | 1 | 0/0 | 2026-07-07 |
 | [awesome-multi-agent-orchestrators](https://github.com/aaronjmars/awesome-multi-agent-orchestrators) | HIGH | Curated directory of open-source multi-agent orchestrators & coding-agent workspaces (fork of openorchestrators). | Astro | MISSING_DEPENDABOT, MISSING_LICENSE, MISSING_CLAUDE_MD | 0 | 0/0 | 2026-07-07 |
 | [eve](https://github.com/aaronjmars/eve) | MED | Filesystem-first framework for durable backend AI agents on Vercel (fork of vercel/eve). | Node/TS | MISSING_DEPENDABOT | 0 | 0/0 | 2026-07-07 |
-| [soul-aaronjmars](https://github.com/aaronjmars/soul-aaronjmars) | HIGH | New standard for AI soul files / digital twins — feed an LLM the folder and it embodies the identity. | Node/JS | MISSING_LICENSE, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 10 | 0/0 | 2026-07-06 |
-| [opendia](https://github.com/aaronjmars/opendia) | HIGH | Connect any browser (Chrome, Arc, Firefox) to AI models via MCP — turns Dia-style AI into a browser extension. | JavaScript | README_STUB, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 1842 | 0/0 | 2026-07-06 |
+| [soul-aaronjmars](https://github.com/aaronjmars/soul-aaronjmars) | HIGH | New standard for AI soul files / digital twins — feed an LLM the folder and it embodies the identity. | JavaScript | MISSING_LICENSE, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 10 | 0/0 | 2026-07-06 |
+| [opendia](https://github.com/aaronjmars/opendia) | HIGH | Connect any browser (Chrome, Arc, Firefox) to AI models via MCP — turns Dia-style AI into a browser extension. | JavaScript | README_STUB, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 1843 | 0/0 | 2026-07-06 |
 | [awesome-ai-agents-slava](https://github.com/aaronjmars/awesome-ai-agents-slava) | HIGH | Awesome list of 300+ agentic AI resources by Slava Kurilyak (fork). | Python | MISSING_CI, MISSING_DEPENDABOT, MISSING_CLAUDE_MD | 0 | 0/0 | 2026-07-03 |
 | [awesome-llm-agents](https://github.com/aaronjmars/awesome-llm-agents) | HIGH | Curated list of LLM agent frameworks with stats and features (fork). | Python | MISSING_LICENSE, MISSING_DEPENDABOT, MISSING_CLAUDE_MD | 0 | 0/0 | 2026-07-03 |
 | [agent-credit](https://github.com/aaronjmars/agent-credit) | HIGH | The first credit line for agents — lets an agent borrow/repay credit via Aave. | Shell | README_STUB, MISSING_CLAUDE_MD, MISSING_CONTRIBUTING | 25 | 0/0 | 2026-07-03 |
-| [.github](https://github.com/aaronjmars/.github) | HIGH | Org-wide community-health defaults (SECURITY, CONTRIBUTING) inherited by every aaronjmars repo without local overrides. | — | MISSING_CI, MISSING_LICENSE | 0 | 0/0 | 2026-07-03 |
+| [.github](https://github.com/aaronjmars/.github) | HIGH | Org-wide community-health defaults (SECURITY, CONTRIBUTING) inherited by every aaronjmars repo without local overrides. | — | MISSING_CI, MISSING_LICENSE, MISSING_CLAUDE_MD | 0 | 0/0 | 2026-07-03 |
 | [awesome-claws](https://github.com/aaronjmars/awesome-claws) | MED | Curated list of OpenClaw-related products, skills, communities, and ecosystem resources (fork). | HTML | MISSING_CLAUDE_MD | 0 | 0/0 | 2026-06-18 |
 | [awesome-crypto-ai-agents](https://github.com/aaronjmars/awesome-crypto-ai-agents) | HIGH | Curated crypto-economy projects for AI agents — payments, DAOs, human-in-the-loop (fork). | — | MISSING_CI, MISSING_LICENSE, MISSING_CLAUDE_MD | 0 | 0/0 | 2026-06-18 |
 | [awesome-onchain-agents](https://github.com/aaronjmars/awesome-onchain-agents) | HIGH | Curated resources for building AI agents on Ethereum — frameworks, standards, MCP servers (fork). | — | MISSING_CI, MISSING_LICENSE, MISSING_CLAUDE_MD | 0 | 0/0 | 2026-06-18 |
@@ -62,25 +62,27 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 
 ### Repo Details
 
-#### miroshark-aeon
-**What:** Public Aeon agent automation driving the MiroShark repo — copy of the aeon framework wired to run scheduled skills as GitHub Actions.
-**Stack:** Node/JS · JavaScript surface; no explicit package.json framework markers.
-**Status:** active · fork: no · agent-repo
-**Topics:** —
-**License:** MIT
-**Numbers:** 17 ★ · 1 fork · 0 open issues · 4 open PRs · last push 2026-07-09
-**Opportunities:**
-- `MISSING_CONTRIBUTING` — add a short `CONTRIBUTING.md` explaining that this is an agent-driven mirror; direct issues/PRs to the upstream aeon repo instead.
-
 #### aeon-agent
-**What:** Public Aeon agent automation driving the Aeon framework repo itself — self-hosting operator loop for aaronjmars/aeon.
-**Stack:** Node/JS · JavaScript surface; no framework markers.
+**What:** Public agent automation of aeon — the self-hosting operator loop for aaronjmars/aeon; runs scheduled Claude Code skills as GitHub Actions and commits back to main.
+**Stack:** Node/JS · JavaScript surface; no root `package.json` framework markers.
 **Status:** active · fork: no · agent-repo
 **Topics:** —
 **License:** MIT
-**Numbers:** 10 ★ · 1 fork · 0 open issues · 4 open PRs · last push 2026-07-09
+**Numbers:** 10 ★ · 1 fork · 0 open issues · 0 open PRs · last push 2026-07-11
 **Opportunities:**
-- `MISSING_CONTRIBUTING` — add a short `CONTRIBUTING.md` clarifying this repo is agent-driven and pointing external contributors to aaronjmars/aeon.
+- `README_STUB` — README is 0 bytes; write a short `README.md` explaining this is an agent-driven mirror of aaronjmars/aeon, point external readers to the upstream, and link the operator dashboard/notifications.
+- `MISSING_CONTRIBUTING` — add a short `CONTRIBUTING.md` clarifying that direct PRs land upstream at aaronjmars/aeon; this repo is agent-only.
+
+#### miroshark-aeon
+**What:** Public agent automation of miroshark — Aeon-style operator loop wired to the aaronjmars/MiroShark repo, running scheduled skills as GitHub Actions.
+**Stack:** Node/JS · JavaScript surface; no root `package.json` framework markers.
+**Status:** active · fork: no · agent-repo
+**Topics:** —
+**License:** MIT
+**Numbers:** 17 ★ · 1 fork · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `README_STUB` — README is 0 bytes; write a short `README.md` explaining this mirror drives MiroShark, and direct issues/PRs to aaronjmars/MiroShark upstream.
+- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` clarifying agent-driven ownership and where humans should file issues.
 
 #### minitor
 **What:** "Monitor the current thing" — a personal dashboard for the internet built on Next.js 16 + Drizzle + Neon Postgres.
@@ -88,89 +90,9 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 **Status:** active · fork: no
 **Topics:** twitter, dashboard, github, monitor, monitoring
 **License:** MIT
-**Numbers:** 12 ★ · 2 forks · 0 open issues · 0 open PRs · last push 2026-07-09
+**Numbers:** 12 ★ · 2 forks · 0 open issues · 0 open PRs · last push 2026-07-10
 **Opportunities:**
 - `MISSING_CLAUDE_MD` — add a `CLAUDE.md` documenting the Next.js app layout, drizzle-kit migration flow (`npm run db:migrate`), and the vitest test entry (`npm test`).
-
-#### polymarket-tg-bot
-**What:** Telegram bot that monitors Polymarket and pings subscribers when new prediction markets appear; supports category filters and automatic dead-subscriber cleanup.
-**Stack:** Node/TS · grammy · @upstash/redis · TypeScript 6.
-**Status:** active · fork: no
-**Topics:** polymarket, telegram, telegram-bot
-**License:** —
-**Numbers:** 7 ★ · 2 forks · 0 open issues · 2 open PRs · last push 2026-07-09
-**Opportunities:**
-- `MISSING_LICENSE` — add `LICENSE` (MIT, matching sibling npm-published bot projects) and set `"license": "MIT"` in `package.json` (currently already MIT-declared but no file).
-- `MISSING_CLAUDE_MD` — add a `CLAUDE.md` describing `tsx src/bot.ts` entry, `/start` `/stop` `/filter` command routing, and Upstash Redis subscriber storage.
-
-#### magi
-**What:** AI-powered semantic meme search engine for Farcaster (Typesense + LLaVA + Cloudflare Images) with Frames integration for sharing.
-**Stack:** Next.js 16 · React 19 · Typesense · OpenAI SDK · Tailwind v4.
-**Status:** active · fork: no
-**Topics:** ai, image-classification, llava, memes, replicate, search-engine
-**License:** —
-**Numbers:** 11 ★ · 1 fork · 0 open issues · 5 open PRs · last push 2026-07-09
-**Opportunities:**
-- `MISSING_LICENSE` — add `LICENSE` (MIT) and declare `"license": "MIT"` in `package.json` so downstream users know they can fork.
-- `MISSING_CLAUDE_MD` — add a `CLAUDE.md` covering the Typesense schema for memes, the OpenAI-based classify step, and Farcaster Frames endpoints under `pages/api/frames/`.
-- `MISSING_CONTRIBUTING` — add a `CONTRIBUTING.md` explaining collection curation (Farcaster/Degen/Higher/Enjoy) and how to submit new meme sources.
-
-#### tweazy
-**What:** Query Twitter with AI in one click; monetized via x402, MCP, Coinbase CDP Smart Wallets & Paymaster — showcase Next.js app for x402-payable MCP endpoints.
-**Stack:** Next.js 16 · React 19 · wagmi · viem · @coinbase/cdp-sdk · @tambo-ai/react.
-**Status:** active · fork: no
-**Topics:** mcp, x402, cdp, coinbase, passkeys, smartwallet
-**License:** MIT
-**Numbers:** 48 ★ · 14 forks · 0 open issues · 5 open PRs · last push 2026-07-09
-**Opportunities:**
-- `README_STUB` — write a real `README.md`: what tweazy demonstrates (x402-monetized MCP query), quickstart (`npm run dev`), env vars (`NEXT_PUBLIC_CDP_PROJECT_ID`, tambo/x402 config), and a link to a hosted demo.
-- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` covering the tambo-ai + wagmi setup and how to test x402 payment flows locally with the CDP paymaster.
-
-#### soul.md
-**What:** Framework for building AI-agent personalities — Claude Code / OpenClaw ingests your data & files and builds an AI "soul" (identity + style + examples).
-**Stack:** JavaScript surface only; no framework detected (documentation-first repo).
-**Status:** active · fork: no
-**Topics:** agents, openclaw, soul, claude-code, claude-code-skill, claude-skills
-**License:** MIT
-**Numbers:** 606 ★ · 65 forks · 0 open issues · 1 open PR · last push 2026-07-09
-**Opportunities:**
-- `README_STUB` — README currently empty (0 bytes); write a proper `README.md` explaining SOUL.md/STYLE.md/examples/ hierarchy, install command, and the "run this as a Claude skill" quickstart.
-- `MISSING_CLAUDE_MD` — add `CLAUDE.md` so contributors know the skill contract, expected file layout, and how the ingestion flow is invoked from Claude Code.
-- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` outlining how to submit new example soul files and voice calibration data (606-star repo — clear contribution path materially matters).
-
-#### blank-page-prototyping
-**What:** "Figma, but IRL" — snap a photo of a page/sketch and generate a working HTML site via GPT-4o vision.
-**Stack:** Next.js 16 · React 19 · OpenAI SDK · formidable · Tailwind v4.
-**Status:** active · fork: no
-**Topics:** ai, figma, prototyping, prototyping-tool
-**License:** —
-**Numbers:** 11 ★ · 2 forks · 0 open issues · 2 open PRs · last push 2026-07-09
-**Opportunities:**
-- `MISSING_LICENSE` — add `LICENSE` (MIT) so forks can clearly reuse the vision-to-HTML flow.
-- `MISSING_CLAUDE_MD` — add `CLAUDE.md` describing the OpenAI vision → HTML generation pipeline, the formidable upload endpoint, and prompt override guidance.
-- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` since the repo advertises "contributions welcome" without a concrete PR/issue template.
-
-#### openroutercli
-**What:** CLI that exposes every OpenRouter endpoint (`or ...`) for humans and LLM agents; published on npm as `@aaronjmars/openroutercli`.
-**Stack:** Node/JS · pure ESM, node >=20; ships two bins (`openrouter`, `or`).
-**Status:** active · fork: no
-**Topics:** openrouter, openrouter-api, openrouter-integration
-**License:** MIT
-**Numbers:** 10 ★ · 2 forks · 0 open issues · 2 open PRs · last push 2026-07-09
-**Opportunities:**
-- `MISSING_CLAUDE_MD` — add `CLAUDE.md` covering the OAuth flow (SKILL.md hint), env vars (`OPENROUTER_API_KEY`), the endpoint router in `src/`, and the release process (`prepublishOnly`).
-- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` explaining how to add a new endpoint wrapper and the npm publish workflow.
-
-#### web3-research-mcp
-**What:** Deep-research MCP server for crypto — free and fully local; scrapes via DuckDuckGo + Cheerio + Turndown; published on npm.
-**Stack:** Node/TS · @modelcontextprotocol/sdk 1.9 · cheerio · duck-duck-scrape · turndown · TypeScript 6.
-**Status:** active · fork: no
-**Topics:** mcp, mcp-server, mcp-crypto
-**License:** MIT
-**Numbers:** 161 ★ · 53 forks · 0 open issues · 4 open PRs · last push 2026-07-09
-**Opportunities:**
-- `README_STUB` — README is empty; add one covering the MCP tool list, install (`npx web3-research-mcp`), Claude Desktop config JSON block, and example research prompts.
-- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` with the local dev loop (`npm run dev`), how to add new sources/scrapers, and the release process.
 
 #### MiroShark
 **What:** Universal swarm-intelligence engine that simulates outcomes for ~$1 in under 10 minutes — Python backend, JS frontend, financial-forecasting focus.
@@ -178,10 +100,90 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 **Status:** active · fork: no
 **Topics:** mirofish, swarm, swarm-intelligence, financial-forecasting, future-prediction, ai-simulation
 **License:** AGPL-3.0
-**Numbers:** 1358 ★ · 286 forks · 1 open issue · 0 open PRs · last push 2026-07-08
+**Numbers:** 1358 ★ · 288 forks · 1 open issue · 1 open PR · last push 2026-07-10
 **Opportunities:**
 - `README_STUB` — README is 0 bytes; write one covering "what MiroShark simulates", the `npm run setup:all` + `npm run dev` quickstart, and the AGPL-3.0 licensing implications for commercial use (flagship repo — README is currently the biggest gap in the fleet).
 - `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` covering the split Python (`uv sync`) / Node (`npm install`) setup, how to run backend tests (`tests.yml` implies pytest), and the AGPL contribution licensing note.
+
+#### tweazy
+**What:** Query Twitter with AI in one click; monetized via x402, MCP, Coinbase CDP Smart Wallets & Paymaster — showcase Next.js app for x402-payable MCP endpoints.
+**Stack:** Next.js 16 · React 19 · wagmi · viem · @coinbase/cdp-sdk · @tambo-ai/react.
+**Status:** active · fork: no
+**Topics:** mcp, x402, cdp, coinbase, passkeys, smartwallet
+**License:** MIT
+**Numbers:** 48 ★ · 14 forks · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `README_STUB` — README is 0 bytes; write a real `README.md`: what tweazy demonstrates (x402-monetized MCP query), quickstart (`npm run dev`), env vars (`NEXT_PUBLIC_CDP_PROJECT_ID`, tambo/x402 config), and a link to a hosted demo.
+- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` covering the tambo-ai + wagmi setup and how to test x402 payment flows locally with the CDP paymaster.
+
+#### web3-research-mcp
+**What:** Deep-research MCP server for crypto — free and fully local; scrapes via DuckDuckGo + Cheerio + Turndown; published on npm.
+**Stack:** Node/TS · @modelcontextprotocol/sdk 1.9 · cheerio · duck-duck-scrape · turndown · TypeScript 7.
+**Status:** active · fork: no
+**Topics:** mcp, mcp-server, mcp-crypto
+**License:** MIT
+**Numbers:** 161 ★ · 53 forks · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `README_STUB` — README is 0 bytes; add one covering the MCP tool list, install (`npx web3-research-mcp`), Claude Desktop config JSON block, and example research prompts.
+- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` with the local dev loop (`npm run dev`), how to add new sources/scrapers, and the release process.
+
+#### openroutercli
+**What:** CLI that exposes every OpenRouter endpoint (`or ...`) for humans and LLM agents; published on npm as `@aaronjmars/openroutercli`.
+**Stack:** Node/JS · pure ESM, node >=20; ships two bins (`openrouter`, `or`).
+**Status:** active · fork: no
+**Topics:** openrouter, openrouter-api, openrouter-integration
+**License:** MIT
+**Numbers:** 10 ★ · 2 forks · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `MISSING_CLAUDE_MD` — add `CLAUDE.md` covering the OAuth flow (SKILL.md hint), env vars (`OPENROUTER_API_KEY`), the endpoint router in `src/`, and the release process (`prepublishOnly`).
+- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` explaining how to add a new endpoint wrapper and the npm publish workflow.
+
+#### soul.md
+**What:** Framework for building AI-agent personalities — Claude Code / OpenClaw ingests your data & files and builds an AI "soul" (identity + style + examples).
+**Stack:** JavaScript surface only; no framework detected (documentation-first repo).
+**Status:** active · fork: no
+**Topics:** agents, openclaw, soul, claude-code, claude-code-skill, claude-skills
+**License:** MIT
+**Numbers:** 609 ★ · 65 forks · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `README_STUB` — README currently empty (0 bytes); write a proper `README.md` explaining SOUL.md/STYLE.md/examples/ hierarchy, install command, and the "run this as a Claude skill" quickstart.
+- `MISSING_CLAUDE_MD` — add `CLAUDE.md` so contributors know the skill contract, expected file layout, and how the ingestion flow is invoked from Claude Code.
+- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` outlining how to submit new example soul files and voice calibration data (609-star repo — clear contribution path materially matters).
+
+#### magi
+**What:** AI-powered semantic meme search engine for Farcaster (Typesense + LLaVA + Cloudflare Images) with Frames integration for sharing.
+**Stack:** Next.js 16 · React 19 · Typesense · OpenAI SDK · Tailwind v4.
+**Status:** active · fork: no
+**Topics:** ai, image-classification, llava, memes, replicate, search-engine
+**License:** —
+**Numbers:** 11 ★ · 1 fork · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `MISSING_LICENSE` — add `LICENSE` (MIT) and declare `"license": "MIT"` in `package.json` so downstream users know they can fork.
+- `MISSING_CLAUDE_MD` — add a `CLAUDE.md` covering the Typesense schema for memes, the OpenAI-based classify step, and Farcaster Frames endpoints under `pages/api/frames/`.
+- `MISSING_CONTRIBUTING` — add a `CONTRIBUTING.md` explaining collection curation (Farcaster/Degen/Higher/Enjoy) and how to submit new meme sources.
+
+#### polymarket-tg-bot
+**What:** Telegram bot that monitors Polymarket and pings subscribers when new prediction markets appear; supports category filters and automatic dead-subscriber cleanup.
+**Stack:** Node/TS · grammy · @upstash/redis · TypeScript 7.
+**Status:** active · fork: no
+**Topics:** polymarket, telegram, telegram-bot
+**License:** —
+**Numbers:** 7 ★ · 2 forks · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `MISSING_LICENSE` — add `LICENSE` (MIT, matching the `"license": "MIT"` field already in package.json) so the declared license appears on the repo page.
+- `MISSING_CLAUDE_MD` — add a `CLAUDE.md` describing `tsx src/bot.ts` entry, `/start` `/stop` `/filter` command routing, and Upstash Redis subscriber storage.
+
+#### blank-page-prototyping
+**What:** "Figma, but IRL" — snap a photo of a page/sketch and generate a working HTML site via GPT-4o vision.
+**Stack:** Next.js 16 · React 19 · OpenAI SDK · formidable · Tailwind v4.
+**Status:** active · fork: no
+**Topics:** ai, figma, prototyping, prototyping-tool
+**License:** —
+**Numbers:** 11 ★ · 2 forks · 0 open issues · 0 open PRs · last push 2026-07-10
+**Opportunities:**
+- `MISSING_LICENSE` — add `LICENSE` (MIT) so forks can clearly reuse the vision-to-HTML flow.
+- `MISSING_CLAUDE_MD` — add `CLAUDE.md` describing the OpenAI vision → HTML generation pipeline, the formidable upload endpoint, and prompt override guidance.
+- `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` since the repo advertises "contributions welcome" without a concrete PR/issue template.
 
 #### torlink
 **What:** Zero-setup terminal torrent finder & downloader — one search checks curated sources, pick a result and it downloads via WebTorrent (fork of baairon/torlink).
@@ -278,9 +280,9 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 **Status:** active · fork: no
 **Topics:** chrome-extension, dia, mcp, automation, npm, npm-package
 **License:** MIT
-**Numbers:** 1842 ★ · 148 forks · 0 open issues · 0 open PRs · last push 2026-07-06
+**Numbers:** 1843 ★ · 148 forks · 0 open issues · 0 open PRs · last push 2026-07-06
 **Opportunities:**
-- `README_STUB` — README is empty on a 1842-star repo; write one covering install (`npx opendia` + browser extension load), the MCP tools it exposes, supported browsers, and a demo GIF.
+- `README_STUB` — README is empty on a 1843-star repo; write one covering install (`npx opendia` + browser extension load), the MCP tools it exposes, supported browsers, and a demo GIF.
 - `MISSING_CLAUDE_MD` — add `CLAUDE.md` covering the extension → MCP server bridge, the `ci.yml`/`publish.yml` flow, and how new browser targets are added.
 - `MISSING_CONTRIBUTING` — add `CONTRIBUTING.md` (highest-star non-fork in the fleet — clear contribution path is the biggest lever here).
 
@@ -330,6 +332,7 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 **Opportunities:**
 - `MISSING_CI` — add `.github/workflows/lint.yml` running `DavidAnson/markdownlint-cli2-action@v18` on push/PR against `**/*.md` to keep the org-wide SECURITY/CONTRIBUTING defaults quality-gated.
 - `MISSING_LICENSE` — add `LICENSE` (CC-BY-4.0 is standard for org-health defaults) so downstream repos can rely on the templates without licensing ambiguity.
+- `MISSING_CLAUDE_MD` — add `CLAUDE.md` explaining the fallback-file contract (README/SECURITY/CONTRIBUTING) and how to update the org-wide defaults safely.
 
 #### awesome-claws
 **What:** Curated list of OpenClaw-related products, skills, communities, and ecosystem resources (bilingual EN/中文, static Pages fork).
@@ -423,17 +426,17 @@ Pre-ranked; each row is a concrete target `external-feature` can pick up directl
 - `MISSING_CLAUDE_MD` — add `CLAUDE.md` documenting the ALMA cycle steps and how to invoke the skill from Claude Code.
 
 <!-- repo-scanner-state
-miroshark-aeon|2026-07-09T19:38:57Z|active
-aeon-agent|2026-07-09T19:35:29Z|active
-minitor|2026-07-09T18:52:58Z|active
-polymarket-tg-bot|2026-07-09T15:34:45Z|active
-magi|2026-07-09T12:48:28Z|active
-tweazy|2026-07-09T06:46:28Z|active
-soul.md|2026-07-09T05:44:09Z|active
-blank-page-prototyping|2026-07-09T05:09:53Z|active
-openroutercli|2026-07-09T03:34:25Z|active
-web3-research-mcp|2026-07-09T03:24:23Z|active
-MiroShark|2026-07-08T14:11:49Z|active
+aeon-agent|2026-07-11T06:27:11Z|active
+miroshark-aeon|2026-07-10T21:43:20Z|active
+minitor|2026-07-10T19:57:30Z|active
+MiroShark|2026-07-10T19:16:59Z|active
+tweazy|2026-07-10T14:11:30Z|active
+web3-research-mcp|2026-07-10T14:10:38Z|active
+openroutercli|2026-07-10T14:10:34Z|active
+soul.md|2026-07-10T14:07:51Z|active
+magi|2026-07-10T14:07:47Z|active
+polymarket-tg-bot|2026-07-10T14:07:43Z|active
+blank-page-prototyping|2026-07-10T13:26:48Z|active
 torlink|2026-07-08T11:58:04Z|active
 claude-explorer|2026-07-08T11:57:57Z|active
 farcaster-scraper|2026-07-08T11:53:26Z|active

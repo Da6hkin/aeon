@@ -19,7 +19,7 @@
 
 ## About This Repo
 - github: aaronjmars
-- [Repo catalog](topics/repos.md) — GitHub fleet with prioritized opportunities (32 repos, last scanned 2026-07-10)
+- [Repo catalog](topics/repos.md) — GitHub fleet with prioritized opportunities (32 repos, last scanned 2026-07-11)
 
 ## Active setup (Aeon)
 See `memory/topics/aeon-config.md` for the full skill manifest and cost model.
