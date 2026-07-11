@@ -14,44 +14,33 @@ Load `memory/seen-vibecoding.txt` if present (one post ID per line, last 200) �
 
 ## Data source
 
-Reddit JSON API (no auth). Append `.json` to any Reddit URL. Use `old.reddit.com` — it's lighter, more stable, and less likely to be JS-rate-limited than `www.reddit.com`.
+Reddit domain-bans the Anthropic crawler (WebFetch) **and** the sandbox blocks in-run curl, so this skill CANNOT fetch Reddit at runtime (ISS-003). Instead, `scripts/prefetch-reddit.sh` runs on the GitHub runner **before** Claude starts and caches the listings to `.reddit-cache/`. This skill reads those cache files — it does not fetch Reddit directly.
 
-**User-Agent (required):** `web:aeon-vibecoding-digest:1.0 (by /u/aeonbot)` — Reddit's preferred format. Default/generic UAs get 429'd fast.
+Cache files (populated by the prefetch step for r/vibecoding):
+- `.reddit-cache/vibecoding-top.json` — top by score in the window
+- `.reddit-cache/vibecoding-hot.json` — currently hot
+- `.reddit-cache/vibecoding-rising.json` — rising (catches momentum before top)
 
-Endpoints:
-- `https://old.reddit.com/r/vibecoding/top.json?t={window}&limit=30` — top by score in window
-- `https://old.reddit.com/r/vibecoding/hot.json?limit=30` — currently hot
-- `https://old.reddit.com/r/vibecoding/rising.json?limit=15` — rising (catches momentum before top)
-- `https://old.reddit.com/r/vibecoding/comments/{post_id}.json?sort=top&limit=15&depth=2` — comments
+Each file is the raw Reddit listing JSON (`.data.children[].data`). A file is **absent** if that endpoint failed in prefetch — treat absent/empty as that source = `fail`.
 
 Fields to keep per post: `id`, `title`, `selftext`, `score`, `num_comments`, `upvote_ratio`, `author`, `created_utc`, `permalink`, `link_flair_text`, `is_self`, `domain`, `url`, `stickied`.
 
+Comment threads (step 4) are **not** available at runtime (same crawler block). Work from post-level fields; if a post's `selftext` is thin, lean on title + flair + score signals rather than fetching comments. Skip the per-post comment fetch and note it in the source footer.
+
 ## Steps
 
-### 1. Fetch three sorts
+### 1. Read the three cached sorts
+
+Read the prefetched cache files (do NOT curl or WebFetch Reddit — both are blocked, see Data source):
 
 ```bash
-TIME_WINDOW="${var:-day}"
-case "$TIME_WINDOW" in day|week|month) ;; *) TIME_WINDOW="day" ;; esac
-UA="web:aeon-vibecoding-digest:1.0 (by /u/aeonbot)"
-
-mkdir -p /tmp/vc
 STATUS_TOP=fail STATUS_HOT=fail STATUS_RISING=fail
-
-curl -fsSL -H "User-Agent: $UA" \
-  "https://old.reddit.com/r/vibecoding/top.json?t=$TIME_WINDOW&limit=30" \
-  -o /tmp/vc/top.json && STATUS_TOP=ok
-
-curl -fsSL -H "User-Agent: $UA" \
-  "https://old.reddit.com/r/vibecoding/hot.json?limit=30" \
-  -o /tmp/vc/hot.json && STATUS_HOT=ok
-
-curl -fsSL -H "User-Agent: $UA" \
-  "https://old.reddit.com/r/vibecoding/rising.json?limit=15" \
-  -o /tmp/vc/rising.json && STATUS_RISING=ok
+[ -s .reddit-cache/vibecoding-top.json ]    && jq -e '.data.children[0]' .reddit-cache/vibecoding-top.json    >/dev/null 2>&1 && STATUS_TOP=ok
+[ -s .reddit-cache/vibecoding-hot.json ]    && jq -e '.data.children[0]' .reddit-cache/vibecoding-hot.json    >/dev/null 2>&1 && STATUS_HOT=ok
+[ -s .reddit-cache/vibecoding-rising.json ] && jq -e '.data.children[0]' .reddit-cache/vibecoding-rising.json >/dev/null 2>&1 && STATUS_RISING=ok
 ```
 
-If a curl fails, **fall back to WebFetch** on the same URL (the sandbox may block curl but not WebFetch). If all three endpoints fail after fallback, notify `VIBECODING_DIGEST_ERROR: all Reddit endpoints failed` and log to today's log; exit.
+Read posts via `Read`/`jq` from whichever cache files are `ok`. If **all three** are `fail` (cache absent/empty — prefetch couldn't reach Reddit), notify `VIBECODING_DIGEST_ERROR: all Reddit endpoints blocked (ISS-003)` with the stale tools-pulse from the last successful run in `memory/logs/` for context, log to today's log, and exit. Do not fabricate posts.
 
 ### 2. Merge, dedupe, filter
 
@@ -191,7 +180,9 @@ If any post surfaces a take or insight relevant to topics tracked in `MEMORY.md`
 
 ## Sandbox note
 
-The sandbox may block outbound curl. If curl fails, use **WebFetch** on the same URL as a fallback — WebFetch bypasses the sandbox. If all three Reddit endpoints fail even via WebFetch, emit `VIBECODING_DIGEST_ERROR` to notify, log the failure, and exit. No auth is required, so no pre-fetch/post-process pattern is needed.
+Reddit **cannot** be fetched at runtime: the Anthropic crawler (WebFetch) is domain-banned and the sandbox blocks in-run curl (ISS-003). This skill therefore uses the **pre-fetch pattern** — `scripts/prefetch-reddit.sh` runs on the runner before Claude and writes `.reddit-cache/vibecoding-{top,hot,rising}.json`; this skill only reads those files. Never curl or WebFetch Reddit from inside the skill — it will fail.
+
+For reliability from GitHub's datacenter IPs, set `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET` secrets (free "script" app at reddit.com/prefs/apps) — the prefetch uses Reddit OAuth when present, and falls back to anonymous `old.reddit.com` otherwise. If the cache is empty, emit `VIBECODING_DIGEST_ERROR` and exit — do not attempt a runtime fetch.
 
 ## Output codes
 
