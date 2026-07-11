@@ -1,17 +1,17 @@
-*Deep Research — 2026-07-10*
+Report shipped. Notification file staged at `.pending-notify/deep-research-2026-07-11.md` for the workflow's post-run delivery step.
 
-Topic: autonomous AI agents on Base + Liquid Protocol/DIEM + new agent infra opportunities
-Mode: deep — 33 sources (T1:15 T2:13 T3:5) — 4 papers
+## Summary
 
-Base has become the default execution environment for autonomous crypto agents. AgentKit, Base MCP (May 26), Agentic Wallets, Coinbase for Agents (Jun 11) shipped in a single 12-month arc; Chainalysis records 100M+ x402 payments on Base through Q1 2026. But agent transactions are still ~0.0001% of $46T annual stablecoin volume, and the median tx size has shifted decisively above $1 (95% of volume vs 49% a year ago) — micropayments is not the winning use case.
+Executed `skills/deep-research/SKILL.md` on the configured topic: "autonomous AI agents on Base + Liquid Protocol + DIEM ecosystem + new agent infrastructure opportunities" (deep mode).
 
-Key findings:
-- Base is default (Conf: H): AgentKit + Base MCP + Coinbase for Agents saturate the stack
-- x402 real but tiny; $1+ median tx (Conf: H): sub-cent micropayments not the wedge
-- Security is first-order limiter (Conf: H): $600M+ H1 2026 losses, 88% of AI-agent orgs report incidents
-- Identity/attestation/policy layer is the opening (Conf: M-H): ERC-8004 + Warden SPEx + AP2 unstandardized
+**What changed since yesterday's report on the same topic:**
+- **Xiong et al. arXiv 2606.26028 (rev 2026-07-08)** empirically measured ERC-8004: only 3–15% of registrations have live endpoints; 59–91% coordinated Sybil misbehavior across ETH/BSC/Base. This overturns yesterday's optimistic take on the standard and sharpens the opportunity from "another ERC-8004 dashboard" to **Sybil-resistant reputation aggregator**.
+- **AWS Bedrock AgentCore Payments** (Preview 2026-05-07) and **Stripe/Cross River single-use cards** (production 2026-07-03) close some doors for solo builders. **Warden Halo GA slipping to Nov 2026** and **Virtuals ACP public beta (Jul 3)** are the timing bounds. Estimated solo-builder window: 3–6 months.
+- Added contradiction: x402 infra adoption (Chainalysis: 100M+ tx) vs. commercial thinness (77% collapse from Nov 2025 peak, ~50% "gamed" volume).
 
-Strongest data: 169M x402 payments across 590K buyers and 100K sellers year one (InfoQ, 2026-07-06)
-Biggest open question: does Google AP2 with 60+ partners (PayPal, Mastercard, Amex) rebase agent payments off crypto rails?
+**Files:**
+- `articles/deep-research-2026-07-11.md` (34 sources: T1:16 T2:14 T3:4; 4 arXiv papers) — pushed to main (commit 66bad93)
+- `memory/logs/2026-07-11.md` — deep-research log entry appended
+- `.pending-notify/deep-research-2026-07-11.md` — Telegram notification staged for post-run delivery
 
-Full report: articles/deep-research-2026-07-10.md
+**Sharpest wedge surfaced for the operator's 14-day MVP question:** Sybil-resistant ERC-8004 reputation aggregator — no shipped competitor, clear buyer list (x402 merchants + Coinbase for Agents), tight 3–6 month window before AWS AgentCore GA + Warden Halo overlap.
