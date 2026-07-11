@@ -1,3 +1,3 @@
 HEARTBEAT_OK · STATUS_PAGE=OK
 
-All checks passed clean. No P0/P1/P2/P3 flags — defi-overview completed successfully at 12:42Z, chain ran clean this morning, all daily skills within normal windows. `docs/status.md` regenerated (🟢 OK, ISS-003 still open at medium, next run vibecoding-digest at 17:30 UTC).
+All checks clear. No notifications sent — all potential findings (ISS-003, idea-pile decision, Kalshi watchlist seed) are deduped against prior 48h logs. `docs/status.md` regenerated as 🟢 OK with the full evening skill slate reflected (money-radar 19:16Z, skill-health 18:09Z, vibecoding-digest 18:07Z, reflect 18:05Z all added/updated). Next run: chain:overnight-research at 04:45 UTC.
