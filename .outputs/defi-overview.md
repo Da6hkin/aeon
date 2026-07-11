@@ -1,16 +1,20 @@
-Done. Here's the summary:
-
 ## Summary
 
-**Verdict: Mixed** — Protocol-level TVL broadly up +2–7% (Aave V3 +7.2%, Lido +2.7%), but DEX volume reversed sharply at −14.5% after yesterday's +6.5% surge. Capital appears to be rotating from active trading into lending positions.
+**Verdict: Sideways** — Volume eased to −4.7% (moderating from yesterday's −14.5%), TVL broadly flat at protocol level, stables flat overall. No conviction in either direction.
 
-**Key signals today:**
-- Ethereum TVL estimated +3.9% vs yesterday ($38.9B → $40.4B)
-- DEX volume $6.8B (−14.5%) — Orca −24.6%, Raydium −11.7% dragging Solana DEXes down
-- Ethena USDe TVL −6.4% ($4.1B) continuing and deepening from yesterday's −3.2% — basis trade unwind accelerating
-- Fees leaders: Lido $1.08M, Sky Lending $986k — both holding steady
-- One real-yield pool confirmed: stETH 2.23% base APY ($16.5B TVL, confidence=2)
+**Key signals today (2026-07-11):**
+- Chain TVL ~$103B total (chain-level; /v2/chains change_1d absent for 3rd consecutive day)
+- DEX volume $6.37B (−4.7% 1d, +12.8% 7d) — decline is moderating
+- BUIDL +15.7% ($3.2B → $3.7B): only protocol mover clearing ≥10% / ≥$100M; no obvious catalyst
+- Ethena USDe supply −6.8% → $3.9B — basis trade unwind day 3 (was −6.4% yesterday, accelerating)
+- USDD +6.5% → $1.5B
+- Fees leaders: Lido $1.11M (+2.4%, reversed from −1.7% yesterday), Sky Lending $993k (+0.7%), Raydium $81k (−29%, day 2 of Solana fee compression)
+- Top DEXes by vol: Orca $127M (−23.6%), Curve $62M (−25.5%), Raydium $56M (−34.5%)
 
-**Limitations:** Chain-level 24h deltas missing from `/v2/chains` (second day running). Yields dataset still >10MB — only individual pool spot-fetches possible. No protocol movers cleared the ≥10% threshold today.
+**Limitations:**
+- Chain-level 24h deltas missing from `/v2/chains` (day 3; permanent endpoint change suspected)
+- Yields dataset >10MB — endpoint unreachable via WebFetch (day 2); stETH 2.23% apyBase from 2026-07-10 carried forward unverified
+- Fees breakdown partial (top-2 by fees clearly identified; full ranking unavailable from endpoint response)
+- No protocol down mover cleared −10% / ≥$100M threshold today; no chain movers (no delta data)
 
-Notification queued in `.pending-notify/defi-overview-20260710.md` for post-run delivery.
+Notification written to `.pending-notify/defi-overview-20260711.md` for post-run delivery.
