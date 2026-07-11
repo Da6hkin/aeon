@@ -1,0 +1,135 @@
+{
+  "root": "card_root",
+  "state": {},
+  "elements": {
+    "card_root": {
+      "type": "Card",
+      "props": {
+        "title": "Money Radar — 2026-07-11 Evening Addendum"
+      },
+      "children": [
+        "text_status",
+        "separator_1",
+        "heading_sharpens",
+        "stack_sharpen1",
+        "stack_sharpen2",
+        "separator_2",
+        "heading_virtuals",
+        "text_virtuals",
+        "separator_3",
+        "text_full_details_label",
+        "link_memory"
+      ]
+    },
+    "text_status": {
+      "type": "Text",
+      "props": {
+        "text": "No re-rank vs 08:00 brief",
+        "variant": "body"
+      }
+    },
+    "separator_1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_sharpens": {
+      "type": "Heading",
+      "props": {
+        "text": "Two Sharpens",
+        "level": "h2"
+      }
+    },
+    "stack_sharpen1": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_sharpen1_title",
+        "text_sharpen1_detail1",
+        "text_sharpen1_detail2"
+      ]
+    },
+    "text_sharpen1_title": {
+      "type": "Text",
+      "props": {
+        "text": "Underwater window compresses to 48h",
+        "variant": "lead"
+      }
+    },
+    "text_sharpen1_detail1": {
+      "type": "Text",
+      "props": {
+        "text": "Anthropic reversed Fable 5 promo cutoff through July 12",
+        "variant": "body"
+      }
+    },
+    "text_sharpen1_detail2": {
+      "type": "Text",
+      "props": {
+        "text": "GPT-5.6 Sol prices half of Fable 5",
+        "variant": "body"
+      }
+    },
+    "stack_sharpen2": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "text_sharpen2_title"
+      ]
+    },
+    "text_sharpen2_title": {
+      "type": "Text",
+      "props": {
+        "text": "Ship outbound Saturday",
+        "variant": "lead"
+      }
+    },
+    "separator_2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "heading_virtuals": {
+      "type": "Heading",
+      "props": {
+        "text": "Virtuals",
+        "level": "h2"
+      }
+    },
+    "text_virtuals": {
+      "type": "Text",
+      "props": {
+        "text": "Auto-registers every ACP-graduated agent on ERC-8004 — Idea 3 buyer-side wedge widens",
+        "variant": "body"
+      }
+    },
+    "separator_3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "text_full_details_label": {
+      "type": "Text",
+      "props": {
+        "text": "Full details:",
+        "variant": "caption"
+      }
+    },
+    "link_memory": {
+      "type": "Link",
+      "props": {
+        "label": "memory/money-radar/2026-07-11-evening.md",
+        "href": "memory/money-radar/2026-07-11-evening.md"
+      }
+    }
+  }
+}
