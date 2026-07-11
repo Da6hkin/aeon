@@ -46,6 +46,7 @@ See `memory/topics/system-health.md` for issue history and operational patterns.
 - Fix vibecoding-digest: add `scripts/prefetch-reddit.sh` (ISS-003).
 
 ## Kalshi signals
+- **2026-07-11:** KXFED-26JUL T3.75 surged 14%→20% (+6pp, tight book) — cut prob fell from 86% to 80%. KXCPI-26JUN T-0.2 at 43% (+4pp, intraday hit 48%); modal −0.3%–−0.2% band compressed 51%→43%; milder-deflation bands gaining. CPI print July 14 (3 days).
 - **2026-07-10:** KXCPI-26JUN — T-0.2 spiked to 65% intraday (28pp range on tight book) before reverting to 37%; modal −0.3% to −0.2% (51% prob); book tightened 6pp→2pp. KXFED-26JUL T3.75 at 14%, cut prob 86%. CPI print July 14.
 - **2026-07-09:** KXCPI-26JUN pricing US deflation for June (CPI modal outcome −0.2% to −0.3%, data July 14). KXFED-26JUL T3.75 at 16% → 84% cut probability at July 29 FOMC.
 
