@@ -1,15 +1,13 @@
 ## Summary
 
-Ran the startup-idea skill. Generated 2 memos in fresh domains (rotated away from recent runs' heavy focus on MCP infra, on-call runbook agents, bookkeeping automation, Claude Skills marketplace, and Polymarket LP).
+Ran startup-idea skill (chain-step, freeform). Two memos generated using fresh 2026-07-11 signals — the Xiong et al. arXiv 2606.26028 (rev 2026-07-08) empirical breaking of ERC-8004 Sybil resistance, Virtuals ACP public beta (2026-07-03), AWS Bedrock AgentCore Payments preview, x402r refund protocol, and the vibecoding "fix-one-break-ten" pain from Reddit synthesis. Deduped against the operator's standing radar (Underwater, FieldWrench, Agent Firewall, AgentLens, MCPSentry, Cortex, LiquidLine, Resolva).
 
-**Idea 1 — Underwater** (executable): per-customer LLM cost-vs-revenue Slack alerts for AI-native SaaS founders about to reprice. Rides the 60% → usage-based pricing shift + $30/MTok Opus 4.8 / GPT-5.2 Pro margin cliff. Buyer is founder/CFO (not engineering), which differentiates from crowded observability space (Helicone/Portkey/Langfuse).
+**Idea 1 — Regression Sentinel** (executable): GitHub App that replays golden-path traffic pre-vs-post AI PR and blocks silent regressions in flows the author didn't touch. $99/mo; MVP is 3 pilot repos in 2 weeks; kills at <3 paid pilots by Day 60 or <60% precision.
 
-**Idea 2 — FieldWrench** (ambitious): unified diagnostic + repair-record platform for independent farm-equipment shops, riding the FTC-Deere Dec-31-2026 mandated software drop. $4.2B addressable pain, hard-dated regulatory tailwind, existing tools (JALTEST/Texa) priced $8–15k/seat with no modern SaaS competitor.
+**Idea 2 — Attestly** (ambitious): marketplace of vertical evaluator agents (code / translation / creative asset) that plug into Virtuals ACP / x402r / AP2 as the third-party attestation layer for agent-to-agent commerce. 1.5% GMV + $99/mo minimum; MVP is 100 testnet ACP txs with ≥90% human-agreement on release; kills at <3 paying integrations by Day 90 or <85% agreement.
 
-**8 permalinks cited** across pain sources (LLM cost attribution, unit-economics collapse, FTC settlement text, PIRG compliance concerns, existing tooling gap). Passed the tarpit filter (neither is a generic AI wrapper), quality bar (named ICPs with trigger events, specific channels, numeric time-bound kill criteria), and 14-day dedup (fresh domains vs. prior startup-idea + money-radar memos).
+Files:
+- `memory/logs/2026-07-11.md` — full 2-memo output, 7 cited permalinks, founder profile, pain evidence, tarpit filter section (~lines 82–170)
+- `.pending-notify/startup-idea-20260711.md` — 1,985-char notification (well under 4,000; established sandbox fallback since `./notify "$(cat …)"` shell-substitution is blocked)
 
-**Files modified:**
-- `memory/logs/2026-07-10.md` — full 2-memo output appended
-- `.pending-notify/startup-idea-20260710.md` — notification (1,560 chars, post-run delivery)
-
-**Follow-up:** None from this run. Operator's fastest natural first action on Idea 1: scrape 30 AI-native SaaS pricing pages this weekend and DM the 5 whose flat-rate math looks most broken. On Idea 2: post the "Deere Dec-31 Readiness Checklist" bait to the 58k-member Facebook group and see if 20 shops opt in.
+Follow-up: if operator picks Idea 1, no-build first move is DMing 20 named devrel/founder handles at Bolt/Lovable/Cursor/Windsurf/Codex/Replit-Agents offering white-label integration. If Idea 2, first move is a Virtuals Protocol partnership pitch — their own case study admits the evaluator gap.
