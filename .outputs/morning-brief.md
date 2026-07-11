@@ -1,29 +1,20 @@
-Brief delivered. Here it is:
-
-```
-*Morning Brief — 2026-07-10*
-
-*Focus today*
-1. Pick Underwater vs FieldWrench; lock a 14-day MVP scope — why now: fresh executable ideas, both dated windows
-2. Draft the distribution asset in parallel with the build — why now: distribution takes weeks, code takes days
-3. Set the numeric day-14 kill criterion for the pick — why now: undated criteria drift into month 3
-
-*Since yesterday*
-- Overnight chain end-to-end for the first time in ~30d — startup-idea produced Underwater + FieldWrench
-- ISS-001 fix landed on main (chain-runner jq + messages.yml IN_SKILLS guard); no open issues
-- deep-research: identity/attestation/policy layer called out as the clearest agent-builder opening
-- HN + repo-scanner first fires: FTC-Deere Dec-31-2026 software mandate; 32-repo baseline (top opportunity: lychee CI on 4 awesome-* lists)
-
-*Running today*
-- paper-digest 07:00 · money-radar 08:00 + 19:00 · defi-overview 12:00 · monitor-kalshi 13:00 · vibecoding-digest 17:30 · skill-health + reflect 18:00 · heartbeat 08/14/20
-```
+Task complete. Skipping TaskCreate — this was a single-shot skill execution, not multi-step work worth tracking.
 
 ## Summary
 
-Ran morning-brief. Ranked 3 focus items on leverage × urgency: pick Underwater vs FieldWrench (today's fresh startup-idea output), draft distribution in parallel with build, set day-14 kill criterion. Since-yesterday captures the ~30d overnight-chain repair milestone, ISS-001 fix landed on main (verified `IN_SKILLS` guard in messages.yml), deep-research's identity/attestation/policy call-out, and HN+repo-scanner first fires. Watch section omitted — WebSearch surfaced nothing beyond what today's deep-research and HN digest already caught. Running-today lists 8 scheduled skills through 20:00Z.
+Ran morning-brief for 2026-07-11. Substrate: MEMORY.md, yesterday's log, today's chain outputs (deep-research, github-trending, HN, repo-scanner, startup-idea = Regression Sentinel + Attestly, vienna-apartments), cron-state, empty PR/issue queues, empty soul templates.
+
+**Focus items ranked (leverage × urgency):**
+1. Cut the 6-idea pile to 1 pick — the pile grew from 4 to 6 overnight with 0 in build
+2. Ship ISS-003 `scripts/prefetch-reddit.sh` — concrete 1–2h fix, unblocks daily skill
+3. Draft distribution copy for the pick — distribution takes weeks, code takes days
+
+**Since yesterday (4 bullets):** clean chain 2nd day + Regression Sentinel/Attestly added; Xiong arXiv rev shows ERC-8004 empirically 73–91% Sybil (sharpens Agent Firewall + Attestly); Virtuals ACP + AWS Bedrock Payments + Stripe single-use cards all shipped inside 90d; Underwater explainer sent last night, no reply yet.
+
+**Watch:** omitted — this morning's substrate is already fresher than any WebSearch.
+
+**Running today:** 7 skills (paper-digest 07:00, money-radar 08+19:00, defi-overview 12:00, monitor-kalshi 13:00, vibecoding-digest 17:30 will error per ISS-003, skill-health + reflect 18:00, heartbeat ~14+~20).
 
 Files:
-- `.pending-notify/morning-brief-20260710.md` — notification (post-run workflow step delivers; `./notify "$(cat …)"` blocked by sandbox, established fallback)
-- `memory/logs/2026-07-10.md` — `### morning-brief` log entry for tomorrow's since-yesterday input
-
-Follow-up: none from this skill.
+- `.pending-notify/morning-brief-20260711.md` (965 chars — post-run workflow delivers)
+- `memory/logs/2026-07-11.md` — appended `### morning-brief` block
