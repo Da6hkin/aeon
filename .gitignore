@@ -24,6 +24,7 @@
 skills.lock
 
 # Scratch / temp files
+repo-scan-tmp/
 tmp_*
 *.tmp
 .tmp-*
